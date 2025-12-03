@@ -13,3 +13,4 @@ HTML files with 'partial.html' suffix will be ignored, so validator is compatibl
 - Anna Sverydova 
 - Mushchynka Vasyl
 - Antonina Pokotylenko
+- Osliev Mykyta
