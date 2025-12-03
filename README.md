@@ -9,3 +9,4 @@ HTML files with 'partial.html' suffix will be ignored, so validator is compatibl
 # Team #2 
 - Yavorskyi Taras
 - Nalyvaiko Matvii
+- Serhiy Saranchyn
