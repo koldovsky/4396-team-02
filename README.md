@@ -6,3 +6,4 @@ Validation is performed with dynamic pre-rendering of html files so it will allo
 
 HTML files with 'partial.html' suffix will be ignored, so validator is compatible with dynamic construction of website with html includes like (HTML Data Include)[https://github.com/programmingmentor/html-data-include].
 
+# Yavorskyi Taras
