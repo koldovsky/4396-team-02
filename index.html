@@ -10,22 +10,9 @@
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
       crossorigin="anonymous"
     ></script>
+    <script type="module" src="router.js"></script>  
   </head>
   <body>
-    <nav>
-      <a href="#/">Головна</a>
-      <a href="#/about">Про нас</a>
-      <a href="#/packages">Послуги</a>
-      <a href="#/school">Блог</a>
-      <a href="#/contacts">Контакти</a>
-    </nav>
-
-    <main id="app">
-      <!-- Вміст вибраної сторінки буде завантажуватися сюди -->
-    </main>
-
-    <script type="module" src="router.js"></script>
-
     <header class="header">
       <nav
         data-hx-trigger="load"
@@ -33,6 +20,21 @@
         data-hx-get="global.header-nav.partial.html"
       ></nav>
     </header>
+
+    <nav>
+      <a href="#/">
+        <img width="187" height="auto" alt="logo"
+          loading="lazy" src="assets/images/5d779142330b820023596365_optimized_448.webp">
+      </a>
+      <a href="#/about">About Us</a>
+      <a href="#/packages">Packages</a>
+      <a href="#/school">Diving School</a>
+      <a href="#/contacts">Contacts</a>
+    </nav>
+
+    <main id="app">
+      <!-- Вміст вибраної сторінки буде завантажуватися сюди -->
+    </main>
 
     <footer class="footer"></footer>
   </body>

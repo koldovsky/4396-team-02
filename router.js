@@ -21,6 +21,10 @@ async function render(path) {
   }
   const res = await fetch(file);
   app.innerHTML = await res.text();
+  // If htmx is loaded, process newly-inserted content so data-hx-* attributes work
+  if (window.htmx && typeof window.htmx.process === 'function') {
+    window.htmx.process(app);
+  }
 }
 
 function onRouteChange() {
