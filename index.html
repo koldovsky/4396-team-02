@@ -1,32 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="shortcut icon" href="#" type="image/x-icon">
-    <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
-</head>
-<body>
-    <header class="header">
-        <nav data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.header-nav.partial.html"></nav>
-    </header>
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <nav>
-        <a href="#/">Головна</a>
-        <a href="#/about">Про нас</a>
-        <a href="#/packages">Послуги</a>
-        <a href="#/school">Блог</a>
-        <a href="#/contacts">Контакти</a>
+      <a href="#/">Головна</a>
+      <a href="#/about">Про нас</a>
+      <a href="#/packages">Послуги</a>
+      <a href="#/school">Блог</a>
+      <a href="#/contacts">Контакти</a>
     </nav>
 
-    <main id="app">
-        <!-- Вміст вибраної сторінки буде завантажуватися сюди -->
+    <main class="main" id="app">
+      <!-- Вміст вибраної сторінки буде завантажуватися сюди -->
+      <section
+        class="why-choose-us"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.why-choose-us.partial.html"
+      ></section>
     </main>
 
-    <footer class="footer">
-        
-    </footer>
+    <script type="module" src="router.js"></script>
 
-    <script type="module" src="router.js"></script>    
-</body>
+    <header class="header">
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.header-nav.partial.html"
+      ></nav>
+    </header>
+    <footer class="footer"></footer>
+  </body>
 </html>
