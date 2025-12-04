@@ -22,7 +22,6 @@
 
     <main class="main" id="app">
       <!-- Вміст вибраної сторінки буде завантажуватися сюди -->
-   
     </main>
 
     <script type="module" src="router.js"></script>
@@ -34,6 +33,12 @@
         data-hx-get="global.header-nav.partial.html"
       ></nav>
     </header>
+    <section
+      class="why-choose-us"
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="index.why-choose-us.partial.html"
+    ></section>
     <footer class="footer"></footer>
   </body>
 </html>
