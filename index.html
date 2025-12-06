@@ -32,8 +32,13 @@
       <a href="#/contacts">Contacts</a>
     </nav>
 
-    <main id="app">
-      <!-- Вміст вибраної сторінки буде завантажуватися сюди -->
+    <main id="app" class="main">
+      <section
+        class="why-choose-us"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="../components/index.why-choose-us.partial.html"
+      ></section>
     </main>
 
     <footer class="footer"></footer>
