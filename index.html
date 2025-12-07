@@ -12,36 +12,40 @@
     ></script>
   </head>
   <body>
-    <header class="header">
+    <!-- 01__header+hero+footer (Yavorskyi Taras) -->
+    <header
+      class="global__header"
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="global.header.partial.html">
+    </header>
+    <!-- /01__header+hero+footer (Yavorskyi Taras)-->
+
+
+    <main class="main">
+      <!-- 01__menu+hero (Yavorskyi Taras) -->
       <nav
+        class="global__nav-menu"
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="global.header-nav.partial.html"
-      ></nav>
-    </header>
+        data-hx-get="components/global.nav-menu.partial.html">
+      </nav>
 
-    <nav>
-      <a href="index.html">
-        <img width="187" height="auto" alt="logo"
-          loading="lazy" src="assets/images/main-page-logo.webp">
-      </a>
-      <a href="pages/about.html">About Us</a>
-      <a href="pages/packages.html">Packages</a>
-      <a href="pages/school.html">Diving School</a>
-      <a href="pages/contacts.html">Contacts</a>
-
-    </nav>
-
-    <main id="app" class="main">
-      <!-- 01__header+hero+footer (Yavorskyi Taras) -->
-      <!-- TODO: ваш блок має бути тут -->
-
-      <!-- /01__header+hero+footer (Yavorskyi Taras)-->
-
-
+      <section
+        class="main__hero"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="components/index.hero.partial.html">
+      </section>
+      <!-- /01__menu+hero (Yavorskyi Taras) -->
+    
       <!-- 02__Unveil the Marvellous Undersea (Yavorskyi Taras) -->
-      <!-- TODO: ваш блок має бути тут -->
-
+      <section
+        class="marvellous-undersea"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="components/index.marvellous-undersea.partial.html">
+      </section>
       <!-- /02__Unveil the Marvellous Undersea (Yavorskyi Taras)-->
 
 
@@ -103,6 +107,14 @@
       <!-- /11__Contacts (Mushchynka Vasyl)-->
     </main>
 
-    <footer class="footer"></footer>
+
+    <!-- 01__footer (Yavorskyi Taras) -->
+    <footer
+        class="global__footer"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="components/global.footer.partial.html">
+    </footer>
+    <!-- /01__footer (Yavorskyi Taras) -->
   </body>
 </html>
