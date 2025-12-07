@@ -1,17 +1,17 @@
-+ Matvii Nalyvaiko
-+ Mushchynka Vasyl
-+ Palamariuk Mariia
+V+ Matvii Nalyvaiko
+V+ Mushchynka Vasyl
+V+ Palamariuk Mariia
 -- Pechak Oleksandr (чекаю відповіді на запит про вибір секції)
-+ Petryshyn Roman
-+ Pokotylenko Antonina
+_+ Petryshyn Roman
+V+ Pokotylenko Antonina
 -- Rudyk Vladyslav (пообіцяв вибрати собі блок для роботи)
-+ Saranchyn Serhiy
-+ Sultanova Oleksandra
-+ Sverydova Anna
-+ Yavorskyi Taras
-+ Zarvanskyi Yaroslav
-+ Zhuk Artem
-+ Oslaiev Mykyta
-+ Savchuk Nazar
+V+ Saranchyn Serhiy
+_+ Sultanova Oleksandra
+V+ Sverydova Anna
+V+ Yavorskyi Taras
+V+ Zarvanskyi Yaroslav
+V+ Zhuk Artem
+V+ Oslaiev Mykyta
+V+ Savchuk Nazar
 -- Tsap Illia (пообіцяв вибрати собі блок для роботи і написати розмітку до понеділка)
 -- Hnatyshyn Volodymyr (чекаю відповіді на запит про вибір секції)
