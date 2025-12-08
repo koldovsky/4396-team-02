@@ -1,0 +1,23 @@
+.why-choose-us {
+  padding: 0 0.9rem;
+
+  .why-choose-us__container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .why-choose-us__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .why-choose-us__main-icon {
+    width: 3.125rem;
+  }
+}
