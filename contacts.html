@@ -1,52 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Contacts</title>
-        <link rel="icon" href="assets/images/favicon.png" type="image/png" />
-        <script
-            src="https://unpkg.com/htmx.org@1.9.10"
-            integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
-            crossorigin="anonymous"
-        ></script>
-    </head>
-    <body>
-        <!-- 01__header (Yavorskyi Taras) -->
-        <header
-            class="global__header"
-            data-hx-trigger="load"
-            data-hx-swap="outerHTML"
-            data-hx-get="components/global.header.partial.html">
-        </header>
-        <!-- /01__header (Yavorskyi Taras)-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacts</title>
+    <link rel="icon" href="assets/images/favicon.png" type="image/png" />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- 01__header (Yavorskyi Taras) -->
+    <header
+      class="global__header"
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="components/global.header.partial.html"
+    ></header>
+    <!-- /01__header (Yavorskyi Taras)-->
 
+    <main class="main">
+      <!-- 01__menu (Yavorskyi Taras) -->
+      <nav
+        class="global__nav-menu"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="components/global.nav-menu.partial.html"
+      ></nav>
+      <!-- /01__menu (Yavorskyi Taras) -->
 
-        <main class="main">
-            <!-- 01__menu (Yavorskyi Taras) -->
-            <nav
-                class="global__nav-menu"
-                data-hx-trigger="load"
-                data-hx-swap="outerHTML"
-                data-hx-get="components/global.nav-menu.partial.html">
-            </nav>
-            <!-- /01__menu (Yavorskyi Taras) -->
+      <!-- 25__Contacts-4 (Mushchynka Vasyl) -->
+      <!-- TODO: ваш блок має бути тут -->
 
+      <!-- /25__Contacts-4 (Mushchynka Vasyl)-->
+      <section
+        class="contacts_form"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="components/index.contacts_form.html"
+      ></section>
+    </main>
 
-            <!-- 25__Contacts-4 (Mushchynka Vasyl) -->
-            <!-- TODO: ваш блок має бути тут -->
-
-            <!-- /25__Contacts-4 (Mushchynka Vasyl)-->
-        </main>
-
-
-        <!-- 01__footer (Yavorskyi Taras) -->
-        <footer
-            class="global__footer"
-            data-hx-trigger="load"
-            data-hx-swap="outerHTML"
-            data-hx-get="components/global.footer.partial.html">
-        </footer>
-        <!-- /01__footer (Yavorskyi Taras) -->
-    </body>
+    <!-- 01__footer (Yavorskyi Taras) -->
+    <footer
+      class="global__footer"
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="components/global.footer.partial.html"
+    ></footer>
+    <!-- /01__footer (Yavorskyi Taras) -->
+  </body>
 </html>
