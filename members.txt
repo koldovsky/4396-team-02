@@ -13,6 +13,6 @@
 + + 03          Zhuk Artem
 + + 05          Oslaiev Mykyta
 + + 04,12       Savchuk Nazar
-+ -             Tsap Illia (пообіцяв вибрати собі блок для роботи і написати розмітку до понеділка) //я ніколи нічого не обіцяю
-- - 13          Hnatyshyn Volodymyr (чекаю відповіді на запит про вибір секції)
-- -             Dobriuk Oleksandr (пообіцяв вибрати собі блок для роботи)
++ + 22          Tsap Illia
++ + 13          Hnatyshyn Volodymyr
+- + 20          Dobriuk Oleksandr
