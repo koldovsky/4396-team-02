@@ -1,18 +1,18 @@
-+ + Matvii Nalyvaiko
-+ + Mushchynka Vasyl
-+ + Palamariuk Mariia
-- - Pechak Oleksandr (чекаю відповіді на запит про вибір секції)
-- + Petryshyn Roman
-+ + Pokotylenko Antonina
-- - Rudyk Vladyslav (пообіцяв вибрати собі блок для роботи)
-+ + Saranchyn Serhiy
-- + Sultanova Oleksandra
-+ + Sverydova Anna
-+ + Yavorskyi Taras
-+ + Zarvanskyi Yaroslav
-+ + Zhuk Artem
-+ + Oslaiev Mykyta
-+ + Savchuk Nazar
-- - Tsap Illia (пообіцяв вибрати собі блок для роботи і написати розмітку до понеділка) //я ніколи нічого не обіцяю
-- - Hnatyshyn Volodymyr (чекаю відповіді на запит про вибір секції)
-- - Dobriuk Oleksandr (пообіцяв вибрати собі блок для роботи)
+- 20          Dobriuk Oleksandr
++ 13          Hnatyshyn Volodymyr
++ 11,19,24,25 Mushchynka Vasyl
++ 06          Nalyvaiko Matvii
++ 05          Oslaiev Mykyta
++ 14          Palamariuk Mariia
+- 23          Pechak Oleksandr
+- 15,16       Petryshyn Roman
++ 10          Pokotylenko Antonina
+- 21          Rudyk Vladyslav
++ 09          Saranchyn Serhiy
++ 04,12       Savchuk Nazar
++ 17,18       Sultanova Oleksandra
++ 07          Sverydova Anna
++ 22          Tsap Illia
++ 01,02       Yavorskyi Taras
++ 08          Zarvanskyi Yaroslav
++ 03          Zhuk Artem
