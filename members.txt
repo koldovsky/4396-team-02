@@ -1,18 +1,18 @@
-+ + 06          Matvii Nalyvaiko
-+ + 11,19,24,25 Mushchynka Vasyl
-+ + 14          Palamariuk Mariia
-- + 23          Pechak Oleksandr
-- + 15,16       Petryshyn Roman
-+ + 10          Pokotylenko Antonina
-- + 21          Rudyk Vladyslav
-+ + 09          Saranchyn Serhiy
-+ + 17,18       Sultanova Oleksandra
-+ + 07          Sverydova Anna
-+ + 01,02       Yavorskyi Taras
-+ + 08          Zarvanskyi Yaroslav
-+ + 03          Zhuk Artem
-+ + 05          Oslaiev Mykyta
-+ + 04,12       Savchuk Nazar
-+ + 22          Tsap Illia
-+ + 13          Hnatyshyn Volodymyr
-- + 20          Dobriuk Oleksandr
+- 20          Dobriuk Oleksandr
++ 13          Hnatyshyn Volodymyr
++ 11,19,24,25 Mushchynka Vasyl
++ 06          Nalyvaiko Matvii
++ 05          Oslaiev Mykyta
++ 14          Palamariuk Mariia
+- 23          Pechak Oleksandr
+- 15,16       Petryshyn Roman
++ 10          Pokotylenko Antonina
+- 21          Rudyk Vladyslav
++ 09          Saranchyn Serhiy
++ 04,12       Savchuk Nazar
++ 17,18       Sultanova Oleksandra
++ 07          Sverydova Anna
++ 22          Tsap Illia
++ 01,02       Yavorskyi Taras
++ 08          Zarvanskyi Yaroslav
++ 03          Zhuk Artem
