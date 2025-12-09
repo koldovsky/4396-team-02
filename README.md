@@ -41,3 +41,6 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 - Savchuk Nazar
 - Zhuk Artem
 - Dobriuk Oleksandr
+- Tsap Illia
+- Sultanova Oleksandra
+- Hnatyshyn Volodymyr
