@@ -1,4 +1,4 @@
-- 20          Dobriuk Oleksandr
++ 20          Dobriuk Oleksandr
 + 13          Hnatyshyn Volodymyr
 + 11,19,24,25 Mushchynka Vasyl
 + 06          Nalyvaiko Matvii
