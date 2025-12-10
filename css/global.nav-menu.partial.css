@@ -1,8 +1,3 @@
-.logo-image {
-  width: 187px;
-  height: auto;
-}
-
 .global__nav-menu {
   margin: 0;
   padding: 20px 40px;
@@ -18,31 +13,98 @@
   width: 100%;
 }
 
-.menu__spaising {
-  margin: 0 -10px;
+.menu__main-link{
+  display: inline-block;
+
+  .logo-image {
+    width: 187px;
+    height: auto;
+  }
 }
 
-.menu__spaising-inner {
-  margin: 0 10px;
-}
 
 .menu__buttons-block {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: end;
-  align-items: center;
+  .menu__spaising {
+    margin: 0 -10px;
+  }
+
+  .menu__spaising-inner {
+    margin: 0 10px;
+  }
+
+  .menu__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu__item {
+    margin: 5px 7.5px;
+  }
+
+  .menu__link {
+    text-decoration: none;
+    font-size: 0.875rem;
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu__buttons-block-inner {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .button__go-diving {
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 12px 24px;
+    border-radius: 21px;
+    background-color: var(--button-primary-background-color);
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--button-primary-text-color);
+    font-size: 0.6875rem;
+    text-transform: uppercase;
+  }
+
+  .button__go-diving:hover {
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 12px 24px;
+    border-radius: 21px;
+    background-color: var(--button-primary-background-hover-color);
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--button-primary-text-color);
+    font-size: 0.6875rem;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease-in;
+  }
+
+  .button__border {
+    box-sizing: border-box;
+    border-radius: 21px;
+    border-width: 0.8px;
+    border-style: solid;
+    border-color: var(--color-border-transparent);
+    margin: 0;
+  }
+
+  .button__content {
+    padding: o;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    line-height: 1.2375rem;
+  }
 }
 
-.menu__list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.menu__item {
-  margin: 5px 7.5px;
-}
