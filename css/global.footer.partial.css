@@ -1,0 +1,125 @@
+.global__footer-logo-link {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.global__footer-logo-image {
+  justify-content: center;
+  max-width: 197px;
+  height: auto;
+}
+
+.global__footer-inner {
+  padding: 0;
+}
+
+.global__footer-nav {
+  margin-top: 1.75rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.global__footer-nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.25rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.global__footer-nav-item {
+  margin: 0;
+}
+
+.global__footer-nav-link {
+  text-decoration: none;
+  font-size: 1rem;
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+}
+
+.global__footer-nav-link:hover,
+.global__footer-nav-link:focus {
+  text-decoration: none;
+  color: var(--text-hover-color);
+}
+
+.global__footer-socials {
+  margin-bottom: 0;
+}
+
+.global__footer-socials-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.global__footer-socials-item {
+  margin: 0 0.5rem 1rem 0.5rem;
+  display: inline-block;
+}
+
+.global__footer-socials-icon-logo {
+  color: var(--text-color-secondary);
+  fill: var(--tect-color-secondary);
+}
+
+.global__footer-socials-icon-outer {
+  color: var(--color-background-transparent);
+  fill: var(--color-background-transparent);
+}
+
+.global__footer-socials-icon-mask-hover {
+  color: var(--text-color-secondary);
+  fill: var(--color-background-transparent);
+}
+
+.global__footer-socials-icon-mask-logo-hover {
+  color: var(--text-color-secondary);
+  fill: var(--tect-color-secondary);
+}
+
+.global__footer-socials-link {
+  align-items: center;
+}
+
+.global__footer-socials-icon {
+  box-sizing: border-box;
+  border-radius: 50%;
+  fill: var(--text-color-secondary);
+  width: 30px;
+  height: 30px;
+}
+
+.global__footer-bottom {
+  padding: 1rem 2rem;
+  display: flex;
+  gap: 0.25rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.global__footer-bottom-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.global__footer-copyright {
+  text-align: center;
+  margin: 10px;
+}
+
+.global__footer-copyright-text {
+  font-size: 0.75rem;
+  color: var(--text-color-primary);
+}

@@ -7,11 +7,26 @@
   padding: 0;
   box-sizing: border-box;
   /* outline: 1px solid red; */
+  color: var(--text-color-primary);
 }
 
 :root {
   scroll-behavior: smooth;
+  --font-family-base: 'Chivo', sans-serif;
+  --text-color-primary: rgb(255, 255, 255);
+  --text-color-secondary: rgb(72, 134, 174);
+  --text-hover-color: rgb(231, 185, 0);
+  --color-background-primary: #000e24;
+  --color-background-transparent: rgba(0, 0, 0, 0);
 }
+
+body {
+  font-family: var(--font-family-base);
+  font-weight: 400;
+  color: var(--text-color-primary);
+  background: var(--color-background-primary);
+}
+
 img {
     display: block;
     width: 100%;
