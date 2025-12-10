@@ -45,3 +45,4 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 - Sultanova Oleksandra
 - Hnatyshyn Volodymyr
 - Pechak Oleksandr
+- Rudyk Vladyslav
