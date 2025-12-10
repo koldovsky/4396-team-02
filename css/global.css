@@ -16,8 +16,16 @@
   --text-color-primary: rgb(255, 255, 255);
   --text-color-secondary: rgb(72, 134, 174);
   --text-hover-color: rgb(231, 185, 0);
-  --color-background-primary: #000e24;
+  --color-background-primary: rgb(0, 14, 36);
   --color-background-transparent: rgba(0, 0, 0, 0);
+  --button-primary-background-color: rgb(255, 91, 0);
+  --button-primary-text-color: var(--text-color-primary);
+  --button-primary-background-hover-color: var(--text-color-secondary);
+  --button-secondary-background-color: var(--color-background-transparent);
+  --button-secondary-border-color: var(--text-color-secondary); 
+  --button-secondary-text-color: var(--text-color-primary);
+  --button-secondary-background-hover-color: var(--button-primary-background-color);
+  --button-secondary-border-hover-color: var(--button-primary-background-color);
 }
 
 body {
