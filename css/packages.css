@@ -1,0 +1,9 @@
+@import url(global.css);
+@import url(components.css);
+
+@import url(global.header.partial.css);
+@import url(global.nav-menu.partial.css);
+@import url(global.footer.partial.css);
+
+/* font Chivo sans-serif import */
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;600;700&display=swap');
