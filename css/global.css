@@ -28,7 +28,9 @@
   --button-secondary-background-hover-color: var(--button-primary-background-color);
   --button-secondary-border-hover-color: var(--button-primary-background-color);
   --input-background-color: rgba(64, 122, 160, 0.4);
-  --contacts-inputs-block-background-color: rgba(18, 36, 58, 0.43);
+  --inputs-block-background-color: rgba(18, 36, 58, 0.43);
+  --round-icons-background-color: rgba(72, 134, 174, 0.4);
+  --rectangle-cards-background-color: rgba(18, 36, 58, 0.8);
 }
 
 body {
