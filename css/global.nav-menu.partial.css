@@ -1,0 +1,48 @@
+.logo-image {
+  width: 187px;
+  height: auto;
+}
+
+.global__nav-menu {
+  margin: 0;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.global__nav-menu-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.menu__spaising {
+  margin: 0 -10px;
+}
+
+.menu__spaising-inner {
+  margin: 0 10px;
+}
+
+.menu__buttons-block {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.menu__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu__item {
+  margin: 5px 7.5px;
+}
