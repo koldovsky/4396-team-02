@@ -18,6 +18,7 @@
   --text-hover-color: rgb(231, 185, 0);
   --color-background-primary: rgb(0, 14, 36);
   --color-background-transparent: rgba(0, 0, 0, 0);
+  --color-border-transparent: rgba(0, 0, 0, 0);
   --button-primary-background-color: rgb(255, 91, 0);
   --button-primary-text-color: var(--text-color-primary);
   --button-primary-background-hover-color: var(--text-color-secondary);
@@ -26,6 +27,8 @@
   --button-secondary-text-color: var(--text-color-primary);
   --button-secondary-background-hover-color: var(--button-primary-background-color);
   --button-secondary-border-hover-color: var(--button-primary-background-color);
+  --input-background-color: rgba(64, 122, 160, 0.4);
+  --contacts-inputs-block-background-color: rgba(18, 36, 58, 0.43);
 }
 
 body {
