@@ -7,7 +7,7 @@
   padding: 0;
   box-sizing: border-box;
   /* outline: 1px solid red; */
-  color: var(--text-color-primary);
+  /* color: var(--text-color-primary); */
 }
 
 :root {
@@ -42,5 +42,6 @@ body {
 
 img {
     display: block;
-    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
