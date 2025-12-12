@@ -8,7 +8,7 @@
 @import url(index.hero.partial.css);
 @import url(index.why-choose-us.partial.css);
 @import url(index.diving-packages.partial.css);
-@import url(global.contacts_form.css);
+@import url(global.contacts_form.partial.css);
 
 /* font Chivo sans-serif import */
 @import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;600;700&display=swap');
