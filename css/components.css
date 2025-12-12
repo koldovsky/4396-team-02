@@ -1,3 +1,65 @@
 .container {
     max-width: 1200px;
 }
+
+/*  <!-- BUTTON-PRIMARY template HTML (use it in your partial): -->
+    <!-- Change:  #button-href
+                  BUTTON CAPTION -->
+  <div class="button__btn-group">
+    <a class="button__button-primary" href="#button-href">
+      <span class="button__border"></span>
+      <span class="button__inner">
+        <span class="button__content">BUTTON CAPTION</span>
+      </span>
+    </a>
+  </div>
+*/
+
+/* BUTTON-PRIMARY css */
+
+.button__button-primary {
+  box-sizing: border-box;
+  margin: 6.48px 10px;
+  padding: 12px 24px;
+  border-radius: 21px;
+  background-color: var(--button-primary-background-color);
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--button-primary-text-color);
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease-in;
+  border: none;
+  cursor: pointer;
+}
+
+.button__button-primary:hover {
+  background-color: var(--button-primary-background-hover-color);
+}
+
+.button__border {
+  box-sizing: border-box;
+  border-radius: 21px;
+  border-width: 0.8px;
+  border-style: solid;
+  border-color: var(--color-border-transparent);
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.button__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button__content {
+  padding: 0;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  line-height: 1.2375rem;
+}
+
+/* /BUTTON-PRIMARY css */

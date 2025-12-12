@@ -1,63 +1,41 @@
 <!-- 01__hero (Yavorskyi Taras) -->
 <section class="main__hero">
-
-  <div class="block-wrapper background">
-    <div class="block-background background-wrapper">
-      <div class="background"></div>
-      <div class="background-overlay"></div>
+  <div class="main__hero-block-wrapper main__hero-background">
+    
+    <div class="main__hero-background-wrapper">
+      <div class="main__hero-background"></div>
+      <div class="main__hero-background-overlay"></div>
     </div>
-    <section class="w-section">
-      <div class="w-section__inner">
-        <header class="w-section__header">
-          <div class="w-grid w-grid--row w-grid--gap">
-            <div class="w-grid__inner">
-              <div class="w-grid__item w-grid__item--top">
-                <div
-                  class="w-grid__item-inner w-grid__item-panel w-text-center-xs w-text-center-sm w-text-center-md w-text-center w-088754deb0dd8820b733e12d9894218e">
-                  <h2 class="text ui-heroTitle w-hero-title ui-heroTitle--light">
-                    <span class="w-text-block">
-                      <span class="w-text-content">
-                        <span>
-                          <span>Discover Andaman Sea!</span>
-                        </span>
-                      </span>
-                    </span>
-                  </h2>
-                  <p class="text ui-subtitle w-subtitle ui-subtitle--light" data-component="text">
-                    <span class="w-text-block">
-                      <span class="w-text-content">Welcome to our diving center in Phuket,
-                        Thailand</span>
-                    </span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </header>
-        <footer class="w-section__footer">
-          <div class="w-grid w-grid--row w-grid--gap" data-columns-count="1">
-            <div class="w-grid__inner">
-              <div class="w-grid__item w-grid__item--top">
-                <div
-                  class="w-grid__item-inner w-grid__item-panel w-text-center-xs w-text-center-sm w-text-center-md w-text-center w-088754deb0dd8820b733e12d9894218e">
-                  <div class="w-btns-group">
-                    <div class="w-btns-group__inner">
-                      <a data-component="hash-link" href="/#contact-form"
-                        class="w-btns-group__item button_2W3 w-button ui-button ui-button--primary-dark ui-button--size-lg">
-                        <span class="button__border_1J- ui-button__border"></span>
-                        <span class="button__inner_2of">
-                          <span class="button__content_1_I">Go scuba diving!</span>
-                        </span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer>
-      </div>
-    </section>
-  </div>
 
+    <nav class="global__nav-menu"
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="components/global.nav-menu.partial.html">
+    </nav>
+
+    <div class="main__hero-section-inner">
+      <div class="main__hero-item-inner">
+        <h2 class="main__hero-title">
+          <span class="main__hero-text-block">
+            <span class="main__hero-text-content">Discover Andaman Sea!</span>
+          </span>
+        </h2>
+        <p class="main__hero-subtitle">
+          <span class="main__hero-text-block">
+            <span class="main__hero-text-content">Welcome to our diving center in Phuket, Thailand</span>
+          </span>
+        </p>
+      </div>
+
+      <div class="button__btn-group">
+        <a class="button__button-primary" href="#contact-form">
+          <span class="button__border"></span>
+          <span class="button__inner">
+            <span class="button__content">Go scuba diving!</span>
+          </span>
+        </a>
+      </div>
+    </div>
+
+  </div>
 </section>
