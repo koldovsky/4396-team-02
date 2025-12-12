@@ -1,3 +1,7 @@
+.global__header {
+  background-color: var(--color-background-primary);
+}
+
 .global__header-inner {
   display: flex;
   justify-content: space-between;
