@@ -60,7 +60,22 @@
           class="contacts__input"
         />
       </label>
-      <button class="contacts__btn">Go Diving</button>
+      <!-- <button class="contacts__btn">Go Diving</button> -->  <!-- OLD BUTTON-->
+
+      <!-- BUTTON-PRIMARY template HTML (use it in your partial): -->
+      <!--  -You have to change:  #button-href
+            -You have to change:  BUTTON CAPTION
+            +Add extra classes to change size -->
+      <div class="button__btn-group contacts__form-body"> <!-- ADDED CLASS: contacts__form-body-->
+        <a class="button__button-primary" href="#button-href">
+          <span class="button__border"></span>
+          <span class="button__inner">
+            <span class="button__content">Go Diving</span>
+          </span>
+        </a>
+      </div>
+      <!-- /BUTTON-PRIMARY -->
+
     </form>
   </div>
 </section>

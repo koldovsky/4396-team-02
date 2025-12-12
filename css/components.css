@@ -3,8 +3,9 @@
 }
 
 /*  <!-- BUTTON-PRIMARY template HTML (use it in your partial): -->
-    <!-- Change:  #button-href
-                  BUTTON CAPTION -->
+    <!--  -You have to change:  #button-href
+          -You have to change:  BUTTON CAPTION
+          +Add extra classes to change size    -->
   <div class="button__btn-group">
     <a class="button__button-primary" href="#button-href">
       <span class="button__border"></span>
