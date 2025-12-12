@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Dosis:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700&display=swap');
 
 *,
 *::after,
@@ -13,6 +14,7 @@
 :root {
   scroll-behavior: smooth;
   --font-family-base: 'Chivo', sans-serif;
+  --font-family-additinal: 'Dosis', sans-serif;
   --text-color-primary: rgb(255, 255, 255);
   --text-color-secondary: rgb(72, 134, 174);
   --text-hover-color: rgb(231, 185, 0);

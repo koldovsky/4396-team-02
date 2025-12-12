@@ -1,41 +1,44 @@
 <!-- 01__hero (Yavorskyi Taras) -->
 <section class="main__hero">
-  <div class="main__hero-block-wrapper main__hero-background">
-    
-    <div class="main__hero-background-wrapper">
-      <div class="main__hero-background"></div>
-      <div class="main__hero-background-overlay"></div>
-    </div>
 
-    <nav class="global__nav-menu"
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="components/global.nav-menu.partial.html">
-    </nav>
-
-    <div class="main__hero-section-inner">
-      <div class="main__hero-item-inner">
-        <h2 class="main__hero-title">
-          <span class="main__hero-text-block">
-            <span class="main__hero-text-content">Discover Andaman Sea!</span>
-          </span>
-        </h2>
-        <p class="main__hero-subtitle">
-          <span class="main__hero-text-block">
-            <span class="main__hero-text-content">Welcome to our diving center in Phuket, Thailand</span>
-          </span>
-        </p>
+  <nav class="global__nav-menu"
+    data-hx-trigger="load"
+    data-hx-swap="outerHTML"
+    data-hx-get="components/global.nav-menu.partial.html">
+  </nav>
+  
+  <div class="main__hero-inner">
+    <div class="main__hero-block-wrapper main__hero-background">
+      
+      <div class="main__hero-background-wrapper">
+        <div class="main__hero-background"></div>
+        <div class="main__hero-background-overlay"></div>
       </div>
 
-      <div class="button__btn-group">
-        <a class="button__button-primary" href="#contact-form">
-          <span class="button__border"></span>
-          <span class="button__inner">
-            <span class="button__content">Go scuba diving!</span>
-          </span>
-        </a>
-      </div>
-    </div>
+      <div class="main__hero-section-inner">
+        <div class="main__hero-item-inner">
+          <h2 class="main__hero-title">
+            <span class="main__hero-text-block-title">
+              <span class="main__hero-text-content-title">Discover Andaman Sea!</span>
+            </span>
+          </h2>
+          <p class="main__hero-subtitle">
+            <span class="main__hero-text-block-subtitle">
+              <span class="main__hero-text-content-subtitle">Welcome to our diving center in Phuket, Thailand</span>
+            </span>
+          </p>
+        </div>
 
+        <div class="button__btn-group button__hero-centered button__hero-margin-top-media">
+          <a class="button__button-primary button__button-bigger" href="#contact-form">
+            <span class="button__border"></span>
+            <span class="button__inner">
+              <span class="button__content button__font-size-bigger">Go scuba diving!</span>
+            </span>
+          </a>
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>

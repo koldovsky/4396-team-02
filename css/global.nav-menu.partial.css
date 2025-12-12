@@ -5,6 +5,10 @@
   justify-content: center;
   align-items: center;
   color: var(--text-color-primary);
+  /* background-image: url('../assets/images/sections/hero/main-page__hero-background.png');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;   */
 }
 
 .global__nav-menu-inner {
@@ -87,6 +91,10 @@
   flex-direction: row;
 }
 
+.button__margin-x-off {
+  margin-right: 0;
+}
+
 /* БУРГЕР-МЕНЮ */
 .burger-menu {
   position: relative;
@@ -133,10 +141,10 @@
   transform: rotate(-45deg) translate(8px, -8px);
 }
 
-/* МОБІЛЬНА ВЕРСІЯ (max-width: 990px) */
-@media (max-width: 990px) {
+/* МІНІМАЛЬНА (екрани <= 766px) */
+@media (max-width: 766px) {
   .global__nav-menu {
-    padding: 20px 30px;
+    padding: 20px 24px;
   }
 
   .menu__buttons-block {
@@ -183,8 +191,19 @@
  */
 }
 
-/* ДЕСКТОПНА ВЕРСІЯ (min-width: 991px) */
+/* СЕРЕДНЯ (екрани > 766px і <= 990px) */
+@media (min-width: 767px) and (max-width: 990px) {
+  .global__nav-menu {
+    padding: 20px 32px;
+  }
+}
+
+/* ДЕСКТОП (екрани > 990px) */
 @media (min-width: 991px) {
+  .global__nav-menu {
+    padding: 20px 40px;
+  }
+
   .burger-menu {
     display: none;
   }
@@ -203,5 +222,5 @@
   .button__btn-group-media {
     display: flex !important;
   }
-}
 
+}
