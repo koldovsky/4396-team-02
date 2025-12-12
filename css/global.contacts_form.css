@@ -91,7 +91,8 @@
   border: 0.1rem solid var(--text-color-secondary);
 }
 
-.contacts__btn {
+/* Якщо використаєш кнопку з глобальних компонентів, то цей клас можна видалити */
+/* .contacts__btn {
   margin-top: 1.25rem;
   padding: 1.1rem;
   border: none;
@@ -102,7 +103,7 @@
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.3s;
-}
+} */
 
 .contacts__btn:hover {
   background-color: var(--text-color-secondary);
