@@ -58,7 +58,7 @@
   display: flex;
   justify-content: center;
   padding: 4.5rem;
-  background-color: var(--contacts-inputs-block-background-color);
+  background-color: var(--input-background-color);
 }
 
 .contacts__form-body {
@@ -77,7 +77,7 @@
   padding: 1.3rem 1.5rem;
   border: none;
   border-radius: 3rem;
-  background-color: var(--contacts-inputs-block-background-color);
+  background-color: var(--inputs-block-background-color);
   font-size: 1.1rem;
   outline: none;
   transition: background 0.3s, box-shadow 0.3s;
@@ -91,20 +91,46 @@
   border: 0.1rem solid var(--text-color-secondary);
 }
 
-/* Якщо використаєш кнопку з глобальних компонентів, то цей клас можна видалити */
-/* .contacts__btn {
-  margin-top: 1.25rem;
-  padding: 1.1rem;
-  border: none;
-  border-radius: 3rem;
-  background-color: var(--button-primary-background-color);
-  color: var(--text-color-primary);
-  font-size: 1.25rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.3s;
-} */
-
 .contacts__btn:hover {
   background-color: var(--text-color-secondary);
+}
+
+@media (min-width: 320px) and (max-width: 820px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem 1rem;
+    gap: 1.5rem;
+    align-items: stretch;
+  }
+
+  .contacts > * {
+    order: 1;
+  }
+
+  .contacts__form {
+    order: 2;
+    padding: 1.5rem;
+    justify-content: stretch;
+    width: 100%;
+  }
+
+  .contacts__form-body {
+    width: 100%;
+    padding: 0;
+  }
+
+  .contacts__info {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .contacts__title {
+    font-size: 2rem;
+  }
+
+  .contacts__text {
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
+  }
 }
