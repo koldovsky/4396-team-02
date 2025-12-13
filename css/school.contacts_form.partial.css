@@ -1,0 +1,78 @@
+.contacts {
+    display: flex;
+    justify-content: center;
+    padding: 4rem 1rem;
+}
+
+.contacts__form {
+    width: 100%;
+    max-width: 32rem;
+    background-color: var(--inputs-block-background-color);
+    border-radius: 1.5rem;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.contacts__icon {
+    display: block;
+    width: 3rem;
+    height: auto;
+    margin: 0 auto 1.5rem;
+}
+
+.contacts__title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-color-primary);
+    margin-bottom: 1rem;
+}
+
+.contacts__text {
+    font-size: 1rem;
+    color: var(--text-color-secondary);
+    margin-bottom: 2rem;
+}
+
+.contacts__body {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.contacts__label {
+    width: 100%;
+}
+
+.contacts__input {
+    width: 100%;
+    padding: 1.1rem 1.5rem;
+    border: none;
+    border-radius: 3rem;
+    background-color: var(--inputs-block-background-color);
+    color: var(--text-color-primary);
+    font-size: 1rem;
+    outline: none;
+    transition: box-shadow 0.3s, background-color 0.3s;
+}
+
+.contacts__input::placeholder {
+    color: var(--text-color-secondary);
+}
+
+.contacts__input:focus {
+    border: 0.1rem solid var(--text-color-secondary);
+}
+
+.contacts__select {
+    width: 100%;
+    padding: 1.1rem 3rem 1.1rem 1.5rem;
+    border: none;
+    border-radius: 3rem;
+    background-color: var(--inputs-block-background-color);
+    color: var(--text-color-secondary);
+    font-size: 1rem;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    transition: box-shadow 0.3s, background-color 0.3s;
+}
