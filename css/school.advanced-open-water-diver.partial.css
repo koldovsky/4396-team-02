@@ -1,0 +1,35 @@
+.advanced-open-water-diver
+{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+.advanced-open-water-diver__container
+{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.advanced-open-water-diver__text
+{
+    width: 60%;
+    height: auto;
+}
+.advanced-open-water-diver__checklist
+{
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-items: flex-start;
+}
+.advanced-open-water-diver__checklist-item
+{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
