@@ -1,12 +1,14 @@
 .why-choose-us {
-  padding: 0 0.9rem;
-
   .why-choose-us__container {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 30px 24px 50px 24px;
+    font-family: var(--font-family-additinal);
+
+    
   }
 
   .why-choose-us__header {
@@ -19,5 +21,61 @@
 
   .why-choose-us__main-icon {
     width: 3.125rem;
+    margin-bottom: 20px;
+  }
+
+  .why-choose-us__title {
+    font-size: 2.375rem;
+    font-weight: 700;
+  }
+
+  .why-choose-us__list {
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (min-width: 678px) {
+      display: grid;
+      grid: repeat(2, 1fr) / repeat(2, 1fr);
+      gap: 30px;
+    }
+
+    @media screen and (min-width: 992px) {
+      grid: 1fr / repeat(4, 1fr);
+      gap: 30px;
+    }
+
+    .why-choose-us__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 20px;
+    }
+    .why-choose-us__item-icon-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background-color: rgb(29, 62, 92);
+    }
+    .why-choose-us__item-icon {
+      width: 40px;
+      height: 40px;
+    }
+    .why-choose-us__item-title {
+      font-weight: 700;
+      font-size: 1.375rem;
+    }
+    .why-choose-us__item-text {
+      font-size: 1rem;
+      font-family: var(--font-family-base);
+      color: var(--text-color-secondary);
+    }
   }
 }
