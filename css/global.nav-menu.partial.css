@@ -1,14 +1,15 @@
+/* .logo-image {
+  box-shadow: 3px 3px 10px rgba(0,0,0,1);
+} */
+
 .global__nav-menu {
   margin: 0;
-  padding: 20px 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--text-color-primary);
-  /* background-image: url('../assets/images/sections/hero/main-page__hero-background.png');
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;   */
 }
 
 .global__nav-menu-inner {
@@ -71,6 +72,7 @@
   padding: 0;
   margin: 0;
   color: var(--text-color-primary);
+  text-shadow: 3px 4px 3px rgba(0,0,0,1);
 }
 
 .menu__link:hover {
@@ -144,12 +146,11 @@
 /* МІНІМАЛЬНА (екрани <= 766px) */
 @media (max-width: 766px) {
   .global__nav-menu {
-    padding: 20px 24px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
-
   .menu__buttons-block {
-    position: static;
-    width: auto;
+    display: none;
   }
 
   .burger-menu {
@@ -161,47 +162,36 @@
   .button__btn-group-media {
     display: none;
   }
-
-  .menu__buttons-block-inner {
-    display: none;
-    /* position: absolute;
-    top: 100%;
-    right: 0;
-    left: 0;
-    flex-direction: column;
-    background: var(--color-background-primary);
-    padding: 1rem;
-    border-top: 1px solid var(--color-border-transparent);
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-    z-index: 999; */
-  }
-
-  /* .menu__buttons-block-inner.active {
-    max-height: 500px;
-    display: flex;
-  }
-
-  .menu__buttons-block-inner.active .menu__spaising,
-  .menu__buttons-block-inner.active .menu__list,
-  .menu__buttons-block-inner.active .button__btn-group-media {
-    display: flex;
-  }
- */
 }
 
 /* СЕРЕДНЯ (екрани > 766px і <= 990px) */
 @media (min-width: 767px) and (max-width: 990px) {
   .global__nav-menu {
-    padding: 20px 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  
+  .menu__buttons-block-inner {
+    position: static !important;
+    max-height: none !important;
+    flex-direction: row;
+    padding: 0 !important;
+    border: none !important;
+    background: transparent !important;
+  }
+
+  .menu__spaising,
+  .menu__list,
+  .button__btn-group-media {
+    display: flex !important;
   }
 }
 
 /* ДЕСКТОП (екрани > 990px) */
 @media (min-width: 991px) {
   .global__nav-menu {
-    padding: 20px 40px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .burger-menu {
@@ -222,5 +212,4 @@
   .button__btn-group-media {
     display: flex !important;
   }
-
 }

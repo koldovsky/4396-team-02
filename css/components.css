@@ -1,7 +1,30 @@
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: auto;
+  align-content: center;
 }
+
+/* МІНІМАЛЬНА (екрани <= 766px) */
+@media (max-width: 766px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+/* СЕРЕДНЯ (екрани > 766px і <= 990px) */
+@media (min-width: 767px) and (max-width: 990px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+/* ДЕСКТОП (екрани > 990px) */
+@media (min-width: 991px) {
+  .container{
+    padding: 0 2.5rem;    
+  }
+}
+
 
 /*  <!-- BUTTON-PRIMARY template HTML (use it in your partial): -->
     <!--  -You have to change:  #button-href

@@ -45,12 +45,16 @@
   transition: fill 0.3s ease;
 }
 
-/* МОБІЛЬНА ВЕРСІЯ (max-width: 990px) */
-@media (max-width: 990px) {
+
+/* МІНІМАЛЬНА (екрани <= 766px) */
+@media (max-width: 766px) {
   .global__header {
     display: none;
   }
+}
 
+/* СЕРЕДНЯ (екрани > 766px і <= 990px) */
+@media (min-width: 767px) and (max-width: 990px) {
   .global__header-inner {
     padding: 5px 2rem;
   }
