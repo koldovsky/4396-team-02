@@ -4,10 +4,6 @@
 @import url(global.header.partial.css);
 @import url(global.nav-menu.partial.css);
 @import url(global.footer.partial.css);
-@import url(index.hero.partial.css);
-@import url(index.why-choose-us.partial.css);
-@import url(index.destinations.partial.css);
-@import url(index.diving-packages.partial.css);
+
 @import url(global.contacts_form.partial.css);
 @import url(global.contacts_map.partial.css);
-@import url(school.advanced-open-water-diver.partial.css);

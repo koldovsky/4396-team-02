@@ -1,0 +1,7 @@
+@import url(global.css);
+@import url(components.css);
+
+@import url(global.header.partial.css);
+@import url(global.nav-menu.partial.css);
+@import url(global.footer.partial.css);
+

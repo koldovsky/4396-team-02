@@ -1,0 +1,21 @@
+.contacts-map {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+.contacts-map__wrapper {
+    width: 100%;
+    max-width: 75rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 1.375rem;
+}
+
+.contacts-map__wrapper iframe {
+    width: 100% !important;
+    height: 28rem;
+    border: 0;
+    display: block;
+}

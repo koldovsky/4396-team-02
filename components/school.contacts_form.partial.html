@@ -1,0 +1,44 @@
+<section class="contacts">
+    <div class="contacts__form container">
+        <img src="assets/ui/icons/diver-icon.svg" alt="Diver icon" class="contacts__icon" />
+
+        <h2 class="contacts__title">Ready to Go Diving?</h2>
+
+        <p class="contacts__text">
+            Complete the form below and book your diving package!
+        </p>
+
+        <form class="contacts__body" id="contact-form">
+            <label class="contacts__label">
+                <input type="text" name="name" placeholder="Name*" class="contacts__input" required />
+            </label>
+
+            <label class="contacts__label">
+                <input type="tel" name="phone" placeholder="Phone number*" class="contacts__input" required />
+            </label>
+
+            <label class="contacts__label">
+                <input type="email" name="email" placeholder="E-mail*" class="contacts__input" required />
+            </label>
+            <label class="contacts__label contacts__label--select">
+                <select name="package" class="contacts__select" required>
+                    <option value="" disabled selected>
+                        Type placeholder text
+                    </option>
+                    <option value="beginner">Beginner diving</option>
+                    <option value="advanced">Advanced diving</option>
+                    <option value="night">Night diving</option>
+                </select>
+            </label>
+
+            <div class="button__btn-group contacts__form-body"> <!-- ADDED CLASS: contacts__form-body -->
+                <a class="button__button-primary" href="#button-href">
+                    <span class="button__border"></span>
+                    <span class="button__inner">
+                        <span class="button__content">Request a quote</span>
+                    </span>
+                </a>
+            </div>
+        </form>
+    </div>
+</section>

@@ -1,42 +1,63 @@
 <!-- 01__nav-menu (Yavorskyi Taras) -->
 <nav class="global__nav-menu">
-  <ul class="menu__list">
-    <li>
-      <a href="../index.html" class="menu__main-link">
-        <span class="lqip-wrapper">
-          <img class="logo-image" src="assets/images/main-page-logo.webp" width="187" height="auto" alt="logo">
-        </span>
-      </a>
-    </li>
-    <li class="menu__item">
-      <span class="menu__item-wrapper">
-        <a class="menu__link" href="../about.html">About Us</a>
-      </span>
-    </li>
-    <li class="menu__item">
-      <span class="menu__item-wrapper">
-        <a class="menu__link" href="../packages.html">Packages</a>
-      </span>
-    </li>
-    <li class="menu__item">
-      <span class="menu__item-wrapper">
-        <a class="menu__link" href="../school.html">Diving School</a>
-      </span>
-    </li>
-    <li class="menu__item">
-      <span class="menu__item-wrapper">
-        <a class="menu__link" href="../contacts.html">Contacts</a>
-      </span>
-    </li>
-  </ul>
-
-  <div class="btns-group">
-    <a class="btns-group__item button__go-diving"
-      href="#contact-form">
-      <span class="button__border"></span>
-      <span class="button__inner">
-        <span class="button__content">GO DIVING</span>
+  <div class="global__nav-menu-inner">
+    <a href="../index.html" class="menu__main-link">
+      <span class="lqip-wrapper">
+        <img
+          class="logo-image"
+          src="assets/images/main-page-logo.webp"
+          width="187"
+          height="auto"
+          alt="logo"
+        />
       </span>
     </a>
+
+    <!-- Бургер-кнопка (видно тільки на малих екранах) -->
+    <button class="burger-menu burger-menu--toggle" aria-label="Toggle menu">
+      <span class="burger-menu__line"></span>
+      <span class="burger-menu__line"></span>
+      <span class="burger-menu__line"></span>
+    </button>
+
+    <div class="menu__buttons-block">
+      <!-- Решта меню (приховується на малих екранах) -->
+      <div class="menu__spaicing">
+        <div class="menu__spaicing-inner"></div>
+      </div>
+
+      <div class="menu__buttons-block-inner">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <span class="menu__item-wrapper">
+              <a class="menu__link" href="../about.html">About Us</a>
+            </span>
+          </li>
+          <li class="menu__item">
+            <span class="menu__item-wrapper">
+              <a class="menu__link" href="../packages.html">Packages</a>
+            </span>
+          </li>
+          <li class="menu__item">
+            <span class="menu__item-wrapper">
+              <a class="menu__link" href="../school.html">Diving School</a>
+            </span>
+          </li>
+          <li class="menu__item">
+            <span class="menu__item-wrapper">
+              <a class="menu__link" href="../contacts.html">Contacts</a>
+            </span>
+          </li>
+        </ul>
+        <div class="button__btn-group button__btn-group-media">
+          <a class="button__button-primary button__margin-x-off" href="#contact-form">
+            <span class="button__border"></span>
+            <span class="button__inner">
+              <span class="button__content">GO DIVING</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
 </nav>
