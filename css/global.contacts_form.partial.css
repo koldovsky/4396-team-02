@@ -2,7 +2,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  padding: 4.5rem 0rem;
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+  margin-top: 3rem;
   gap: 3rem;
 }
 

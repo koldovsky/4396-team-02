@@ -1,7 +1,9 @@
 .contacts {
     display: flex;
     justify-content: center;
-    padding: 4rem 1rem;
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+    margin-top: 3rem;
 }
 
 .contacts__form {
