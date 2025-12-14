@@ -33,6 +33,7 @@
   --inputs-block-background-color: rgba(18, 36, 58, 0.43);
   --round-icons-background-color: rgba(72, 134, 174, 0.4);
   --rectangle-cards-background-color: rgba(18, 36, 58, 0.8);
+  --transition-speed: 0.3s;
 }
 
 body {
@@ -40,6 +41,10 @@ body {
   font-weight: 400;
   color: var(--text-color-primary);
   background: var(--color-background-primary);
+}
+
+body.no-scroll {
+  overflow: hidden;
 }
 
 img {
