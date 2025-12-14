@@ -1,10 +1,5 @@
-/* .logo-image {
-  box-shadow: 3px 3px 10px rgba(0,0,0,1);
-} */
-
 .global__nav-menu {
   margin: 0;
-  padding-top: 20px;
   padding-bottom: 20px;
   display: flex;
   justify-content: center;
@@ -146,8 +141,9 @@
 /* МІНІМАЛЬНА (екрани <= 766px) */
 @media (max-width: 766px) {
   .global__nav-menu {
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-top:  20px;
+    /* padding-left: 24px;
+    padding-right: 24px; */
   }
   .menu__buttons-block {
     display: none;
@@ -167,8 +163,9 @@
 /* СЕРЕДНЯ (екрани > 766px і <= 990px) */
 @media (min-width: 767px) and (max-width: 990px) {
   .global__nav-menu {
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-top: calc(42px + 20px); /* 42px - global header thickness (for global header position: fixed)*/
+    /* padding-left: 32px;
+    padding-right: 32px; */
   }
   
   .menu__buttons-block-inner {
@@ -190,8 +187,9 @@
 /* ДЕСКТОП (екрани > 990px) */
 @media (min-width: 991px) {
   .global__nav-menu {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-top: calc(42px + 20px); /* 42px - global header thickness (for global header position: fixed)*/
+    /* padding-left: 40px;
+    padding-right: 40px; */
   }
 
   .burger-menu {

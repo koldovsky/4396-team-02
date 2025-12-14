@@ -1,14 +1,13 @@
 .main__hero{
   min-width: 320px;
+}
+
+.main__hero-background {
   background-image: url('../assets/images/sections/hero/main-page__hero-background.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-
-/* .main__hero-background {
-
-} */
 
 .button__button-bigger {
   padding: 18px 34px;
