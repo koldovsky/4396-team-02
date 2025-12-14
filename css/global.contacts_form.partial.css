@@ -58,7 +58,7 @@
   display: flex;
   justify-content: center;
   padding: 4.5rem;
-  background-color: var(--input-background-color);
+  background-color: var(--inputs-block-background-color);
 }
 
 .contacts__form-body {
