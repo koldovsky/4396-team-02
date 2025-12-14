@@ -1,0 +1,103 @@
+.advanced-open-water-diver {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    color: rgb(72, 134, 174);
+}
+.advanced-open-water-diver__title
+{
+    font-size: 3em;
+    margin: 1em auto;
+    color: white;
+}
+.advanced-open-water-diver__container
+{
+    display: flex;
+    flex-flow: row nowrap;
+}
+.advanced-open-water-diver__text {
+    width: 60%;
+    margin: 1em 0px;
+}
+.advanced-open-water-diver__checklist {
+    width: 40%;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 1em 0px;
+}
+.advanced-open-water-diver__checklist-item
+{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+.advanced-open-water-diver__checklist-item > span {
+    margin-left: 0.25em;
+}
+.advanced-open-water-diver__articles {
+    display: flex;
+    flex-flow: row nowrap;
+}
+.advanced-open-water-diver__article {
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 1em 0px;
+}
+.advanced-open-water-diver__icon-wrapper {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(72, 134, 174, 0.4);
+}
+.advanced-open-water-diver__article-text
+{
+    margin: 0.5em 0px;
+}
+.advanced-open-water-diver__icon
+{
+    width: 50px;
+    height: 50px;
+}
+
+/* ÑÅÐÅÄÍß (åêðàíè > 766px ³ <= 990px) */
+@media (min-width: 767px) and (max-width: 990px) {
+    .advanced-open-water-diver__article {
+        flex: 0 1 auto;
+        width: 50%;
+    }
+    .advanced-open-water-diver__articles
+    {
+        flex-flow: row wrap;
+    }
+}
+
+/* Ì²Í²ÌÀËÜÍÀ (åêðàíè <= 766px) */
+@media (max-width: 766px) {
+    .advanced-open-water-diver__article {
+        flex: 0 1 auto;
+        width: 100%;
+    }
+    .advanced-open-water-diver__articles {
+        flex-flow: row wrap;
+        align-content: center;
+    }
+    .advanced-open-water-diver__container {
+        display: flex;
+        flex-flow: column;
+    }
+    .advanced-open-water-diver__text {
+        width: 100%;
+    }
+    .advanced-open-water-diver__checklist {
+        width: 100%;
+    }
+}
