@@ -1,5 +1,8 @@
-.destinations__container {
+.destinations {
   background-image: url("./assets/images/sections/destinations/destinations__background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
 }
 
 .destinations__header {
@@ -21,7 +24,12 @@
   display: flex;
   justify-content: center;
   align-items: stretch;
-  max-width: 1000px;
+  max-width: 1115px;
+}
+
+.destinations__subtitle{
+  color: var(--text-color-primary);
+  margin-bottom: 20px;
 }
 
 .destinations__item--racha-yai {
@@ -47,8 +55,8 @@
 }
 
 .destinations__img {
-  width: 600px;
-  height: 400px;
+  width: 1000px;
+  height: 350px;
   overflow: hidden;
 }
 
@@ -59,12 +67,12 @@
 }
 
 .destinations__content {
-  width: 578px;
+  width: 910px;
   color: #afc3d3;
   background-color: var(--rectangle-cards-background-color);
   border: 2px solid;
   border-color: var(--rectangle-cards-background-color);
-  padding-top: 70px;
+  padding-top: 80px;
   padding-left: 60px;
   padding-right: 50px;
 }
@@ -75,9 +83,8 @@
 }
 
 .destinations__link--read-more {
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 600;
-  letter-spacing: 1px;
   color: var(--button-primary-background-color);
   text-decoration: none;
   transition: color 0.4s ease, letter-spacing 0.4s ease;
