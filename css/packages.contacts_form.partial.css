@@ -10,16 +10,16 @@
     width: 100%;
     max-width: 32rem;
     background-color: var(--inputs-block-background-color);
-    border-radius: 1.5rem;
-    padding: 3rem 2rem;
+    color: var(--text-color-primary);
     text-align: center;
+    font-family: var(--font-family-additinal);
 }
 
 .contacts__icon {
     display: block;
     width: 3rem;
     height: auto;
-    margin: 0 auto 1.5rem;
+    margin: 3rem auto 1.5rem;
 }
 
 .contacts__title {
@@ -31,7 +31,7 @@
 
 .contacts__text {
     font-size: 1rem;
-    color: var(--text-color-secondary);
+    color: var(--text-color-primary);
     margin-bottom: 2rem;
 }
 
@@ -77,4 +77,12 @@
     outline: none;
     cursor: pointer;
     transition: box-shadow 0.3s, background-color 0.3s;
+}
+
+.contacts__form-body {
+    margin-bottom: 3rem;
+}
+
+.contacts__form-btn {
+    width: 100%;
 }
