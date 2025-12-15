@@ -159,11 +159,11 @@
   /* header__nav */
   .menu__buttons-block {
     position: fixed;
-    top: var(--header-height);
+    top: 4rem;
     left: 0;
     width: 100%;
     height: 0;
-    background-color: var(--color-background);
+    background-color: var(--color-background-primary);
     overflow: hidden;
     transition: height var(--transition-speed);
     display: block;
@@ -192,7 +192,7 @@
   /* Mobile menu open state */
   /*  header__nav.is-open */
   .menu__buttons-block.is-open {
-    height: calc(100vh - var(--header-height));
+    height: calc(100vh - 4rem);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
