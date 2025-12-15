@@ -3,137 +3,133 @@
 /* 1. MAIN CONTAINER */
 /* It keeps everything in the center of the screen, but inside we will move blocks */
 .Certificates.container {
-    margin-left: auto  ;
-    margin-right: auto  ;
-    max-width: 100px; /* Standard container width */
-    width: 100%;
-
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1350px; /* Standard container width */
+  width: 100%;
 }
 
 /* =========================================
    2. TOP SECTION (Scuba Diving Course) -> SHIFT LEFT
    ========================================= */
 .Certificat-top {
-    margin-top: 80px;
-    margin-bottom: 20px;
-    
-    /* IMPORTANT: Remove Flexbox centering, make it a regular block */
-    display: block  ; 
-    
-    /* Align text inside the block to the left */
-    text-align: left  ; 
-    
-    /* Limit text width (60-65%) to leave space for the diver on the right */
-    max-width: 85%  ; 
-    
-    /* Push the block itself to the left */
-    margin-left: 0  ;
-    margin-right: auto  ;
+  margin-top: 80px;
+  margin-bottom: 20px;
+
+  /* IMPORTANT: Remove Flexbox centering, make it a regular block */
+  display: block;
+
+  /* Align text inside the block to the left */
+  text-align: left;
+
+  /* Limit text width (60-65%) to leave space for the diver on the right */
+  max-width: 85%;
+
+  /* Push the block itself to the left */
+  margin-left: 0;
+  margin-right: auto;
 }
 
 /* Mask icon */
 .Certificat-top .top-icon {
-    width: 80px;
-    height: auto;
-    display: block  ;
-    
-    /* Remove 'auto' margins so the icon is precisely aligned to the left above the text */
-    margin: 0 0 25px 0  ; 
+  width: 80px;
+  height: auto;
+  display: block;
+
+  /* Remove 'auto' margins so the icon is precisely aligned to the left above the text */
+  margin: 0 0 25px 0;
 }
 
 /* H1 Heading */
 .Certificat-top h1 {
-    font-family: 'Chivo', sans-serif;
-    color: #ffffff;
-    font-size: 3rem;
-    font-weight: 800;
-    margin-bottom: 20px;
-    line-height: 1.1;
-    
-    /* Ensure left alignment */
-    text-align: left  ; 
+  font-family: "Chivo", sans-serif;
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: 1.1;
+
+  /* Ensure left alignment */
+  text-align: left;
 }
 
 /* Paragraph text */
 .Certificat-top p {
-    color: #8faecb;
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 0;
-    
-    /* Ensure left alignment */
-    text-align: left  ;
-    margin-left: 0  ;
+  color: #8faecb;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+
+  /* Ensure left alignment */
+  text-align: left;
+  margin-left: 0;
 }
 
 /* --- RESPONSIVENESS FOR PHONES --- */
 /* On small screens, text will return to center, which looks better */
 @media (max-width: 768px) {
-    .Certificat-top {
-        max-width: 100%  ;
-        text-align: center  ;
-        padding-left: 20px;
-        padding-right: 20px;
-        box-sizing: border-box;
-    }
-    .Certificat-top .top-icon {
-        margin: 0 auto 25px auto  ;
-    }
-    .Certificat-top h1, 
-    .Certificat-top p {
-        text-align: center  ;
-    }
+  .Certificat-top {
+    max-width: 100%;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+  .Certificat-top .top-icon {
+    margin: 0 auto 25px auto;
+  }
+  .Certificat-top h1,
+  .Certificat-top p {
+    text-align: center;
+  }
 }
-
 
 @media (min-width: 768px) {
-    .Certificat-top {
-        padding-left: 50px; 
-    }
+  .Certificat-top {
+    padding-left: 50px;
+  }
 }
-
-
 
 /* =========================================
    3. MIDDLE SECTION (Certificates) -> KEEP CENTERED
    ========================================= */
 .Certificat-middle {
-    display: flex  ;
-    flex-direction: column  ;
-    align-items: center  ; /* Center horizontally */
-    text-align: center  ;
-    width: 100%  ;
-    margin-bottom: 60px;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  text-align: center;
+  width: 100%;
+  margin-bottom: 60px;
+  position: relative;
 }
 
 /* Block with logo and "Certificates" heading */
 .logo-center {
-    display: flex  ;
-    flex-direction: column  ;
-    align-items: center  ;
-    justify-content: center  ;
-    width: 100%  ;
-    margin-top: 80px;
-    margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 80px;
+  margin-bottom: 50px;
 }
 
 .logo-center .center-icon {
-    width:  80px;
-    height: auto;
-    margin-bottom: 15px;
-    display: block  ;
-    margin-left: auto  ;
-    margin-right: auto  ;
+  width: 80px;
+  height: auto;
+  margin-bottom: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .logo-center h2 {
-    font-family: 'Chivo', sans-serif;
-    color: #ffffff;
-    font-size: 3rem;
-    font-weight: 700;
-    margin: 0;
-    text-align: center  ;
+  font-family: "Chivo", sans-serif;
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
 }
 
 /* =========================================
@@ -142,69 +138,69 @@
 
 /* Mobile carousel */
 .certificates-carousel-mobile {
-    display: block;
-    width: 100%;
-    margin-bottom: 40px;
+  display: block;
+  width: 100%;
+  margin-bottom: 40px;
 }
 ul.certificates-list-desktop {
-    display: none;
+  display: none;
 }
 
 /* Desktop version */
 @media (min-width: 992px) {
-    .certificates-carousel-mobile {
-        display: none  ;
-    }
-    
-    ul.certificates-list-desktop {
-        display: flex  ;
-        flex-direction: row  ;
-        justify-content: center  ;
-        align-items: center  ;
-        flex-wrap: wrap  ;
-        list-style: none;
-        padding: 0  ;
-        margin: 0 auto 80px auto  ;
-        gap: 50px;
-        width: 100%  ;
-    }
+  .certificates-carousel-mobile {
+    display: none;
+  }
 
-    ul.certificates-list-desktop li {
-        margin: 0;
-        padding: 0;
-        display: flex  ;
-        justify-content: center  ;
-    }
+  ul.certificates-list-desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto 80px auto;
+    gap: 50px;
+    width: 100%;
+  }
 
-    ul.certificates-list-desktop li img.cert-img {
-        width: 250px;
-        height: 250px;
-        object-fit: contain;
-        display: block  ;
-    }
+  ul.certificates-list-desktop li {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  ul.certificates-list-desktop li img.cert-img {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    display: block;
+  }
 }
 
 /* Diver image at the bottom (if any) */
 .Certificat-middle > img,
 .big-middle-pic {
-    width: 100%;
-    
-    /* 1. Set the height of the "window" through which we view the image */
-    height: 470px; 
-    
-    /* 2. CSS magic: crops excess from top and bottom without flattening the photo */
-    object-fit: cover; 
-    
-    /* 3. Center (can be changed to top or bottom if face is cropped) */
-    object-position: center; 
+  width: 100%;
 
-    display: block;
-    margin-top: 20px;
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
+  /* 1. Set the height of the "window" through which we view the image */
+  height: 470px;
+
+  /* 2. CSS magic: crops excess from top and bottom without flattening the photo */
+  object-fit: cover;
+
+  /* 3. Center (can be changed to top or bottom if face is cropped) */
+  object-position: center;
+
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 ul.certificates-list-desktop li:last-child img.cert-img {
-    transform: scale(0.85);
+  transform: scale(0.85);
 }
