@@ -1,0 +1,115 @@
+.open-water-course {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    color: rgb(72, 134, 174);
+}
+.open-water-course__title {
+    font-size: 3em;
+    margin: 1em auto;
+    color: white;
+}
+.open-water-course__container {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+}
+.open-water-course__text {
+    width: 60%;
+    margin: 1em 0px;
+}
+.open-water-course__checklist {
+    width: 40%;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 1em 0px;
+}
+.open-water-course__checklist-item {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+.open-water-course__checklist-item > span {
+    margin-left: 0.25em;
+}
+.open-water-course__articles {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+}
+.open-water-course__article {
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 1em 0px;
+}
+.open-water-course__icon-wrapper {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(72, 134, 174, 0.4);
+}
+.open-water-course__article-text {
+    margin: 0.5em 0px;
+    text-align: center;
+}
+.open-water-course__icon {
+    width: 50px;
+    height: 50px;
+}
+.open-water-course__gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 80%;
+    margin: 2em 0;
+}
+.open-water-course__gallery img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+@media (min-width: 767px) and (max-width: 990px) {
+    .open-water-course__article {
+        flex: 0 1 auto;
+        width: 50%;
+    }
+    .open-water-course__articles {
+        flex-flow: row wrap;
+    }
+}
+
+@media (max-width: 766px) {
+    .open-water-course__article {
+        flex: 0 1 auto;
+        width: 100%;
+    }
+    .open-water-course__articles {
+        flex-flow: row wrap;
+        align-content: center;
+    }
+    .open-water-course__container {
+        display: flex;
+        flex-flow: column;
+    }
+    .open-water-course__text {
+        width: 100%;
+    }
+    .open-water-course__checklist {
+        width: 100%;
+    }
+    .open-water-course__gallery {
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 10px;
+    }
+}
