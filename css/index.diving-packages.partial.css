@@ -1,1 +1,145 @@
-/* to be done */
+.diving-packages {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    max-width: 960px; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+    .diving-packages__header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .diving-packages__image-container img{
+            width: 3rem;
+            height: 3.125rem;
+
+            @media (min-width: 576px) {
+                width: 4.25rem;
+                height: 4.375rem;
+            }
+        }
+        .diving-packages__title-container{
+            text-align: center;
+            .diving-packages__title{
+                margin-top: 20px;
+                font-size: 2.375rem;
+
+                @media (min-width: 576px) {
+                    font-size: 2.75rem;
+                }
+            }
+            .diving-packages__subtitle{
+                margin-top: 20px;
+                color: var(--text-color-secondary);
+            }
+        }
+    }
+    .diving-packages__cards-container{
+        margin-top: 45px;
+        display: grid;
+        gap: 3.125rem;
+        grid-template-columns: 1fr;
+        .diving-packages__package-card{
+            background-color: var(--color-background-cards);
+            padding: 25px 20px;
+            height: 100%;   
+            display: flex;     
+            flex-direction: column;
+        }
+
+        .package-card__image{
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            overflow: hidden;
+        }
+
+        .package-card__image img {
+            width: 100%;
+            height: 100%; 
+            object-fit: cover; 
+            display: block; 
+        }
+
+        .package-card__body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            flex-grow: 1;
+
+            .diving-packages__package-title{
+            margin-top: 20px;
+            font-size: 1.375rem;
+            font-weight: bold;
+            }
+
+            .diving-packages__package-price{
+            margin-top: 20px;
+            font-size: 1.25rem;
+            font-weight: bold;
+            }
+
+            .diving-packages__package-description{
+            margin-top: 25px;
+            color: var(--text-color-secondary);
+            font-size: 1rem;
+            }
+
+            .package-card__link{
+                margin-top: auto;
+                padding-top: 26.25px;
+                text-decoration: none;
+                font-size: 0.6875rem;
+                color: var(--button-primary-background-color);
+                transition: color 0.3s ease;
+            }
+            .package-card__link:hover{
+                color: var(--text-color-primary);
+                text-decoration: underline;
+            }
+        }
+
+        @media (min-width: 576px) {
+            grid-template-columns: 1fr 1fr;
+            gap: 1.875rem;
+            .diving-packages__package-card:last-child{
+                grid-column: 1 / -1;
+                justify-self: center;
+                width: calc(50% - 0.9375rem);
+            }
+        }
+
+        @media (min-width: 744px){
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.875rem;
+            .diving-packages__package-card:last-child{
+                grid-column: auto;
+                width: auto;
+                justify-self: auto;
+            }
+        }
+
+    }
+    .diving-packages__cta-row{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        .diving-packages__cta-button{
+            color: var(--text-color-primary);
+            text-decoration: none;
+            background-color: var(--button-primary-background-color);
+            font-size: 0.6875rem;
+            padding: 12px 24px;
+            margin: 10px;
+            border-radius: 21px;
+        }
+        .diving-packages__cta-button:hover{
+            background-color: var(--button-primary-background-hover-color);
+            transition: background-color 0.3s ease;
+        }
+    }
+}
