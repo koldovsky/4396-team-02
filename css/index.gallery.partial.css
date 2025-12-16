@@ -14,7 +14,7 @@
   }
 
   .gallery__subtitle {
-    font-family: var(--font-family-additinal);
+    font-family: var(--font-family-additional);
     color: var(--text-color-secondary);
     font-size: 20px;
     margin-bottom: 20px;
