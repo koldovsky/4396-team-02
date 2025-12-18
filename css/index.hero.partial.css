@@ -1,9 +1,9 @@
-.main__hero{
+.main__hero {
   min-width: 320px;
 }
 
 .main__hero-background {
-  background-image: url('../assets/images/sections/hero/main-page__hero-background.png');
+  background-image: url("../assets/images/sections/hero/main-page__hero-background.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -34,10 +34,10 @@
 .main__hero-title {
   box-sizing: border-box;
   display: inline;
-  font-family: var(--font-family-additinal);
+  font-family: var(--font-family-additional);
   font-weight: 700;
   font-size: 6.9375rem;
-  letter-spacing:-2.22px;
+  letter-spacing: -2.22px;
   color: var(--text-color-primary);
   vertical-align: baseline;
 }
@@ -58,7 +58,7 @@
 
 /* МІНІМАЛЬНА (екрани <= 766px) */
 @media (max-width: 766px) {
-  .main__hero-inner{
+  .main__hero-inner {
     padding: 130px 0 100px 0;
   }
 
@@ -74,7 +74,7 @@
   .main__hero-subtitle {
     margin: 35px 0 0 0;
   }
-  
+
   .button__hero-margin-top-media {
     margin-top: 50px;
   }
@@ -82,7 +82,7 @@
 
 /* СЕРЕДНЯ (екрани > 766px і <= 990px) */
 @media (min-width: 767px) and (max-width: 990px) {
-  .main__hero-inner{
+  .main__hero-inner {
     padding: 190px 0 137.5px 0;
   }
 
@@ -98,7 +98,7 @@
   .main__hero-subtitle {
     margin: 35px 0 0 0;
   }
-  
+
   .button__hero-margin-top-media {
     margin-top: 50px;
   }
@@ -106,7 +106,7 @@
 
 /* ДЕСКТОП (екрани > 990px) */
 @media (min-width: 991px) {
-  .main__hero-inner{
+  .main__hero-inner {
     padding: 250px 0 175px 0;
   }
 

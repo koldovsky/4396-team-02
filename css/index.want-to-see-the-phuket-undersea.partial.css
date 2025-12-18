@@ -1,0 +1,131 @@
+.want-to-see-the-phuket-undersea {
+  background: var(--color-background-primary);
+  padding: 80px 0;
+  text-align: center;
+  font-family: var(--font-family-additional);
+}
+
+.want-to-see-the-phuket-undersea__icon {
+  margin-bottom: 16px;
+  width: 74px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.want-to-see-the-phuket-undersea__title {
+  font-size: 50px;
+  line-height: 1.2;
+  margin-bottom: 36px;
+  overflow-wrap: break-word;
+  font-weight: bold;
+}
+
+.want-to-see-the-phuket-undersea__description {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  overflow-wrap: break-word;
+  margin-bottom: 24px;
+  color: var(--text-color-secondary);
+}
+
+.want-to-see-the-phuket-undersea__button {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: var(--button-primary-background-color);
+  color: var(--button-primary-text-color);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 11px;
+  text-transform: uppercase;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.want-to-see-the-phuket-undersea__button:hover {
+  background-color: var(--button-primary-background-hover-color);
+}
+
+.scuba-diving-course {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 80px;
+}
+
+.scuba-diving-course__image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.scuba-diving-course__content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.scuba-diving-course__icon {
+  width: 48px;
+}
+
+.scuba-diving-course__title {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -1.05px;
+  line-height: 1.2;
+  color: var(--text-color-primary);
+  overflow-wrap: break-word;
+  text-align: left;
+}
+
+.scuba-diving-course__description {
+  color: var(--text-color-secondary);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  text-align: left;
+  max-width: 520px;
+}
+
+.scuba-diving-course__button {
+  align-self: flex-start;
+  padding: 10px 24px;
+  color: var(--button-primary-text-color);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 1px solid var(--button-secondary-border-color);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.scuba-diving-course__button:hover {
+  background-color: var(--button-primary-background-color);
+  border: 1px solid var(--button-primary-background-color);
+}
+
+@media (min-width: 768px) {
+  .scuba-diving-course {
+    flex-direction: row;
+    align-items: center;
+    gap: 64px;
+  }
+
+  .scuba-diving-course__image {
+    width: 50%;
+  }
+
+  .scuba-diving-course__content {
+    width: 50%;
+  }
+
+  .scuba-diving-course__title {
+    font-size: 50px;
+    line-height: 1.2;
+  }
+}
