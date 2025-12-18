@@ -1,3 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.our-instructors{
+   padding: 80px 20px;
+  text-align: center;
+   font-family: Arial, sans-serif;
+  background: linear-gradient(#061a2d, #06344d);
+  color: white;
+}
 .our-instructors__title{
     font-size: 50px;
     display: flex;
@@ -9,7 +21,37 @@
      display: block;
     width: 3rem;
     height: auto;
-    margin: 0 auto 1.5rem;
+    margin: 3rem auto 1.5rem;
 }
-.our-instructors__container{
+.our-instructors__container__cards{
+   display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.our-instructors__card{
+ background: var(--inputs-block-background-color);
+  padding: 40px 25px;
+  max-width: 320px;
+  border-radius: 10px;
+}
+.our-instructors__card img{
+   width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.our-instructors__card h3{
+   color: var(--text-hover-color);
+   font-family: var(--font-family-additinal);
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+.our-instructors__card p{
+  font-size: 14px;
+  line-height: 1.6;
+  font-family: var(--font-family-base);
 }
