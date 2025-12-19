@@ -1,206 +1,93 @@
-/* school.certificates-nav.partial.css */
-
-/* 1. MAIN CONTAINER */
-/* It keeps everything in the center of the screen, but inside we will move blocks */
-.Certificates.container {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1350px; /* Standard container width */
-  width: 100%;
+.Certificates {
+    padding: 60px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: sans-serif;
 }
-
-/* =========================================
-   2. TOP SECTION (Scuba Diving Course) -> SHIFT LEFT
-   ========================================= */
 .Certificat-top {
-  margin-top: 80px;
-  margin-bottom: 20px;
-
-  /* IMPORTANT: Remove Flexbox centering, make it a regular block */
-  display: block;
-
-  /* Align text inside the block to the left */
-  text-align: left;
-
-  /* Limit text width (60-65%) to leave space for the diver on the right */
-  max-width: 85%;
-
-  /* Push the block itself to the left */
-  margin-left: 0;
-  margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    margin-bottom: 40px;
+    padding: 0 20px;
 }
 
-/* Mask icon */
-.Certificat-top .top-icon {
-  width: 80px;
-  height: auto;
-  display: block;
-
-  /* Remove 'auto' margins so the icon is precisely aligned to the left above the text */
-  margin: 0 0 25px 0;
+.top-icon {
+    width: 50px;
+    margin-bottom: 20px;
 }
 
-/* H1 Heading */
 .Certificat-top h1 {
-  font-family: "Chivo", sans-serif;
-  color: #ffffff;
-  font-size: 3rem;
-  font-weight: 800;
-  margin-bottom: 20px;
-  line-height: 1.1;
-
-  /* Ensure left alignment */
-  text-align: left;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffff;
 }
 
-/* Paragraph text */
 .Certificat-top p {
-  color: #8faecb;
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 0;
-
-  /* Ensure left alignment */
-  text-align: left;
-  margin-left: 0;
+    max-width: 900px;
+    line-height: 1.6;
+    color: rgb(72, 134, 174);
+    font-weight: 400;
 }
-
-/* --- RESPONSIVENESS FOR PHONES --- */
-/* On small screens, text will return to center, which looks better */
-@media (max-width: 768px) {
-  .Certificat-top {
-    max-width: 100%;
-    text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    box-sizing: border-box;
-  }
-  .Certificat-top .top-icon {
-    margin: 0 auto 25px auto;
-  }
-  .Certificat-top h1,
-  .Certificat-top p {
-    text-align: center;
-  }
-}
-
-@media (min-width: 768px) {
-  .Certificat-top {
-    padding-left: 50px;
-  }
-}
-
-/* =========================================
-   3. MIDDLE SECTION (Certificates) -> KEEP CENTERED
-   ========================================= */
-.Certificat-middle {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Center horizontally */
-  text-align: center;
-  width: 100%;
-  margin-bottom: 60px;
-  position: relative;
-}
-
-/* Block with logo and "Certificates" heading */
 .logo-center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  margin-top: 80px;
-  margin-bottom: 50px;
-}
-
-.logo-center .center-icon {
-  width: 80px;
-  height: auto;
-  margin-bottom: 15px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.logo-center h2 {
-  font-family: "Chivo", sans-serif;
-  color: #ffffff;
-  font-size: 3rem;
-  font-weight: 700;
-  margin: 0;
-  text-align: center;
-}
-
-/* =========================================
-   4. LIST OF CERTIFICATES (CAROUSEL AND LIST)
-   ========================================= */
-
-/* Mobile carousel */
-.certificates-carousel-mobile {
-  display: block;
-  width: 100%;
-  margin-bottom: 40px;
-}
-ul.certificates-list-desktop {
-  display: none;
-}
-
-/* Desktop version */
-@media (min-width: 992px) {
-  .certificates-carousel-mobile {
-    display: none;
-  }
-
-  ul.certificates-list-desktop {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.center-icon {
+    width: 40px;
+    margin-bottom: 10px;
+}
+.certificates-list-desktop {
+    display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
     list-style: none;
-    padding: 0;
-    margin: 0 auto 80px auto;
-    gap: 50px;
-    width: 100%;
-  }
-
-  ul.certificates-list-desktop li {
+    padding: 0 20px;
     margin: 0;
-    padding: 0;
+}
+.certificates-list-desktop li {  
+    flex: 0 0 calc(25% - 20px);
     display: flex;
     justify-content: center;
-  }
+    box-sizing: border-box;
+}
 
-  ul.certificates-list-desktop li img.cert-img {
-    width: 250px;
-    height: 250px;
+.cert-img {
+    width: 100%;
+    height: auto;
     object-fit: contain;
-    display: block;
-  }
+    transition: transform 0.3s ease;
 }
 
-/* Diver image at the bottom (if any) */
-.Certificat-middle > img,
-.big-middle-pic {
-  width: 100%;
-
-  /* 1. Set the height of the "window" through which we view the image */
-  height: 470px;
-
-  /* 2. CSS magic: crops excess from top and bottom without flattening the photo */
-  object-fit: cover;
-
-  /* 3. Center (can be changed to top or bottom if face is cropped) */
-  object-position: center;
-
-  display: block;
-  margin-top: 20px;
-  margin-bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
+.cert-img:hover {
+    transform: scale(1.05);
 }
 
-ul.certificates-list-desktop li:last-child img.cert-img {
-  transform: scale(0.85);
+@media (max-width: 1023px) and (min-width: 601px) {
+    .certificates-list-desktop li {
+        flex: 0 0 calc(50% - 20px);
+    }
 }
+
+@media (max-width: 600px) {
+    .Certificates {
+        padding: 40px 0;
+    }
+    .Certificat-top h1 {
+        font-size: 1.8rem;
+    }
+    .certificates-list-desktop {
+        flex-direction: column;
+        align-items: center;
+    }
+    .certificates-list-desktop li {
+        flex: 0 0 100%;
+        max-width: 320px;
+    }
+}
+
