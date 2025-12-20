@@ -25,9 +25,18 @@
   grid-template-columns: 1fr 1fr;
 }
 
-.our-equipment__image img {
+.our-equipment__image_1 img {
   width: 100%;
   height: 100%;
+  filter: contrast(0.95) saturate(2.85);
+  object-fit: cover;
+  display: block;
+}
+
+.our-equipment__image_2 img {
+  width: 100%;
+  height: 100%;
+  filter: contrast(1.45) saturate(1.15);
   object-fit: cover;
   display: block;
 }
