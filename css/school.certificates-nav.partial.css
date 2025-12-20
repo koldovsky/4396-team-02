@@ -1,93 +1,102 @@
 .Certificates {
-    padding: 60px 0;
-    max-width: 1200px;
-    margin: 0 auto;
-    font-family: sans-serif;
+  padding: 60px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: sans-serif;
 }
 .Certificat-top {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    margin-bottom: 40px;
-    padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  margin-bottom: 40px;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  position: relative;
+  background-image: url("/assets/images/sections/сertificates/swimmingwithfriends.png");
+  background-size: 200%;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-left: max(50px, calc((100vw - 1200px) / 2 + 50px));
+  padding-right: max(50px, calc((100vw - 1200px) / 2 + 50px));
+  box-sizing: border-box;
 }
 
 .top-icon {
-    width: 50px;
-    margin-bottom: 20px;
+  width: 50px;
+  margin-bottom: 20px;
 }
 
 .Certificat-top h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #ffff;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ffff;
 }
 
 .Certificat-top p {
-    max-width: 900px;
-    line-height: 1.6;
-    color: rgb(72, 134, 174);
-    font-weight: 400;
+  max-width: 900px;
+  line-height: 1.6;
+  color: rgb(72, 134, 174);
+  font-weight: 400;
 }
 .logo-center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 30px;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  text-align: center;
 }
 .center-icon {
-    width: 40px;
-    margin-bottom: 10px;
+  width: 40px;
+  margin-bottom: 10px;
 }
 .certificates-list-desktop {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    list-style: none;
-    padding: 0 20px;
-    margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0 20px;
+  margin: 0;
 }
-.certificates-list-desktop li {  
-    flex: 0 0 calc(25% - 20px);
-    display: flex;
-    justify-content: center;
-    box-sizing: border-box;
+.certificates-list-desktop li {
+  flex: 0 0 calc(25% - 20px);
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
 .cert-img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    transition: transform 0.3s ease;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
 }
 
 .cert-img:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 @media (max-width: 1023px) and (min-width: 601px) {
-    .certificates-list-desktop li {
-        flex: 0 0 calc(50% - 20px);
-    }
+  .certificates-list-desktop li {
+    flex: 0 0 calc(50% - 20px);
+  }
 }
 
 @media (max-width: 600px) {
-    .Certificates {
-        padding: 40px 0;
-    }
-    .Certificat-top h1 {
-        font-size: 1.8rem;
-    }
-    .certificates-list-desktop {
-        flex-direction: column;
-        align-items: center;
-    }
-    .certificates-list-desktop li {
-        flex: 0 0 100%;
-        max-width: 320px;
-    }
+  .Certificates {
+    padding: 40px 0;
+  }
+  .Certificat-top h1 {
+    font-size: 1.8rem;
+  }
+  .certificates-list-desktop {
+    flex-direction: column;
+    align-items: center;
+  }
+  .certificates-list-desktop li {
+    flex: 0 0 100%;
+    max-width: 320px;
+  }
 }
-
