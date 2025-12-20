@@ -20,14 +20,10 @@
   color: #ffffff;
 }
 
-/* GRID */
-
 .our-equipment__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-
-/* IMAGE */
 
 .our-equipment__image img {
   width: 100%;
@@ -35,8 +31,6 @@
   object-fit: cover;
   display: block;
 }
-
-/* CONTENT */
 
 .our-equipment__content {
   background-color: #0b1f36;
@@ -58,8 +52,6 @@
   font-size: 0.95rem;
   line-height: 1.6;
 }
-
-/* ADAPTIVE */
 
 @media (max-width: 900px) {
   .our-equipment__grid {
