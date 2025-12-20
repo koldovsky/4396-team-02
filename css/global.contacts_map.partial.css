@@ -2,7 +2,26 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 4rem;
+    margin-bottom: 7rem;
+    position: relative;
+    overflow: visible;
+    min-height: 30rem;
+}
+
+.contacts-map::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    bottom: -5rem;
+    width: 100vw;
+    background-image: url("../assets/images/sections/contact_forms/wave_background.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 100% auto;
+    pointer-events: none;
+    z-index: 0;
 }
 
 .contacts-map__wrapper {
@@ -11,6 +30,8 @@
     margin: 0 auto;
     box-sizing: border-box;
     padding: 0 1.375rem;
+    position: relative;
+    z-index: 1; /* keep content above the background pseudo-element */
 }
 
 .contacts-map__wrapper iframe {

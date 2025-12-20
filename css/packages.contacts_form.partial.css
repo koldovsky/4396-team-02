@@ -4,6 +4,23 @@
   padding-top: 4.5rem;
   padding-bottom: 4.5rem;
   margin-top: 3rem;
+  position: relative;
+}
+
+.contacts::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  background-image: url("../assets/images/sections/contact_forms/map_backgroung.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  pointer-events: none;
+  z-index: 0;
 }
 
 .contacts__form {
@@ -13,6 +30,8 @@
   color: var(--text-color-primary);
   text-align: center;
   font-family: var(--font-family-additional);
+  position: relative;
+  z-index: 1;
 }
 
 .contacts__icon {
@@ -77,6 +96,7 @@
   outline: none;
   cursor: pointer;
   transition: box-shadow 0.3s, background-color 0.3s;
+  margin-bottom: 2rem;
 }
 
 .contacts__form-body {
