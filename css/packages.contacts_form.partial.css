@@ -5,6 +5,7 @@
   padding-bottom: 4.5rem;
   margin-top: 3rem;
   position: relative;
+  margin-bottom: 7rem;
 }
 
 .contacts::before {
@@ -13,9 +14,9 @@
   left: 50%;
   transform: translateX(-50%);
   top: 0;
-  bottom: 0;
+  bottom: -3rem;
   width: 100vw;
-  background-image: url("../assets/images/sections/contact_forms/map_backgroung.png");
+  background-image: url("../assets/images/sections/contact_forms/wave_background.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
