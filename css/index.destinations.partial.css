@@ -216,6 +216,7 @@
 
   .destinations__img{
     display: flex;
+    height: auto;
   }
 
   .destinations__img img {
