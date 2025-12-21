@@ -1,5 +1,13 @@
 .about-thai-diving {
-  margin: 75px auto 50px;
+  margin: 0 auto 50px;
+  padding-top: 75px;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0px,
+      #000e24 616px
+    ),
+    url("../assets/images/sections/about-thai-diving/background-image.png")
+      no-repeat;
 }
 
 .about-thai-diving__header-icon {
@@ -33,25 +41,25 @@
 }
 
 .about-thai-diving__cards {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
 .about-thai-diving__card {
-    .card__content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        .about-thai-diving__card-title {
-            margin-top: 20px;
-            margin-bottom: 20px;
-            font-size: 1.375rem;
-            font-family: var(--font-family-additional);
-        }
-        .about-thai-diving__card-text {
-            margin-bottom: 35px;
-            text-align: center;
-        }
+  .card__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .about-thai-diving__card-title {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 1.375rem;
+      font-family: var(--font-family-additional);
     }
+    .about-thai-diving__card-text {
+      margin-bottom: 35px;
+      text-align: center;
+    }
+  }
 }
