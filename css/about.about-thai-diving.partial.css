@@ -1,11 +1,7 @@
 .about-thai-diving {
   margin: 0 auto 50px;
   padding-top: 75px;
-  background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0) 0px,
-      #000e24 616px
-    ),
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0px, #000e24 616px),
     url("../assets/images/sections/about-thai-diving/background-image.png")
       no-repeat;
 }
@@ -44,6 +40,17 @@
   display: flex;
   flex-direction: column;
   gap: 50px;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+.about-thai-diving__card-image {
+  width: 100%;
+  aspect-ratio: 1.8;
+  object-fit: cover;
 }
 
 .about-thai-diving__card {
@@ -61,5 +68,10 @@
       margin-bottom: 35px;
       text-align: center;
     }
+  }
+
+  .about-thai-diving__card-text {
+    color: var(--text-color-secondary);
+    line-height: 1.3;
   }
 }
