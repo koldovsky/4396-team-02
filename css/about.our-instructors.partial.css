@@ -9,6 +9,7 @@
    font-family: Arial, sans-serif;
   background: linear-gradient(#061a2d, #06344d);
   color: white;
+  background: url("../assets/images/background.png");
 }
 .our-instructors__title{
     font-size: 50px;
