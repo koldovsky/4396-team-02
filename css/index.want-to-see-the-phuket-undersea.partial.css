@@ -1,5 +1,19 @@
 .want-to-see-the-phuket-undersea {
+  padding-bottom: 80px;
+}
+
+.want-to-see-the-phuket-undersea__part {
+  min-height: 420px;
   background: var(--color-background-primary);
+  background-image: url("../assets/images/sections/want-to-see-the-phuket-undersea/background-jellyfish.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.want-to-see-the-phuket-undersea__content { 
   padding: 80px 0;
   text-align: center;
   font-family: var(--font-family-additional);
@@ -51,7 +65,10 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
-  margin-top: 80px;
+}
+
+.scuba-diving-course__image-wrapper {
+  width: 100%;
 }
 
 .scuba-diving-course__image {
@@ -67,12 +84,13 @@
 }
 
 .scuba-diving-course__icon {
-  width: 48px;
+  width: 60px;
 }
 
 .scuba-diving-course__title {
   font-size: 32px;
   font-weight: 700;
+  font-family: var(--font-family-additional);
   letter-spacing: -1.05px;
   line-height: 1.2;
   color: var(--text-color-primary);
@@ -112,12 +130,20 @@
 @media (min-width: 768px) {
   .scuba-diving-course {
     flex-direction: row;
-    align-items: center;
-    gap: 64px;
+    align-items: stretch;
+    gap: 32px;
+  }
+
+  .scuba-diving-course__image-wrapper {
+    width: 50%;
+    aspect-ratio: 1 / 1;
   }
 
   .scuba-diving-course__image {
-    width: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
   }
 
   .scuba-diving-course__content {

@@ -4,6 +4,24 @@
   padding-top: 4.5rem;
   padding-bottom: 4.5rem;
   margin-top: 3rem;
+  position: relative;
+  margin-bottom: 7rem;
+}
+
+.contacts::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  bottom: -3rem;
+  width: 100vw;
+  background-image: url("../assets/images/sections/contact_forms/wave_background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  pointer-events: none;
+  z-index: 0;
 }
 
 .contacts__form {
@@ -12,6 +30,8 @@
   background-color: var(--inputs-block-background-color);
   text-align: center;
   font-family: var(--font-family-additional);
+  position: relative;
+  z-index: 1;
 }
 
 .contacts__icon {
