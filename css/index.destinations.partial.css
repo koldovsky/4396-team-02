@@ -16,9 +16,19 @@
   margin-right: auto;
 }
 
+.destinations__title{
+  font-family: var(--font-family-additional);
+  font-weight: bold;
+}
+
+.destinations__icon{
+  margin-bottom: 20px;
+}
+
 .destinations__header .destinations__title {
   color: var(--text-color-primary);
   font-family: var(--font-family-base);
+  font-size: 50px;
 }
 
 .destinations__main {
@@ -30,6 +40,8 @@
 
 .destinations__subtitle{
   color: var(--text-color-primary);
+  font-family: var(--font-family-additional);
+  font-weight: bold;
   margin-bottom: 20px;
 }
 
