@@ -1,71 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Packages</title>
     <link rel="icon" href="assets/images/favicon.png" type="image/png" />
-    <script src="https://unpkg.com/htmx.org@1.9.10"
-        integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/packages.css">
-</head>
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/packages.css" />
+  </head>
 
-<body>
+  <body>
     <!-- 01__header (Yavorskyi Taras) -->
-    <header class="global__header" data-hx-trigger="load" data-hx-swap="outerHTML"
-        data-hx-get="components/global.header.partial.html">
-    </header>
+    <header
+      class="global__header"
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="components/global.header.partial.html"
+    ></header>
     <!-- /01__header (Yavorskyi Taras)-->
 
-
     <main class="main">
-        <!-- 01__menu (Yavorskyi Taras) -->
-        <nav class="global__nav-menu" data-hx-trigger="load" data-hx-swap="outerHTML"
-            data-hx-get="components/global.nav-menu.partial.html">
-        </nav>
-        <!-- /01__menu (Yavorskyi Taras) -->
+      <!-- 01__menu (Yavorskyi Taras) -->
+      <nav
+        class="global__nav-menu"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="components/global.nav-menu.partial.html"
+      ></nav>
+      <!-- /01__menu (Yavorskyi Taras) -->
 
+      <!-- 15__Explore Phuket (Petryshyn Roman) -->
+      <!-- TODO: ваш блок має бути тут -->
 
-        <!-- 15__Explore Phuket (Petryshyn Roman) -->
-        <!-- TODO: ваш блок має бути тут -->
+      <!-- /15__Explore Phuket (Petryshyn Roman)-->
 
-        <!-- /15__Explore Phuket (Petryshyn Roman)-->
+      <!-- 16__3 Days - 9 Dives (Petryshyn Roman) -->
+      <!-- TODO: ваш блок має бути тут -->
 
+      <!-- /16__3 Days - 9 Dives (Petryshyn Roman)-->
 
-        <!-- 16__3 Days - 9 Dives (Petryshyn Roman) -->
-        <!-- TODO: ваш блок має бути тут -->
+      <!-- 17__Night Dives (Sultanova Oleksandra) -->
+      <section
+        class="night-dives"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="components/packages.night-dives.html"
+      ></section>
+      <!-- /17__Night Dives (Sultanova Oleksandra)-->
 
-        <!-- /16__3 Days - 9 Dives (Petryshyn Roman)-->
+      <!-- 18__3 Caves - 3 Days (Sultanova Oleksandra) -->
+      <!-- TODO: ваш блок має бути тут -->
 
+      <!-- /18__3 Caves - 3 Days (Sultanova Oleksandra)-->
 
-        <!-- 17__Night Dives (Sultanova Oleksandra) -->
-        <!-- TODO: ваш блок має бути тут -->
-
-        <!-- /17__Night Dives (Sultanova Oleksandra)-->
-
-
-        <!-- 18__3 Caves - 3 Days (Sultanova Oleksandra) -->
-        <!-- TODO: ваш блок має бути тут -->
-
-        <!-- /18__3 Caves - 3 Days (Sultanova Oleksandra)-->
-
-
-        <!-- 19__Contacts-2 (Mushchynka Vasyl) -->
-        <!-- TODO: ваш блок має бути тут -->
-        <section class="contacts__form" data-hx-trigger="load" data-hx-swap="outerHTML"
-            data-hx-get="components/packages.contacts_form.partial.html">
-        </section>
-        <!-- /19__Contacts-2 (Mushchynka Vasyl)-->
+      <!-- 19__Contacts-2 (Mushchynka Vasyl) -->
+      <!-- TODO: ваш блок має бути тут -->
+      <section
+        class="contacts__form"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="components/packages.contacts_form.partial.html"
+      ></section>
+      <!-- /19__Contacts-2 (Mushchynka Vasyl)-->
     </main>
 
-
     <!-- 01__footer (Yavorskyi Taras) -->
-    <footer class="global__footer" data-hx-trigger="load" data-hx-swap="outerHTML"
-        data-hx-get="components/global.footer.partial.html">
-    </footer>
+    <footer
+      class="global__footer"
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="components/global.footer.partial.html"
+    ></footer>
     <!-- /01__footer (Yavorskyi Taras) -->
-</body>
-
+  </body>
 </html>
