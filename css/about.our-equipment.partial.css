@@ -29,7 +29,7 @@
 .our-equipment__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  row-gap: 3rem; /* розрив між двома блоками */
+  row-gap: 1.5rem; /* розрив між двома блоками */
 }
 
 /* IMAGES */
