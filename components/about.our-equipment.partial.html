@@ -1,51 +1,87 @@
-<section class="our-equipment">
-  <div class="container">
+.our-equipment {
+  background: linear-gradient(180deg, #020b1d 0%, #04142e 100%);
+  padding: 6rem 0;
+}
 
-    <div class="our-equipment__header">
-      <img
-        class="our-equipment__icon"
-        src="assets\images\favicon.png"
-        alt="Equipment icon"
-      />
-      <h2 class="our-equipment__title">Our Equipment</h2>
-    </div>
+/* HEADER */
 
-    <div class="our-equipment__grid">
+.our-equipment__header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
 
-      <div class="our-equipment__image">
-        <img
-          src="assets\images\sections\about-our-equipment\about-our-equipment-image-1.webp"
-          alt="Speedboat RIB DIVERSAINT"
-        />
-      </div>
+.our-equipment__icon {
+  display: block;
+  width: 3rem;
+  height: auto;
+  margin: 3rem auto 1.5rem;
+}
 
-      <div class="our-equipment__content">
-        <h3>Speedboat RIB DIVERSAINT</h3>
-        <p>
-          The RIB DIVERSAINT high-speed boat is equipped with two Yamaha engines,
-          which allows you to get to any dive sites three times faster than
-          large diving ships. It is used for one-day diving in the Phuket
-          water area.
-        </p>
-      </div>
+.our-equipment__title {
+  font-size: 2.8rem;
+  font-family: "Dosis", sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+}
 
-      <div class="our-equipment__content">
-        <h3>DIVERACE CLASS E</h3>
-        <p>
-          Launched in 2015, the MV DiveRACE Class E safari ship has a length of
-          34.5 m and a width of 7.5 m. The dive deck is spacious enough for any
-          diver, both for amateurs and techies. 6 twin cabins are located on
-          the main deck.
-        </p>
-      </div>
+/* GRID */
 
-      <div class="our-equipment__image">
-        <img
-          src="assets\images\sections\about-our-equipment\about-our-equipment-image-2.webp"
-          alt="DIVERACE Class E"
-        />
-      </div>
+.our-equipment__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 3rem; /* розрив між двома блоками */
+}
 
-    </div>
-  </div>
-</section>
+/* IMAGES */
+
+.our-equipment__image_1 img {
+  width: 100%;
+  height: 100%;
+  filter: contrast(0.95) saturate(2.85);
+  object-fit: cover;
+  display: block;
+}
+
+.our-equipment__image_2 img {
+  width: 100%;
+  height: 100%;
+  filter: contrast(1.45) saturate(1.15);
+  object-fit: cover;
+  display: block;
+}
+
+/* CONTENT */
+
+.our-equipment__content {
+  background-color: #0b1f36;
+  padding: 3rem 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.our-equipment__content h3 {
+  color: #ffffff;
+  font-family: "Dosis", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.our-equipment__content p {
+  color: #6fa3c8;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* ADAPTIVE */
+
+@media (max-width: 900px) {
+  .our-equipment__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .our-equipment__content {
+    padding: 2.5rem 2rem;
+  }
+}
