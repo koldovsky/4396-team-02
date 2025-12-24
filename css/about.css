@@ -3,12 +3,9 @@
 
 @import url(global.header.partial.css);
 @import url(global.nav-menu.partial.css);
-<<<<<<< HEAD
 @import url(about.our-instructors.partial.css);
-=======
 @import url(about.our-equipment.partial.css);
 @import url(about.our-instructors.css);
->>>>>>> 7f954fa5aee4bc514d5a3c91aa7b0725f1ec1727
 @import url(global.footer.partial.css);
 
 @import url(about.about-thai-diving.partial.css);
