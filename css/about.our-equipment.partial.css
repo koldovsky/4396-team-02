@@ -1,27 +1,26 @@
 .our-equipment {
-  background: linear-gradient(180deg, #020b1d 0%, #04142e 100%);
-  padding: 6rem 0;
+  background: linear-gradient(180deg, #000e24 0%, #04142e 100%);
 }
 
 /* HEADER */
 
 .our-equipment__header {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .our-equipment__icon {
   display: block;
-  width: 3rem;
+  width: 4rem;
   height: auto;
   margin: 3rem auto 1.5rem;
 }
 
 .our-equipment__title {
   font-size: 2.8rem;
-  font-family: "Dosis", sans-serif;
+  font-family: var(--font-family-additional);
   font-weight: 700;
-  color: #ffffff;
+  color: var(--text-color-primary);
 }
 
 /* GRID */
@@ -53,8 +52,8 @@
 /* CONTENT */
 
 .our-equipment__content {
-  background-color: #0b1f36;
-  padding: 3rem 3.5rem;
+  background-color: var(--rectangle-cards-background-color);
+  padding: 70px 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -62,14 +61,15 @@
 
 .our-equipment__content h3 {
   color: #ffffff;
-  font-family: "Dosis", sans-serif;
+  font-family: var(--font-family-additional);
   font-size: 1.25rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
 
 .our-equipment__content p {
-  color: #6fa3c8;
+  color: var(--text-color-secondary);
+  font-family: var(--font-family-base);
   font-size: 0.95rem;
   line-height: 1.6;
 }
