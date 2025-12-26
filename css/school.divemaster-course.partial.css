@@ -14,19 +14,73 @@
 }
 
 .divemaster-course__description {
+    display: inline-block;
     color: var(--text-color-secondary);
+    width: 59%;
+    height: 100%;
+}
+
+
+.divemaster-course__features {
+    
+    display: inline-block;
+    width: 40%;
+
+}
+.divemaster-course__feature {
+    display: flex;
+    width: 100%;
+}
+
+.divemaster-course__feature-text {
+    text-align: left;
+    margin-bottom: 1em;
     vertical-align: baseline;
-    width: 60%;
-
-
 }
 
-.divemaster-feature {
-    color: var( --text-hover-color);
-    width: 10%;
+.divemaster-course__block {
+    width: 28%;
+    margin-top: 1em;
+    margin-right: 1em;
+    display: inline-block;
 }
 
-.divemaster-course__icon {
-    width: 40px;
-    height: 40px;
+/* .divemaster-course__block-icon-decorator {
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+} */
+.divemaster-course__block-icon-background {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
+.divemaster-course__block-icon {
+    margin: auto;
+    width: 50px;
+    height: 50px;
+}
+
+
+
+.divemaster-course__block-text {
+    text-align: center;
+}
+
+
+
+
+
+p, span {
+    color: var(--text-color-secondary);
+    
+    font-family: var(--font-family-base);
+}
+    
+    /* text-align: right; */
