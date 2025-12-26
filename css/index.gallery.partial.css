@@ -9,15 +9,21 @@
 
   .gallery__title {
     font-family: var(--font-family-base);
+    font-size: 50px;
+    line-height: 1.2;
+    font-weight: 700;
     color: var(--text-color-primary);
-    margin-bottom: 12px;
+    margin-bottom: 36px;
   }
 
   .gallery__subtitle {
     font-family: var(--font-family-additional);
-    color: var(--text-color-secondary);
     font-size: 20px;
-    margin-bottom: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--text-color-secondary);
+    margin-bottom: 24px;
+    overflow-wrap: break-word;
   }
   .gallery__image {
     width: 100%;
