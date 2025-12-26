@@ -1,0 +1,32 @@
+.divemaster-course__logo {
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.divemaster-course__title {
+    color: var(--text-color-primary);
+    margin: 1em auto;
+    text-align: center;
+    font-size: 3em;
+    font-family: var(--font-family-base);
+
+}
+
+.divemaster-course__description {
+    color: var(--text-color-secondary);
+    vertical-align: baseline;
+    width: 60%;
+
+
+}
+
+.divemaster-feature {
+    color: var( --text-hover-color);
+    width: 10%;
+}
+
+.divemaster-course__icon {
+    width: 40px;
+    height: 40px;
+}
