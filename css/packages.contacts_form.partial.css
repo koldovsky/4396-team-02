@@ -74,7 +74,7 @@
   color: var(--text-color-primary);
   font-size: 1rem;
   outline: none;
-  transition: box-shadow 0.3s, background-color 0.3s;
+  transition: background 0.3s, box-shadow 0.3s, filter 0.15s;
 }
 
 .contacts__input::placeholder {
@@ -83,6 +83,10 @@
 
 .contacts__input:focus {
   border: 0.1rem solid var(--text-color-secondary);
+}
+
+.contacts__input:hover {
+  filter: brightness(0.7);
 }
 
 .contacts__select {
@@ -96,8 +100,12 @@
   appearance: none;
   outline: none;
   cursor: pointer;
-  transition: box-shadow 0.3s, background-color 0.3s;
+  transition: background 0.3s, box-shadow 0.3s, filter 0.15s;
   margin-bottom: 2rem;
+}
+
+.contacts__select:hover {
+  filter: brightness(0.7);
 }
 
 .contacts__form-body {
