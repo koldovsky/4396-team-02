@@ -24,7 +24,9 @@
     height: 280px;
     object-fit: cover;
     background: var(--rectangle-cards-background-color);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
   }
 
   .gallery__image:hover {
@@ -34,10 +36,17 @@
 }
 
 #galleryCarousel {
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
 
   .carousel-inner {
     overflow: visible;
+  }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  #galleryCarousel {
+    max-width: 100%;
   }
 }
