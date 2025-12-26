@@ -1,3 +1,4 @@
+// https://www.codewars.com/kata/understanding-closures-the-basics/train/javascript
 function buildFun(n) {
   const result = [];
 
