@@ -1,3 +1,4 @@
+//https://www.codewars.com/kata/fun-with-es6-classes-number-2-animals-and-inheritance/train/javascript
 class Animal {
   constructor(name, age, legs, species, status) {
     this.name = name;
