@@ -1,5 +1,9 @@
 .destinations {
-  background-image: url('../assets/images/sections/destinations/destinations__background.png');
+  background-image: linear-gradient(
+      var(--inputs-block-background-color),
+      var(--inputs-block-background-color)
+    ),
+    url("../assets/images/sections/destinations/destinations__background.png");
   background-size: cover;
   background-repeat: no-repeat;
   max-width: 100%;
@@ -16,12 +20,12 @@
   margin-right: auto;
 }
 
-.destinations__title{
+.destinations__title {
   font-family: var(--font-family-additional);
   font-weight: bold;
 }
 
-.destinations__icon{
+.destinations__icon {
   margin-bottom: 20px;
 }
 
@@ -38,7 +42,7 @@
   max-width: 1115px;
 }
 
-.destinations__subtitle{
+.destinations__subtitle {
   color: var(--text-color-primary);
   font-family: var(--font-family-additional);
   font-weight: bold;
@@ -90,7 +94,6 @@
   padding-right: 50px;
 }
 
-
 .destinations__link {
   margin-top: 45px;
 }
@@ -102,7 +105,6 @@
   text-decoration: none;
   transition: color 0.4s ease, letter-spacing 0.4s ease;
 }
-
 
 .destinations__actions {
   height: auto;
@@ -139,14 +141,14 @@
   transition: all 0.3s ease;
 }
 
-.destinations__link--read-more:hover{
-    color: var(--text-color-primary);
-    text-decoration: underline;
+.destinations__link--read-more:hover {
+  color: var(--text-color-primary);
+  text-decoration: underline;
 }
 
-.destinations__link--packages:hover{
-    background-color: var(--button-primary-background-color);
-    border-color: var(--button-primary-background-color);
+.destinations__link--packages:hover {
+  background-color: var(--button-primary-background-color);
+  border-color: var(--button-primary-background-color);
 }
 
 @media (max-width: 767px) {
@@ -210,11 +212,12 @@
     align-items: stretch;
   }
 
-  .destinations__img, .destinations__content {
+  .destinations__img,
+  .destinations__content {
     width: 50%;
   }
 
-  .destinations__img{
+  .destinations__img {
     display: flex;
     height: auto;
   }
@@ -252,7 +255,7 @@
     width: 50%;
   }
 
-  .destinations__img{
+  .destinations__img {
     height: 410px;
   }
 
@@ -270,4 +273,3 @@
     margin: 0;
   }
 }
-
