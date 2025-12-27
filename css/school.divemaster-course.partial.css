@@ -52,9 +52,8 @@
     padding: 0;
 } */
 .divemaster-course__block-icon-background {
-    position: absolute;
-    width: 80px;
-    height: 80px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
     top: 0;
     right: 0;
@@ -63,10 +62,20 @@
 }
 .divemaster-course__block-icon {
     margin: auto;
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background: rgba(72, 134, 174, 0.4);
 }
 
+.divemaster-course__block-icon img {
+    width: 50px;
+    height: 50px;
+
+}
 
 
 .divemaster-course__block-text {
