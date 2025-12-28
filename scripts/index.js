@@ -1,6 +1,7 @@
 function init() {
   import("./global.burger-menu.partial.js");
   import("./index.why-choose-us.partial.js");
+  import("./index.destinations.partial.js");
 }
 
 const totalPartials = document.querySelectorAll(
