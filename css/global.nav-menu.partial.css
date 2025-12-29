@@ -147,7 +147,7 @@
 /* МІНІМАЛЬНА (екрани <= 766px) */
 @media (max-width: 766px) {
   .global__nav-menu {
-    position: fixed;
+    /* position: fixed; */
     padding-top: 20px;
     top: 0;
     left: 0;
@@ -285,6 +285,10 @@
 @media (min-width: 767px) and (max-width: 990px) {
   .global__nav-menu {
     padding-top: calc(42px + 20px); /* 42px - global header thickness (for global header position: fixed)*/
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
     /* padding-left: 32px;
     padding-right: 32px; */
   }
@@ -309,6 +313,10 @@
 @media (min-width: 991px) {
   .global__nav-menu {
     padding-top: calc(42px + 20px); /* 42px - global header thickness (for global header position: fixed)*/
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
     /* padding-left: 40px;
     padding-right: 40px; */
   }

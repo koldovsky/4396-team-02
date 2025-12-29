@@ -1,9 +1,12 @@
 .about-thai-diving {
-  margin: 0 auto 50px;
-  padding-top: 75px;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0px, #000e24 616px),
     url("../assets/images/sections/about-thai-diving/background-image.png")
       no-repeat;
+}
+
+.about-thai-diving-inner {
+  margin: 0 auto 50px;
+  padding-top: 75px !important;
 }
 
 .about-thai-diving__header-icon {
