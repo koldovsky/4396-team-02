@@ -11,5 +11,6 @@ let loadedPartialsCount = 0;
 
 document.body.addEventListener("htmx:afterOnLoad", () => {
   loadedPartialsCount++;
-  if (loadedPartialsCount === totalPartials) init();
+  console.log(`Loaded partials: ${loadedPartialsCount}/${totalPartials}`);
+  if (loadedPartialsCount - 2 === totalPartials) init();
 });

@@ -53,6 +53,8 @@ h6 {
   --rectangle-cards-background-color: rgba(18, 36, 58, 0.8);
   --transition-speed: 0.3s;
 
+  --nav-height: 4rem;
+  
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
   --spacing-md: 1.5rem;
