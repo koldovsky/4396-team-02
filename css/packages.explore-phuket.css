@@ -1,0 +1,88 @@
+.packages__explore-phuket {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 14, 36, 0)),
+    url("../assets/images/sections/packages-explore-phuket/packages-explore-phuket-bg.png")
+      no-repeat top;
+  background-blend-mode: multiply;
+}
+
+.explore-phuket-inner {
+  margin: 0 auto 50px;
+  padding-top: 75px !important;
+}
+
+.explore-phuket__text {
+    max-width: 100%;
+    @media screen and (min-width: 768px) {
+        max-width: 570px;
+    }
+}
+
+.explore-phuket__header-icon {
+  height: 50px;
+  width: 50px;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    height: 70px;
+    width: 70px;
+  }
+}
+
+.explore-phuket__title {
+  font-size: 2.375rem;
+  font-family: var(--font-family-additional);
+  margin-bottom: 25px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 2.75rem;
+  }
+  @media screen and (min-width: 996px) {
+    font-size: 3.125rem;
+  }
+}
+
+.explore-phuket__description {
+  color: var(--text-color-secondary);
+  line-height: 1.56;
+  margin-bottom: 100px;
+}
+
+.explore-phuket__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+.explore-phuket__card-image {
+  width: 100%;
+  aspect-ratio: 1.8;
+  object-fit: cover;
+}
+
+.explore-phuket__card {
+  .card__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .explore-phuket__card-title {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 1.375rem;
+      font-family: var(--font-family-additional);
+    }
+    .explore-phuket__card-text {
+      margin-bottom: 35px;
+      text-align: center;
+    }
+  }
+
+  .explore-phuket__card-text {
+    color: var(--text-color-secondary);
+    line-height: 1.3;
+  }
+}

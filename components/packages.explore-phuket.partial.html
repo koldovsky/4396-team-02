@@ -1,18 +1,56 @@
 <section class="packages__explore-phuket">
-  <header class="global__header"
+  <header
+    class="global__header"
     data-hx-trigger="load"
     data-hx-swap="outerHTML"
-    data-hx-get="components/global.header.partial.html">
-  </header>
+    data-hx-get="components/global.header.partial.html"
+  ></header>
 
-  <nav class="global__nav-menu"
+  <nav
+    class="global__nav-menu"
     data-hx-trigger="load"
     data-hx-swap="outerHTML"
-    data-hx-get="components/global.nav-menu.partial.html">
-  </nav>
+    data-hx-get="components/global.nav-menu.partial.html"
+  ></nav>
 
   <div class="packages__explore-phuket-inner container">
-    <h2 class="packages__title">Explore</h2>
-    <!-- Це вже твоя частина -->
+    <div class="explore-phuket-inner container">
+      <img
+        src="./assets/ui/icons/diver-icon.svg"
+        alt="Diver icon"
+        class="explore-phuket__header-icon"
+      />
+      <div class="explore-phuket__text">
+        <h2 class="explore-phuket__title">Explore Phuket</h2>
+        <p class="explore-phuket__description">
+          If you go on vacation to Phuket don't forget to save some time for
+          scuba diving. The underwater world here is perfect both for amateurs
+          and professional divers. Diving in Phuket and diving safaris on the
+          Similan Islands are traditionally among the ten best places in the
+          world for scuba diving. Phuket dive sites are famous for their variety
+          of corals and an abundance of underwater fauna.
+        </p>
+      </div>
+
+      <div class="explore-phuket__cards">
+        <article class="explore-phuket__card">
+          <img
+            src="../assets/images/sections/packages-explore-phuket/packages-explore-phuket-1.webp"
+            width="570"
+            alt="Diving school in Phuket"
+            class="explore-phuket__card-image"
+          />
+        </article>
+
+        <article class="explore-phuket__card">
+          <img
+            src="../assets/images/sections/packages-explore-phuket/packages-explore-phuket-2.webp"
+            width="570"
+            alt="Diving tours in Phuket"
+            class="explore-phuket__card-image"
+          />
+        </article>
+      </div>
+    </div>
   </div>
 </section>
