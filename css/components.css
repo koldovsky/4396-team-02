@@ -81,6 +81,7 @@
 }
 
 .button__content {
+  color: var(--text-color-primary);
   padding: 0;
   font-size: 0.6875rem;
   font-weight: 700;
