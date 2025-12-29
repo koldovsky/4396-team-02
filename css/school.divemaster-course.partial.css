@@ -5,6 +5,8 @@
     justify-content: center;
     max-width: 1200px;
     margin: auto;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 }
 .divemaster-course__logo-icon {
     margin-top: 48px;
