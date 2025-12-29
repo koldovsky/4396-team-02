@@ -1,11 +1,13 @@
 .certificates {
   /* для того щоб меню відображалось коректно*/
   /* хай тут буде лише background Розкоментуй то що нижче і допиши*/
-  /* background: ... ; */
+  background-image: url("../assets/images/sections/certificates/swimmingwithfriends.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .certificates-inner {
-  padding: 60px 0;
   max-width: 1200px;
   margin: 0 auto;
   font-family: sans-serif;
@@ -15,16 +17,11 @@
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
-  margin-top: -60px;
+  padding-top: 75px;
   margin-bottom: 40px;
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
-  position: relative;
-  background-image: url("../assets/images/sections/certificates/swimmingwithfriends.png");
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
   padding-left: max(50px, calc((100vw - 1200px) / 2 + 50px));
   padding-right: max(50px, calc((100vw - 1200px) / 2 + 50px));
   box-sizing: border-box;
@@ -92,7 +89,7 @@
 }
 
 @media (max-width: 600px) {
-  .certificates {
+  .certificates-inner {
     padding: 40px 0;
   }
   .certificate-top h1 {
