@@ -1,5 +1,5 @@
 .certificates {
-  padding: 60px 0;
+
   max-width: 1200px;
   margin: 0 auto;
   font-family: sans-serif;
@@ -9,7 +9,7 @@
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
-  margin-top: -60px;
+
   margin-bottom: 40px;
   width: 100vw;
   margin-left: calc(50% - 50vw);
