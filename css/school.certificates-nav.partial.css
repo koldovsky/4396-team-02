@@ -1,10 +1,10 @@
-.сertificates {
+.certificates {
   padding: 60px 0;
   max-width: 1200px;
   margin: 0 auto;
   font-family: sans-serif;
 }
-.сertificat-top {
+.certificat-top {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -14,7 +14,7 @@
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
   position: relative;
-  background-image: url("/assets/images/sections/сertificates/swimmingwithfriends.png");
+  background-image: url("assets/images/sections/сertificates/swimmingwithfriends.png");
   background-size: 200%;
   background-position: center;
   background-repeat: no-repeat;
@@ -28,16 +28,16 @@
   margin-bottom: 20px;
 }
 
-.сertificat-top h1 {
+.certificat-top h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #ffff;
+  color: var(--text-color-primary);
 }
 
-.сertificat-top p {
+.certificat-top p {
   max-width: 900px;
   line-height: 1.6;
-  color: rgb(72, 134, 174);
+  color: var(--text-color-secondary);
   font-weight: 400;
 }
 .logo-center {
