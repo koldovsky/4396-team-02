@@ -1,7 +1,14 @@
-.divemaster-course__logo {
+.divemaster-course {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
     margin: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+}
+.divemaster-course__logo-icon {
+    margin-top: 48px;
+    width: 60px;
 }
 
 .divemaster-course__title {
@@ -13,18 +20,28 @@
 
 }
 
-.divemaster-course__description {
-    display: inline-block;
-    color: var(--text-color-secondary);
-    width: 59%;
-    height: 100%;
+.divemaster-course__container {
+    display: flex;
+
 }
-
-
+.divemaster-course__description {
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color-secondary);
+    max-width: 800px;
+    width: auto;
+    /* height: 100%; */
+}
+.divemaster-course__description-text {
+    display: flex;
+    width: auto;
+    max-width: 750px;
+}
 .divemaster-course__features {
     
-    display: inline-block;
-    width: 40%;
+    display: flex;
+    flex-direction: column;
+    /* width: 30%; */
 
 }
 .divemaster-course__feature {
@@ -79,6 +96,7 @@
 
 
 .divemaster-course__block-text {
+    padding-top: 10px;
     text-align: center;
 }
 
