@@ -14,41 +14,33 @@
   </head>
 
   <body>
-    <!-- 01__header (Yavorskyi Taras) -->
-    <header
-      class="global__header"
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="components/global.header.partial.html"
-    ></header>
-    <!-- /01__header (Yavorskyi Taras)-->
-
     <main class="main">
-      <!-- 01__menu (Yavorskyi Taras) -->
-      <nav
-        class="global__nav-menu"
+
+      <!-- 15__Explore Phuket (Petryshyn Roman -> Nazar Savchuk) -->
+      <section
+        class="explore-phuket"
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="components/global.nav-menu.partial.html"
-      ></nav>
-      <!-- /01__menu (Yavorskyi Taras) -->
+        data-hx-get="components/packages.explore-phuket.partial.html"
+      ></section>
+      <!-- /15__Explore Phuket (Petryshyn Roman -> Nazar Savchuk)-->
 
-      <!-- 15__Explore Phuket (Petryshyn Roman) -->
-      <!-- TODO: ваш блок має бути тут -->
+      <!-- 16__3 Days - 9 Dives (Petryshyn Roman -> Nazar Savchuk) -->
+      <section
+        class="days-dives"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="components/packages.days-dives.partial.html"
+      ></section>
 
-      <!-- /15__Explore Phuket (Petryshyn Roman)-->
-
-      <!-- 16__3 Days - 9 Dives (Petryshyn Roman) -->
-      <!-- TODO: ваш блок має бути тут -->
-
-      <!-- /16__3 Days - 9 Dives (Petryshyn Roman)-->
+      <!-- /16__3 Days - 9 Dives (Petryshyn Roman -> Nazar Savchuk)-->
 
       <!-- 17__Night Dives (Sultanova Oleksandra) -->
       <section
         class="night-dives"
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="components/packages.night-dives.html"
+        data-hx-get="components/packages.night-dives.partial.html"
       ></section>
       <!-- /17__Night Dives (Sultanova Oleksandra)-->
 
@@ -57,13 +49,12 @@
         class="caves"
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="components/packages.caves.html"
+        data-hx-get="components/packages.caves.partial.html"
       ></section>
 
       <!-- /18__3 Caves - 3 Days (Sultanova Oleksandra)-->
 
       <!-- 19__Contacts-2 (Mushchynka Vasyl) -->
-      <!-- TODO: ваш блок має бути тут -->
       <section
         class="contacts__form"
         data-hx-trigger="load"
@@ -81,5 +72,7 @@
       data-hx-get="components/global.footer.partial.html"
     ></footer>
     <!-- /01__footer (Yavorskyi Taras) -->
+
+    <script type="module" src="scripts/packages.js"></script>
   </body>
 </html>

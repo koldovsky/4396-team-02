@@ -1,23 +1,27 @@
-.Certificates {
-  padding: 60px 0;
+.certificates {
+  /* для того щоб меню відображалось коректно*/
+  /* хай тут буде лише background Розкоментуй то що нижче і допиши*/
+  background-image: url("../assets/images/sections/certificates/swimmingwithfriends.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.certificates-inner {
   max-width: 1200px;
   margin: 0 auto;
   font-family: sans-serif;
 }
-.Certificat-top {
+.certificate-top {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
+  padding-top: 75px;
   margin-bottom: 40px;
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
-  position: relative;
-  background-image: url("/assets/images/sections/сertificates/swimmingwithfriends.png");
-  background-size: 200%;
-  background-position: center;
-  background-repeat: no-repeat;
   padding-left: max(50px, calc((100vw - 1200px) / 2 + 50px));
   padding-right: max(50px, calc((100vw - 1200px) / 2 + 50px));
   box-sizing: border-box;
@@ -28,16 +32,16 @@
   margin-bottom: 20px;
 }
 
-.Certificat-top h1 {
+.certificate-top h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #ffff;
+  color: var(--text-color-primary);
 }
 
-.Certificat-top p {
+.certificate-top p {
   max-width: 900px;
   line-height: 1.6;
-  color: rgb(72, 134, 174);
+  color: var(--text-color-secondary);
   font-weight: 400;
 }
 .logo-center {
@@ -85,10 +89,10 @@
 }
 
 @media (max-width: 600px) {
-  .Certificates {
+  .certificates-inner {
     padding: 40px 0;
   }
-  .Certificat-top h1 {
+  .certificate-top h1 {
     font-size: 1.8rem;
   }
   .certificates-list-desktop {
