@@ -1,6 +1,7 @@
 .our-equipment {
-  background: linear-gradient(180deg, #000e24 0%, #04142e 100%);
+  background: #000e24;
   padding-bottom: 2rem;
+  --ui-heading-size: 26px;
 }
 
 /* HEADER */
@@ -63,7 +64,7 @@
 .our-equipment__content h3 {
   color: #ffffff;
   font-family: var(--font-family-additional);
-  font-size: 1.25rem;
+  font-size: var(--ui-heading-size);
   font-weight: 700;
   margin-bottom: 1rem;
 }
