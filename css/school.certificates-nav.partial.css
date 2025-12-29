@@ -15,7 +15,7 @@
   margin-right: calc(50% - 50vw);
   position: relative;
   background-image: url("../assets/images/sections/certificates/swimmingwithfriends.png");
-  background-size: 200%;
+  background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
   padding-left: max(50px, calc((100vw - 1200px) / 2 + 50px));
