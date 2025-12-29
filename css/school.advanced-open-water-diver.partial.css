@@ -1,4 +1,5 @@
-.advanced-open-water-diver {
+.advanced-open-water-diver-div
+{
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
