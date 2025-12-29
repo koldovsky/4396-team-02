@@ -1,4 +1,10 @@
 .certificates {
+  /* для того щоб меню відображалось коректно*/
+  /* хай тут буде лише background Розкоментуй то що нижче і допиши*/
+  /* background: ... ; */
+}
+
+.certificates-inner {
   padding: 60px 0;
   max-width: 1200px;
   margin: 0 auto;
