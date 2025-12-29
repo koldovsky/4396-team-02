@@ -4,7 +4,7 @@
   margin: 0 auto;
   font-family: sans-serif;
 }
-.certificat-top {
+.certificate-top {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -28,13 +28,13 @@
   margin-bottom: 20px;
 }
 
-.certificat-top h1 {
+.certificate-top h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
   color: var(--text-color-primary);
 }
 
-.certificat-top p {
+.certificate-top p {
   max-width: 900px;
   line-height: 1.6;
   color: var(--text-color-secondary);
@@ -88,7 +88,7 @@
   .certificates {
     padding: 40px 0;
   }
-  .certificat-top h1 {
+  .certificate-top h1 {
     font-size: 1.8rem;
   }
   .certificates-list-desktop {
