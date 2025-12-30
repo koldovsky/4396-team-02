@@ -3,9 +3,8 @@
   /* хай тут буде лише background Розкоментуй то що нижче і допиши*/
   background-image: url("../assets/images/sections/certificates/swimmingwithfriends.png");
   background-size: cover;
-  background-position: center -50px;
+  background-position: center -200px;
   background-repeat: no-repeat;
-
 }
 
 .certificate-top {
