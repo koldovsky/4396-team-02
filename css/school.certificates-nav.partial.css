@@ -7,11 +7,11 @@
   background-repeat: no-repeat;
 }
 
-.certificates-inner {
+/* .certificates-inner {
   max-width: 1200px;
   margin: 0 auto;
   font-family: sans-serif;
-}
+} */
 .certificate-top {
   display: flex;
   flex-direction: column;
@@ -19,11 +19,6 @@
   text-align: left;
   padding-top: 75px;
   margin-bottom: 40px;
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
-  padding-left: max(50px, calc((100vw - 1200px) / 2 + 50px));
-  padding-right: max(50px, calc((100vw - 1200px) / 2 + 50px));
   box-sizing: border-box;
 }
 
@@ -89,10 +84,7 @@
 }
 
 @media (max-width: 600px) {
-  .certificates-inner {
-    padding: 40px 0;
-  }
-  .certificate-top h1 {
+.certificate-top h1 {
     font-size: 1.8rem;
   }
   .certificates-list-desktop {
