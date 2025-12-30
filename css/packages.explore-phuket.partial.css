@@ -2,7 +2,8 @@
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 14, 36, 0)),
     url("../assets/images/sections/packages-explore-phuket/packages-explore-phuket-bg.png")
       no-repeat top;
-  background-blend-mode: multiply;
+  background-blend-mode: overlay;
+  background-size: cover;
 }
 
 .explore-phuket-inner {
