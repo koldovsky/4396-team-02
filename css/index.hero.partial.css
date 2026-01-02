@@ -3,7 +3,9 @@
 }
 
 .main__hero-background {
-  background-image: url("../assets/images/sections/hero/main-page__hero-background.png");
+  background-image: linear-gradient(var(--color-background-primary-opacity-20),
+                                    var(--color-background-primary-opacity-20)),
+                    url("../assets/images/sections/hero/main-page__hero-background.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
