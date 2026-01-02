@@ -85,7 +85,7 @@
 }
 
 /* ADAPTIVE */
-@media (max-width: 900px) {
+@media (max-width: 990px) {
   .our-equipment__grid {
     grid-template-columns: 1fr;
   }

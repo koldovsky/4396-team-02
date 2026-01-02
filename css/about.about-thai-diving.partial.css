@@ -29,7 +29,7 @@
   width: 50px;
   margin-bottom: 20px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 767px) {
     height: 70px;
     width: 70px;
   }
@@ -40,10 +40,10 @@
   font-family: var(--font-family-additional);
   margin-bottom: 25px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 767px) {
     font-size: 2.75rem;
   }
-  @media screen and (min-width: 996px) {
+  @media screen and (min-width: 991px) {
     font-size: 3.125rem;
   }
 }
@@ -58,7 +58,7 @@
   display: flex;
   flex-direction: column;
   gap: 50px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 767px) {
     flex-direction: row;
     justify-content: center;
     gap: 30px;
