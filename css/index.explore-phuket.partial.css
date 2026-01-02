@@ -1,9 +1,9 @@
 ﻿.explore-phuket {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 80px 20px;
+    padding: 80px 40px;
+    text-align: center;
 }
-
 
 .header {
     display: flex;
@@ -13,55 +13,86 @@
 }
 
 .logo {
-    width: 70px;
+    width: 60px;
     margin-bottom: 20px;
 }
 
 .title {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     font-weight: 700;
-    font-family: var(--font-family-additional);
+    color: var(--color-text-light);
 }
-
 
 .content {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     gap: 60px;
+    align-items: flex-start;
 }
 
-
 .text {
-    max-width: 500px;
+    flex: 0 0 500px; /* текст фіксований */
+    text-align: left;
 }
 
     .text p {
-        margin: 0 0 24px 0;
+        margin: 0 0 24px;
         line-height: 1.7;
         font-size: 1rem;
-        color: #9ec6d8;
     }
 
         .text p:last-child {
             margin-bottom: 0;
         }
 
-
-.content img {
-    width: 600px;
+.image-wrapper {
+    flex: 1 1 auto; /* фото зменшується пропорційно */
     max-width: 100%;
-   
 }
 
+    .image-wrapper img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 8px;
+    }
 
-@media (max-width: 900px) {
+/* Середні екрани: текст фіксований, фото зменшується поруч */
+@media (max-width: 1100px) and (min-width: 901px) {
     .content {
-        flex-direction: column;
-        text-align: center;
+        gap: 40px;
     }
 
     .text {
+        flex: 0 0 450px; /* текст фіксований */
+    }
+
+    .image-wrapper {
+        flex: 1 1 0; /* фото може зменшуватись */
+        max-width: calc(100% - 450px - 40px); /* враховуємо ширину тексту + gap */
+    }
+
+        .image-wrapper img {
+            width: 100%;
+            height: auto;
+        }
+}
+
+
+/* Малі екрани: текст над фото */
+@media (max-width: 900px) {
+    .content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .text,
+    .image-wrapper {
+        flex: none;
         max-width: 100%;
     }
+
+        .image-wrapper img {
+            width: 100%;
+            height: auto;
+        }
 }
