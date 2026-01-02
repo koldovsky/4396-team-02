@@ -70,8 +70,8 @@
 }
 
 .destinations__img {
-  width: 1000px;
-  height: 350px;
+  width: 100%;
+  height: auto;
   overflow: hidden;
 }
 
@@ -82,7 +82,7 @@
 }
 
 .destinations__content {
-  width: 910px;
+  width: 100%;
   color: #afc3d3;
   background-color: var(--rectangle-cards-background-color);
   border: 2px solid;
@@ -122,19 +122,15 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-
   padding: 14px 32px;
   font-family: var(--font-family-base);
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 1px;
-
   color: var(--text-color-primary);
   background-color: transparent;
-
   border: 1px solid var(--text-color-secondary);
   border-radius: 999px;
-
   text-decoration: none;
   transition: all 0.3s ease;
 }
@@ -151,7 +147,6 @@
 
 @media (max-width: 767px) {
   .destinations {
-    padding: 40px 16px;
     background-position: center;
   }
 
@@ -195,28 +190,20 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  .destinations {
-    padding: 48px 20px;
-  }
-
-  .destinations__main {
-    padding: 0 20px;
-  }
-
   .destinations__item--racha-yai,
   .destinations__item--anemone-reef {
     display: flex;
     align-items: stretch;
   }
 
-  .destinations__img,
-  .destinations__content {
+  .destinations__content,
+  .destinations__img {
     width: 50%;
   }
-
   .destinations__img {
     display: flex;
     height: auto;
+    overflow: hidden;
   }
 
   .destinations__img img {
@@ -226,7 +213,6 @@
   }
 
   .destinations__content {
-    width: 50%;
     padding: 32px 28px;
   }
 
@@ -236,9 +222,6 @@
 }
 
 @media (min-width: 1025px) {
-  .destinations {
-    padding: 60px 20px;
-  }
 
   .destinations__main {
     display: flex;
@@ -252,7 +235,7 @@
   }
 
   .destinations__img {
-    height: 410px;
+    height: auto;
   }
 
   .destinations__img {
