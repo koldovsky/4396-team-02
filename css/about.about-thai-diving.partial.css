@@ -1,9 +1,23 @@
 .about-thai-diving {
-  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 14, 36, 0)),
-    url("../assets/images/sections/about-thai-diving/background-image.png")
-      no-repeat ;
+  background: url("../assets/images/sections/about-thai-diving/background-image.png")
+    no-repeat;
   background-blend-mode: overlay;
+  position: relative;
   background-size: cover;
+  background-position: center;
+}
+
+.about-thai-diving > .wrapper {
+  position: relative;
+  z-index: 12;
+}
+
+.about-thai-diving__bg-overlay {
+  background: linear-gradient(0deg, #000e24 0%, rgba(0, 14, 36, 0) 100%);
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+
 }
 
 .about-thai-diving-inner {
