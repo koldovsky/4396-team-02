@@ -33,7 +33,10 @@ h6 {
   --text-color-secondary: rgb(72, 134, 174);
   --text-hover-color: rgb(231, 185, 0);
   --color-background-primary: rgb(0, 14, 36);
-  --color-background-primary-opacity: rgba(0, 14, 36, 0.6);
+  --color-background-primary-opacity-80: rgba(0, 14, 36, 0.8);
+  --color-background-primary-opacity-60: rgba(0, 14, 36, 0.6);
+  --color-background-primary-opacity-40: rgba(0, 14, 36, 0.4);
+  --color-background-primary-opacity-20: rgba(0, 14, 36, 0.2);
   --color-background-transparent: rgba(0, 0, 0, 0);
   --color-border-transparent: rgba(0, 0, 0, 0);
   --color-background-cards: rgba(18, 36, 58, 0.8);
@@ -53,6 +56,8 @@ h6 {
   --rectangle-cards-background-color: rgba(18, 36, 58, 0.8);
   --transition-speed: 0.3s;
 
+  --nav-height: 4rem;
+  
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
   --spacing-md: 1.5rem;

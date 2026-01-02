@@ -1,17 +1,24 @@
-.about-thai-diving {
+.packages__explore-phuket {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 14, 36, 0)),
-    url("../assets/images/sections/about-thai-diving/background-image.png")
-      no-repeat ;
+    url("../assets/images/sections/packages-explore-phuket/packages-explore-phuket-bg.png")
+      no-repeat top;
   background-blend-mode: overlay;
   background-size: cover;
 }
 
-.about-thai-diving-inner {
+.explore-phuket-inner {
   margin: 0 auto 50px;
   padding-top: 75px !important;
 }
 
-.about-thai-diving__header-icon {
+.explore-phuket__text {
+    max-width: 100%;
+    @media screen and (min-width: 768px) {
+        max-width: 570px;
+    }
+}
+
+.explore-phuket__header-icon {
   height: 50px;
   width: 50px;
   margin-bottom: 20px;
@@ -22,7 +29,7 @@
   }
 }
 
-.about-thai-diving__title {
+.explore-phuket__title {
   font-size: 2.375rem;
   font-family: var(--font-family-additional);
   margin-bottom: 25px;
@@ -35,13 +42,13 @@
   }
 }
 
-.about-thai-diving__description {
+.explore-phuket__description {
   color: var(--text-color-secondary);
   line-height: 1.56;
   margin-bottom: 100px;
 }
 
-.about-thai-diving__cards {
+.explore-phuket__cards {
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -52,30 +59,31 @@
   }
 }
 
-.about-thai-diving__card-image {
+.explore-phuket__card-image {
   width: 100%;
   aspect-ratio: 1.8;
   object-fit: cover;
+  height: 100%;
 }
 
-.about-thai-diving__card {
+.explore-phuket__card {
   .card__content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    .about-thai-diving__card-title {
+    .explore-phuket__card-title {
       margin-top: 20px;
       margin-bottom: 20px;
       font-size: 1.375rem;
       font-family: var(--font-family-additional);
     }
-    .about-thai-diving__card-text {
+    .explore-phuket__card-text {
       margin-bottom: 35px;
       text-align: center;
     }
   }
 
-  .about-thai-diving__card-text {
+  .explore-phuket__card-text {
     color: var(--text-color-secondary);
     line-height: 1.3;
   }

@@ -1,13 +1,14 @@
-.advanced-open-water-diver {
+.advanced-open-water-diver-div
+{
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: flex-start;
     color: rgb(72, 134, 174);
 }
-.advanced-open-water-diver__title
-{
+.advanced-open-water-diver__title {
     font-size: 3em;
+    font-family: var(--font-family-additional);
     margin: 1em auto;
     color: white;
 }

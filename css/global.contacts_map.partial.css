@@ -1,58 +1,66 @@
-.contacts-map {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 7rem;
-    position: relative;
-    overflow: visible;
-    min-height: 30rem;
+.contacts-map-background {
+  /* background-image: url(../assets/images/sections/contact_forms/wave_background.png); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.contacts-map::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 0;
-    bottom: -3rem;
-    width: 100vw;
-    background:
-        linear-gradient(to bottom,
-            rgba(0, 14, 36, 0.95) 0%,
-            rgba(0, 14, 36, 0.65) 35%,
-            rgba(0, 14, 36, 0.25) 60%,
-            rgba(0, 14, 36, 0) 80%),
-        url("../assets/images/sections/contact_forms/wave_background.png") center/cover no-repeat;
-    background-blend-mode: normal;
-    pointer-events: none;
-    z-index: 0;
+.contacts-map-inner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 4.5rem;
+  margin-bottom: 7rem;
+  position: relative;
+  overflow: visible;
+  min-height: 30rem;
+}
+
+.contacts-map-inner::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  bottom: -3rem;
+  width: 100vw;
+  background:
+    linear-gradient(to bottom,
+      rgba(0, 14, 36, 0.95) 0%,
+      rgba(0, 14, 36, 0.65) 35%,
+      rgba(0, 14, 36, 0.25) 60%,
+      rgba(0, 14, 36, 0) 80%),
+    url("../assets/images/sections/contact_forms/wave_background.png") center/cover no-repeat;
+  background-blend-mode: normal;
+  pointer-events: none;
+  z-index: 0;
 }
 
 .contacts-map__wrapper {
-    width: 100%;
-    max-width: none;
-    margin: 0 auto;
-    box-sizing: border-box;
-    padding: 0;
-    position: relative;
-    z-index: 1;
+  width: 100%;
+  max-width: none;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0;
+  position: relative;
+  z-index: 1;
 }
 
 .contacts-map__wrapper iframe {
-    width: 100% !important;
-    height: 28rem;
-    border: 0;
-    display: block;
+  width: 100% !important;
+  height: 28rem;
+  border: 0;
+  display: block;
 }
 
 .contacts-map__wrapper iframe {
-    outline: none;
-    box-shadow: none;
-    -webkit-box-shadow: none;
+  outline: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
 }
 
 .contacts-map__wrapper iframe:focus {
-    outline: none;
-    box-shadow: none;
-    -webkit-box-shadow: none;
+  outline: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
 }

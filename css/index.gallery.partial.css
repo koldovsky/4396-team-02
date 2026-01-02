@@ -25,6 +25,16 @@
     margin-bottom: 24px;
     overflow-wrap: break-word;
   }
+  .gallery__status {
+    font-family: var(--font-family-additional);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--text-color-secondary);
+    margin-bottom: 32px;
+    opacity: 0.85;
+    transition: opacity 0.3s ease;
+  }
   .gallery__image {
     width: 100%;
     height: 280px;

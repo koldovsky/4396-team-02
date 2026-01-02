@@ -1,7 +1,7 @@
 .destinations {
   background-image: linear-gradient(
-      var(--color-background-primary-opacity),
-      var(--color-background-primary-opacity)
+      var(--color-background-primary-opacity-40),
+      var(--color-background-primary-opacity-40)
     ),
     url("../assets/images/sections/destinations/destinations__background.png");
   background-size: cover;

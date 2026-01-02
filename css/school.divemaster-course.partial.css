@@ -1,56 +1,88 @@
+.divemaster-course {
+   max-width: 1120px;
+}
+
 .divemaster-course__logo {
-    margin: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divemaster-course__logo img {
+    margin: 0 auto;
+    width: 60px;
+    height: 60px;
 }
 
 .divemaster-course__title {
+    display: flex;
     color: var(--text-color-primary);
     margin: 1em auto;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
     font-size: 3em;
     font-family: var(--font-family-base);
-
 }
 
-.divemaster-course__description {
-    display: inline-block;
+
+.divemaster-course__description-and-features {
     color: var(--text-color-secondary);
-    width: 59%;
-    height: 100%;
+    /* justify-content: center; */
+    display: grid;
+    gap: 30px;
+    margin-bottom: 1.5em;
+    @media (max-width: 766px) {
+        grid-template-columns: 1fr;
+    }
+    @media (min-width: 767px) {
+        grid-template-columns: 70% 30%;
+    }
+    /* height: 100%; */
 }
 
+/* .divemaster-course__feature svg {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+} */
 
+
+/* .divemaster-course__description-text {
+    display: flex;
+    width: auto;
+}
+    */
 .divemaster-course__features {
     
-    display: inline-block;
-    width: 40%;
-
+    display: grid;
+    gap: 5px;
+    grid-template-rows: repeat(2, 1fr);
 }
-.divemaster-course__feature {
+
+
+/* .divemaster-course__feature {
     display: flex;
-    width: 100%;
-}
-
-.divemaster-course__feature-text {
+    flex-direction: column;
     text-align: left;
     margin-bottom: 1em;
-    vertical-align: baseline;
-}
-
-.divemaster-course__block {
-    width: 28%;
-    margin-top: 1em;
-    margin-right: 1em;
-    display: inline-block;
-}
-
-/* .divemaster-course__block-icon-decorator {
-    margin: auto;
-    width: 100px;
-    height: 100px;
-    padding: 0;
 } */
+.divemaster-course__blocks {
+    display: grid;
+    gap: 5px;
+    place-items: center;
+    width: 90%;
+    /* max-width: 1120px; */
+    @media (max-width: 766px) {
+        grid-template-columns: 1fr;
+    }
+    @media (min-width: 767px) and (max-width: 990px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (min-width: 991px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 .divemaster-course__block-icon-background {
     width: 160px;
     height: 160px;
@@ -79,6 +111,7 @@
 
 
 .divemaster-course__block-text {
+    padding-top: 0.5em;
     text-align: center;
 }
 
@@ -91,5 +124,3 @@ p, span {
     
     font-family: var(--font-family-base);
 }
-    
-    /* text-align: right; */

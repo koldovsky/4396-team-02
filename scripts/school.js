@@ -1,7 +1,6 @@
 function init() {
-  import("./global.burger-menu.partial.js");
-  import("./index.why-choose-us.partial.js");
-  import("./index.destinations.partial.js");
+    import("./global.burger-menu.partial.js");
+    import("./school.advanced-open-water-diving.partial.js");
 }
 
 const totalPartials = document.querySelectorAll(
