@@ -1,7 +1,7 @@
 let delegatedInitialized = false;
 
 export function initBurger() {
-  console.log('initBurger — setting up delegated handlers');
+  //console.log('initBurger — setting up delegated handlers');
 
   if (delegatedInitialized) return; // уникнути дублювання слухачів
 
