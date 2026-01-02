@@ -62,6 +62,11 @@
   transition: fill 0.3s ease;
 }
 
+.svgIcon:hover {
+  fill: var(--text-hover-color);
+  opacity: 0.75;
+}
+
 .currency-container {
   display: flex;
   align-items: center;
