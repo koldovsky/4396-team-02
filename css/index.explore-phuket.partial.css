@@ -30,7 +30,7 @@
 }
 
 .text {
-    flex: 0 0 500px; /* текст фіксований */
+    flex: 0 0 500px;
     text-align: left;
 }
 
@@ -45,8 +45,8 @@
         }
 
 .image-wrapper {
-    flex: 1 1 auto; /* фото зменшується пропорційно */
-    max-width: 100%;
+    flex: 1 1 auto;
+    min-width: 0;
 }
 
     .image-wrapper img {
@@ -56,19 +56,18 @@
         border-radius: 8px;
     }
 
-/* Середні екрани: текст фіксований, фото зменшується поруч */
 @media (max-width: 1100px) and (min-width: 901px) {
     .content {
         gap: 40px;
     }
 
     .text {
-        flex: 0 0 450px; /* текст фіксований */
+        flex: 0 0 450px;
     }
 
     .image-wrapper {
-        flex: 1 1 0; /* фото може зменшуватись */
-        max-width: calc(100% - 450px - 40px); /* враховуємо ширину тексту + gap */
+        flex: 1 1 auto;
+        min-width: 0;
     }
 
         .image-wrapper img {
@@ -77,8 +76,6 @@
         }
 }
 
-
-/* Малі екрани: текст над фото */
 @media (max-width: 900px) {
     .content {
         flex-direction: column;
