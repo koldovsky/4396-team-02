@@ -2,9 +2,31 @@
   /* для того щоб меню відображалось коректно*/
   /* хай тут буде лише background Розкоментуй то що нижче і допиши*/
   background-image: url("../assets/images/sections/certificates/swimmingwithfriends.png");
-  background-size: cover;
-  background-position: center -200px;
+  background-size: 190% cover;
+  background-position: center top;
   background-repeat: no-repeat;
+}
+
+.full-width-breakout {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background-image: url("../assets/images/sections/certificates/back.png");
+  background-size: cover;
+  background-position: center top;
+  display: flex;
+  justify-content: center; 
+}
+
+.big-middle-pic {
+  max-width: 1200px; 
+  width: 100%;
+  height: auto;
+  padding: 0 40px; 
+  box-sizing: border-box; 
 }
 
 .certificate-top {
