@@ -1,5 +1,6 @@
 function init() {
   import("./global.burger-menu.partial.js").then(mod => mod.initBurger());
+  import("./global.currency.partial.js").then(mod => mod.initCurrencyTicker());
   import("./index.why-choose-us.partial.js");
   import("./index.destinations.partial.js");
 

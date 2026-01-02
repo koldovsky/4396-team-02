@@ -1,5 +1,7 @@
 function init() {
   import("./global.burger-menu.partial.js").then(mod => mod.initBurger());
+  import("./global.currency.partial.js").then(mod => mod.initCurrencyTicker());
+  import("./about.our-equipment.partial.js");
 
   // додавайте інші partials тут за потреби
 

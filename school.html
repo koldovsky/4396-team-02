@@ -1,85 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Diving School</title>
-  <link rel="icon" href="assets/images/favicon.png" type="image/png" />
-  <link rel="stylesheet" href="css/school.certificates-nav.partial.css">
-  <script src="https://unpkg.com/htmx.org@1.9.10"
-    integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/school.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diving School</title>
+    <link rel="icon" href="assets/images/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="css/school.certificates-nav.partial.css">
+    <script src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/school.css">
+  </head>
 
-<body>
-  <main class="main">
-    <!-- 20__Certificates (Dobriuk Oleksandr) -->
-    <!-- TODO: ваш блок має бути тут -->
-    <section class="certificates">
-      <div
+  <body>
+    <main class="main">
+      <!-- 20__Certificates (Dobriuk Oleksandr) -->
+      <!-- TODO: ваш блок має бути тут -->
+      <section class="certificates">
+        <div
+          data-hx-trigger="load"
+          data-hx-swap="outerHTML"
+          data-hx-get="components/school.certificates-nav.partial.html">
+        </div>
+      </section>
+      <!-- /20__Certificates (Dobriuk Oleksandr)-->
+
+
+      <!-- 21__PADI Open Water Course (Rudyk Vladyslav) -->
+      <section
+        class="open-water-course__container"
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="components/school.certificates-nav.partial.html">
-      </div>
-    </section>
-    <!-- /20__Certificates (Dobriuk Oleksandr)-->
+        data-hx-get="components/school.open-water-course.partial.html">
+      </section>
+      <!--(Tsap Illia) Іконки для наших секцій однакові, тому вони знаходяться в "assets/images/sections/school/icons" -->
+      <!-- /21__PADI Open Water Course (Rudyk Vladyslav)-->
 
 
-    <!-- 21__PADI Open Water Course (Rudyk Vladyslav) -->
-    <section
-      class="open-water-course__container"
+      <!-- 22__PADI Advanced Open Water Diver (AOWD) (Tsap Illia) -->
+      <section
+        class="advanced-open-water-diver"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="components/school.advanced-open-water-diver.partial.html">
+      </section>
+      <!-- /22__PADI Advanced Open Water Diver (AOWD) (Tsap Illia)-->
+
+
+      <!-- 23__PADI Divemaster Course (Oleksandr Pechak) -->
+      <section
+        class="divemaster-course"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="components/school.divemaster-course.partial.html">
+      </section>
+      <!--(Tsap Illia) Іконки для наших секцій однакові, тому вони знаходяться в "assets/images/sections/school/icons" -->
+      <!-- /23__PADI Divemaster Course (Oleksandr Pechak)-->
+
+
+      <!-- 24__Contacts-3 (Mushchynka Vasyl) -->
+      <section
+        class="contacts__form"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="components/school.contacts_form.partial.html">
+      </section>
+      <!-- /24__Contacts-3 (Mushchynka Vasyl)-->
+    </main>
+
+
+    <!-- 01__footer (Yavorskyi Taras) -->
+    <footer
+      class="global__footer"
       data-hx-trigger="load"
       data-hx-swap="outerHTML"
-      data-hx-get="components/school.open-water-course.partial.html">
-    </section>
-    <!--(Tsap Illia) Іконки для наших секцій однакові, тому вони знаходяться в "assets/images/sections/school/icons" -->
-    <!-- /21__PADI Open Water Course (Rudyk Vladyslav)-->
+      data-hx-get="components/global.footer.partial.html">
+    </footer>
+    <!-- /01__footer (Yavorskyi Taras) -->
 
-
-    <!-- 22__PADI Advanced Open Water Diver (AOWD) (Tsap Illia) -->
-    <section
-      class="advanced-open-water-diver"
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="components/school.advanced-open-water-diver.partial.html">
-    </section>
-    <!-- /22__PADI Advanced Open Water Diver (AOWD) (Tsap Illia)-->
-
-
-    <!-- 23__PADI Divemaster Course (Oleksandr Pechak) -->
-    <section
-      class="divemaster-course"
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="components/school.divemaster-course.partial.html">
-    </section>
-    <!--(Tsap Illia) Іконки для наших секцій однакові, тому вони знаходяться в "assets/images/sections/school/icons" -->
-    <!-- /23__PADI Divemaster Course (Oleksandr Pechak)-->
-
-
-    <!-- 24__Contacts-3 (Mushchynka Vasyl) -->
-    <section
-      class="contacts__form"
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="components/school.contacts_form.partial.html">
-    </section>
-    <!-- /24__Contacts-3 (Mushchynka Vasyl)-->
-  </main>
-
-
-  <!-- 01__footer (Yavorskyi Taras) -->
-  <footer
-    class="global__footer"
-    data-hx-trigger="load"
-    data-hx-swap="outerHTML"
-    data-hx-get="components/global.footer.partial.html">
-  </footer>
-  <!-- /01__footer (Yavorskyi Taras) -->
-
-  <script type="module" src="scripts/school.js"></script>
-</body>
-
+    <script type="module" src="scripts/school.js"></script>
+  </body>
 </html>
