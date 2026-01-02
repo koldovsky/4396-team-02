@@ -3,10 +3,18 @@ function init() {
   import("./global.currency.partial.js").then(mod => mod.initCurrencyTicker());
   import("./index.why-choose-us.partial.js");
   import("./index.destinations.partial.js");
-
-  // додавайте інші partials тут за потреби
-
 }
+
+// const totalPartials = document.querySelectorAll(
+//   '[hx-trigger="load"], [data-hx-trigger="load"]'
+// ).length;
+// let loadedPartialsCount = 0;
+
+// document.body.addEventListener("htmx:afterOnLoad", () => {
+//   loadedPartialsCount++;
+//   console.log(`Loaded partials: ${loadedPartialsCount}/${totalPartials}`);
+//   if (loadedPartialsCount === totalPartials) init();
+// });
 
 const selector = '[hx-trigger="load"], [data-hx-trigger="load"]';
 let totalPartials = 0;
@@ -18,7 +26,7 @@ let loadedPartialsCount = 0;
  */
 function markAndCountPlaceholdersRecursive(node) {
   let count = 0;
-  if (!(node instanceof HTMLElement)) return 0;
+  if (!(node instanceof Element)) return 0;
 
   if (node.matches(selector) && !node.hasAttribute("data-partial-tracked")) {
     node.setAttribute("data-partial-tracked", "true");
@@ -33,7 +41,7 @@ function markAndCountPlaceholdersRecursive(node) {
 
 // Початковий підрахунок top-level partial'ів
 totalPartials = markAndCountPlaceholdersRecursive(document);
-//console.log(`Initial partials: ${totalPartials}`);
+console.log(`Initial partials: ${totalPartials}`);
 
 // Коли htmx вставляє (swap) новий partial — перевіряємо вкладені placeholders
 document.body.addEventListener("htmx:afterSwap", (evt) => {
@@ -42,11 +50,11 @@ document.body.addEventListener("htmx:afterSwap", (evt) => {
 
   if (newlyFound > 0) {
     totalPartials += newlyFound;
-    //console.log(`Found ${newlyFound} nested partial(s). Total partials: ${totalPartials}`);
+    console.log(`Found ${newlyFound} nested partial(s). Total partials: ${totalPartials}`);
   }
 
   loadedPartialsCount++;
-  //console.log(`Loaded partials: ${loadedPartialsCount}/${totalPartials}`);
+  console.log(`Loaded partials: ${loadedPartialsCount}/${totalPartials}`);
 
   if (loadedPartialsCount === totalPartials) init();
 });
