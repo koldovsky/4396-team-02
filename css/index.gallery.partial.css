@@ -42,62 +42,71 @@
     height: 280px;
     object-fit: cover;
     background: var(--rectangle-cards-background-color);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
   }
 
   .gallery__image:hover {
     transform: translateY(-6px);
     box-shadow: 0 16px 40px var(--rectangle-cards-background-color);
   }
+
+  /* Wrapper for carousel to position controls */
+  .gallery__carousel-wrapper {
+    position: relative;
+    width: 100%;
+  }
 }
 
-/* Carousel layout */
+/* Carousel itself */
 #galleryCarousel {
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
-  position: relative;
+
+  /* Carousel inner slides */
+  .carousel-inner {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .carousel-item {
+    width: 100%;
+  }
 }
 
-#galleryCarousel .carousel-inner {
-  width: 100%;
-  overflow: hidden;
-}
-
-#galleryCarousel .carousel-item {
-  width: 100%;
-}
-
-/* Move controls outside slides */
-#galleryCarousel .carousel-control-prev,
-#galleryCarousel .carousel-control-next {
-  width: 48px;
+/* Controls positioned relative to wrapper */
+.gallery__carousel-wrapper .carousel-control-prev,
+.gallery__carousel-wrapper .carousel-control-next {
+  position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  width: 48px;
 }
 
-#galleryCarousel .carousel-control-prev {
-  left: -64px;
+.gallery__carousel-wrapper .carousel-control-prev {
+  left: 0;
 }
 
-#galleryCarousel .carousel-control-next {
-  right: -64px;
+.gallery__carousel-wrapper .carousel-control-next {
+  right: 0;
 }
 
-/* Desktop */
+/* Desktop adjustments */
 @media (min-width: 992px) {
   #galleryCarousel {
     max-width: 100%;
   }
 }
 
+/* Mobile adjustments */
 @media (max-width: 767px) {
-  #galleryCarousel .carousel-control-prev {
+  .gallery__carousel-wrapper .carousel-control-prev {
     left: 0;
   }
 
-  #galleryCarousel .carousel-control-next {
+  .gallery__carousel-wrapper .carousel-control-next {
     right: 0;
   }
 }
-
