@@ -17,35 +17,28 @@ let loadedPartialsCount = 0;
  */
 function markAndCountPlaceholdersRecursive(node) {
   let count = 0;
-  if (!(node instanceof Element)) return 0;
+  if (!(node instanceof HTMLElement)) return 0; // skip non-element nodes
 
   if (node.matches(selector) && !node.hasAttribute("data-partial-tracked")) {
     node.setAttribute("data-partial-tracked", "true");
     count++;
   }
 
-  for (const child of node.children) {
-    count += markAndCountPlaceholdersRecursive(child);
-  }
+  for (const child of node.children) count += markAndCountPlaceholdersRecursive(child);
+
   return count;
 }
 
 // Початковий підрахунок top-level partial'ів
 totalPartials = markAndCountPlaceholdersRecursive(document);
-console.log(`Initial partials: ${totalPartials}`);
 
 // Коли htmx вставляє (swap) новий partial — перевіряємо вкладені placeholders
 document.body.addEventListener("htmx:afterSwap", (evt) => {
   const swappedEl = (evt && evt.detail && evt.detail.target) || document;
   const newlyFound = markAndCountPlaceholdersRecursive(swappedEl);
 
-  if (newlyFound > 0) {
-    totalPartials += newlyFound;
-    console.log(`Found ${newlyFound} nested partial(s). Total partials: ${totalPartials}`);
-  }
-
+  if (newlyFound > 0) totalPartials += newlyFound;
   loadedPartialsCount++;
-  console.log(`Loaded partials: ${loadedPartialsCount}/${totalPartials}`);
 
-  if (loadedPartialsCount -2 === totalPartials) init();
+  if (loadedPartialsCount === totalPartials) init();
 });
