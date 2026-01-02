@@ -1,9 +1,22 @@
 .packages__explore-phuket {
-  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 14, 36, 0)),
-    url("../assets/images/sections/packages-explore-phuket/packages-explore-phuket-bg.png")
-      no-repeat top;
+  background: url("../assets/images/sections/packages-explore-phuket/packages-explore-phuket-bg.png")
+      91.88% 100% / cover no-repeat,
+    rgb(0, 14, 36, 0.3);
   background-blend-mode: overlay;
   background-size: cover;
+  position: relative;
+}
+
+.packages__explore-phuket__wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+.packages__explore-phuket__bg-overlay {
+  background: linear-gradient(0deg, #000e24 0%, rgba(0, 14, 36, 0) 100%);
+  position: absolute;
+  inset: 0;
+  z-index: 0;
 }
 
 .explore-phuket-inner {
@@ -12,10 +25,10 @@
 }
 
 .explore-phuket__text {
-    max-width: 100%;
-    @media screen and (min-width: 768px) {
-        max-width: 570px;
-    }
+  max-width: 100%;
+  @media screen and (min-width: 768px) {
+    max-width: 570px;
+  }
 }
 
 .explore-phuket__header-icon {
