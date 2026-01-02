@@ -11,7 +11,7 @@ function startCountdown()
         return;
     }
     const imgHTML = img.outerHTML;
-    let seconds = 30;
+    let seconds = 10;
     container.innerHTML = `<div class="advanced-open-water-diver__countdown">${seconds}s</div>`;
     const countdownEl = container.querySelector('.advanced-open-water-diver__countdown');
     const timer = setInterval(() =>
