@@ -41,6 +41,10 @@
   letter-spacing: normal;
 }
 
+.phone__link-button:hover {
+  color: var(--text-hover-color);
+}
+
 .social-icons__list {
   list-style: none;
   display: flex;
@@ -69,6 +73,9 @@
 
 .currency-display {
   padding: 2px 6px;
+}
+.currency-display:hover {
+  color: var(--text-hover-color);
 }
 
 /* МІНІМАЛЬНА (екрани <= 766px) */
