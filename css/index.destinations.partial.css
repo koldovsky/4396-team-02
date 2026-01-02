@@ -6,7 +6,6 @@
     url("../assets/images/sections/destinations/destinations__background.png");
   background-size: cover;
   background-repeat: no-repeat;
-  max-width: 100%;
 }
 
 .destinations__header {
@@ -39,7 +38,6 @@
   display: flex;
   justify-content: center;
   align-items: stretch;
-  max-width: 1115px;
 }
 
 .destinations__subtitle {
@@ -202,7 +200,6 @@
   }
 
   .destinations__main {
-    max-width: 100%;
     padding: 0 20px;
   }
 
@@ -246,7 +243,6 @@
   .destinations__main {
     display: flex;
     align-items: stretch;
-    max-width: 1115px;
     margin: 0 auto;
   }
 
