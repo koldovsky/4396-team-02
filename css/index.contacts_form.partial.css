@@ -15,6 +15,7 @@
 
 .contacts__title {
   font-size: 3rem;
+  font-family: var(--font-family-additional);
   font-weight: 700;
   margin: 1.25rem 0;
 }
