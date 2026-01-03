@@ -47,9 +47,9 @@
 
 .our-instructors__main-icon {
   display: block;
-  width: 4rem;
+  width: 3.5rem;
   height: auto;
-  margin: 3rem auto 1.5rem;
+  margin: 0 auto 1.5rem;
 }
 
 .our-instructors__container__cards {
@@ -62,20 +62,26 @@
 }
 
 .our-instructors__card {
-  background: var(--inputs-block-background-color);
+ box-sizing: border-box;
+  width: 328px;
+  height: 450px;
   padding: 40px 25px;
-  max-width: 320px;
-  border-radius: 10px;
+  background: rgba(18, 36, 58, 0.43);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 0 0 350px;    /* щоб флекс-контейнер тримав ту ж ширину */
 }
 
 .our-instructors__card img {
+  display: block;
   width: 120px;
   height: 120px;
+  max-width: 100%;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 20px;
 }
 
 .our-instructors__card h3 {
@@ -92,7 +98,7 @@
 }
 
 /* Adaptive */
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
   .our-instructors__title {
     font-size: 32px;
     height: auto;
@@ -100,8 +106,10 @@
   }
 
   .our-instructors__card {
+    width: 100%;
+    height: auto;
     max-width: 100%;
     padding: 2.5rem 2rem;
-    grid-template-columns: 1fr;
+    flex: 1 1 100%;
   }
 }
