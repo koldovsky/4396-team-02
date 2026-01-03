@@ -59,6 +59,10 @@ h6 {
 
   --nav-height: 5rem;
   
+  --titles-font-size-sm: 2.375rem;
+  --titles-font-size-md: 2.75rem;
+  --titles-font-size-lg: 3.125rem;
+
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
   --spacing-md: 1.5rem;
