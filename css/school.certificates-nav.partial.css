@@ -62,9 +62,10 @@
   align-items: center;
   margin-bottom: 30px;
   text-align: center;
+  font-size: 1.7rem;
 }
-.center-icon {
-  width: 40px;
+.top-icon {
+  width: 70px;
   margin-bottom: 10px;
 }
 .certificates-list-desktop {
@@ -84,7 +85,7 @@
 }
 
 .cert-img {
-  width: 100%;
+  width: 75%;
   height: auto;
   object-fit: contain;
   transition: transform 0.3s ease;
