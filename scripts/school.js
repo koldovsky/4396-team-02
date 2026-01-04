@@ -2,6 +2,8 @@ function init() {
   import("./global.burger-menu.partial.js").then(mod => mod.initBurger());
   import("./global.currency.partial.js").then(mod => mod.initCurrencyTicker());
   import("./school.advanced-open-water-diving.partial.js");
+  import("./school.certificates-nav.partial.js").then(mod => mod.initCertificatesPromo());
+
 
   // додавайте інші partials тут за потреби
 
