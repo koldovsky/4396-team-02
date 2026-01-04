@@ -1,4 +1,4 @@
-* .our-instructors {
+* .our-instructors-iner {
   position: relative;
   padding: 80px 30px;
   text-align: center;
@@ -131,7 +131,7 @@
 /* СЕРЕДНЯ (екрани > 766px і <= 990px) */
 @media (min-width: 767px) and (max-width: 990px) {
   .our-instructors {
-    padding: 60px 20px;
+    padding: auto60px 20px;
   }
 
   .our-instructors__title {
