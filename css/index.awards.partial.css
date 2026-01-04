@@ -1,0 +1,19 @@
+.awards {
+  padding: 100px 0;
+  text-align: center;
+
+  .awards__icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+
+  .awards__title {
+    font-family: var(--font-family-base);
+    font-size: 50px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: var(--text-color-primary);
+    margin-bottom: 36px;
+  }
+  
