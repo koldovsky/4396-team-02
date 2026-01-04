@@ -3,6 +3,7 @@ function init() {
   import("./global.currency.partial.js").then(mod => mod.initCurrencyTicker());
   import("./index.why-choose-us.partial.js");
   import("./index.destinations.partial.js");
+  import("./index.courses.partial.js");
 }
 
 const selector = '[hx-trigger="load"], [data-hx-trigger="load"]';

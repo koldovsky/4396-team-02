@@ -55,14 +55,14 @@
 
 .courses-card__image-wrapper {
     width: 100%;
-    height: 100%;
+    aspect-ratio: auto;
     overflow: hidden;
 }
 
 .courses-card__image {
     width: 100%;
     height: 100%;
-    min-height: 260px;
+    min-height: 0;
     object-fit: cover;
     display: block;
     transform-origin: center;
@@ -136,6 +136,95 @@
     border: 1px solid var(--button-primary-background-color);
 }
 
+.courses-modal {
+  position: fixed;
+  inset: 0;
+  display: none;              
+  z-index: 1000;
+}
+
+.courses-modal.is-open {
+  display: block;
+}
+
+.courses-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.courses-modal__dialog {
+  position: relative;
+  max-width: 900px;
+  width: calc(100% - 32px);
+  margin: 40px auto;
+  background: var(--rectangle-cards-background-color);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.courses-modal__media {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.courses-modal__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.courses-modal__body {
+  padding: 28px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: var(--rectangle-cards-background-color);
+}
+
+.courses-modal__title {
+  color: var(--text-color-primary);
+  font-family: var(--font-family-additional);
+  font-weight: 700;
+  font-size: 1.35rem;
+  line-height: 1.15;
+}
+
+.courses-modal__text {
+  color: var(--text-color-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.courses-modal__link {
+  color: var(--button-primary-background-color);
+  font-weight: 700;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  text-decoration: none;
+  margin-top: auto; 
+}
+
+.courses-modal__close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(0,0,0,0.35);
+  color: #fff;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+
 @media (max-width: 766px) {
     .courses__main {
         grid-template-columns: 1fr;
@@ -153,12 +242,21 @@
     .courses-card__title {
         font-size: 1.125rem;
     }
+
+    .courses-modal__dialog {
+    grid-template-columns: 1fr;
+    margin: 18px auto;
+  }
+
 }
 
 @media (min-width: 767px) and (max-width: 990px) {
     .courses__main {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
+    }
+    .courses-card__image {
+        min-height: 280px;
     }
     .courses-card {
         grid-template-columns: 1fr;
