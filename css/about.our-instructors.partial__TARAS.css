@@ -5,17 +5,16 @@
   font-family: var(--font-family-base), sans-serif;
   overflow: hidden;
   padding-bottom: 100px;
-  margin-bottom: 100px;
 }
 
 .our-instructors__background {
   background:
-    linear-gradient(to bottom,
-      rgba(0, 14, 36, 0.95) 0%,
-      rgba(0, 14, 36, 0.65) 35%,
-      rgba(0, 14, 36, 0.25) 60%,
-      rgba(0, 14, 36, 0) 80%),
-    url("../assets/images/background.png") center/cover no-repeat;
+  linear-gradient(to bottom,
+    rgba(0, 14, 36, 0.95) 0%,
+    rgba(0, 14, 36, 0.65) 35%,
+    rgba(0, 14, 36, 0.25) 60%,
+    rgba(0, 14, 36, 0) 80%),
+   url("../assets/images/background.png") center/cover no-repeat;
   background-blend-mode: normal;
 }
 
@@ -32,14 +31,14 @@
   display: block;
   width: 4rem;
   height: auto;
-  margin: 0 auto 10px;
+   margin: 0 auto 10px;
 }
 
 .our-instructors__container__cards {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  justify-content: space-between;
+  justify-content: space-between; /* вирівнює краї карток під краї контейнера */
   padding-top: 50px;
   padding-bottom: 50px;
   width: 100%;
@@ -48,19 +47,18 @@
 
 .our-instructors__card {
   box-sizing: border-box;
-  width: calc((100% - 2 * 30px) / 3);
+  width: calc((100% - 2 * 30px) / 3); /* 3 колонки з двома відступами */
   padding: 40px;
   background: rgba(18, 36, 58, 0.43);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex: 1 1 200px;
 }
 
 .our-instructors__card img {
   display: block;
-  width: 100px;
+  max-width: 100px;
   height: auto;
   max-width: 100%;
   border-radius: 50%;
@@ -83,7 +81,7 @@
 
 /* Adaptive */
 @media (min-width: 1200px) {
-  .our-instructors-iner {
+  .our-instructors-inner {
     padding-top: 80px;
     padding-bottom: 80px;
   }
@@ -92,12 +90,11 @@
     font-size: 50px;
     height: 200px;
   }
-}
 
-/*.our-instructors__card {
-  max-width: 328px;
+  /* .our-instructors__card {
+    max-width: 328px;
+  } */
 }
-*/
 
 /* МІНІМАЛЬНА (екрани <= 766px) */
 @media (max-width: 766px) {
@@ -158,4 +155,3 @@
     flex: 1 1 328px;
   } */
 }
-  
