@@ -9,12 +9,12 @@
 
 .our-instructors__background {
   background:
-  linear-gradient(to bottom,
-    rgba(0, 14, 36, 0.95) 0%,
-    rgba(0, 14, 36, 0.65) 35%,
-    rgba(0, 14, 36, 0.25) 60%,
-    rgba(0, 14, 36, 0) 80%),
-   url("../assets/images/background.png") center/cover no-repeat;
+    linear-gradient(to bottom,
+      rgba(0, 14, 36, 0.95) 0%,
+      rgba(0, 14, 36, 0.65) 35%,
+      rgba(0, 14, 36, 0.25) 60%,
+      rgba(0, 14, 36, 0) 80%),
+    url("../assets/images/background.png") center/cover no-repeat;
   background-blend-mode: normal;
 }
 
@@ -31,7 +31,7 @@
   display: block;
   width: 4rem;
   height: auto;
-   margin: 0 auto 10px;
+  margin: 0 auto 10px;
 }
 
 .our-instructors__container__cards {
@@ -80,8 +80,7 @@
 
 /* Adaptive */
 @media (min-width: 1200px) {
-  .our-instructors {
-  }
+  .our-instructors {}
 
   .our-instructors__title {
     font-size: 50px;
@@ -96,8 +95,7 @@
 
 /* ДЕСКТОП (екрани > 990px) */
 @media (min-width: 991px) {
-  .our-instructors {
-  }
+  .our-instructors {}
 
   .our-instructors__title {
     font-size: 44px;
