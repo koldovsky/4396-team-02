@@ -1,7 +1,6 @@
-* 
-.our-instructors {
+* .our-instructors {
   position: relative;
-  padding: 80px 20px;
+  padding: 80px 30px;
   text-align: center;
   font-family: var(--font-family-base), sans-serif;
   background: linear-gradient(to bottom, #000e24 0%, #04142e 100%);
@@ -18,20 +17,21 @@
   background: url("../assets/images/background.png") center/cover no-repeat;
 
   /* Маска: зверху прозоро, знизу непрозоро */
-  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: cover;
 
-  mask-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
   mask-repeat: no-repeat;
   mask-size: cover;
 
-  opacity: 1; /* картинка завжди видима через маску */
+  opacity: 1;
+  /* картинка завжди видима через маску */
   z-index: 0;
 }
 
 /* Контент поверх фонового шару */
-.our-instructors > * {
+.our-instructors>* {
   position: relative;
   z-index: 1;
 }
@@ -47,7 +47,7 @@
 
 .our-instructors__main-icon {
   display: block;
-  width: 3.5rem;
+  width: 4 rem;
   height: auto;
   margin: 0 auto 1.5rem;
 }
@@ -62,16 +62,15 @@
 }
 
 .our-instructors__card {
- box-sizing: border-box;
-  width: 328px;
-  height: 450px;
+  box-sizing: border-box;
+  max-width: 100%;
   padding: 40px 25px;
   background: rgba(18, 36, 58, 0.43);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  flex: 0 0 350px;    /* щоб флекс-контейнер тримав ту ж ширину */
+  flex: 1 1 200px;
 }
 
 .our-instructors__card img {
@@ -98,18 +97,65 @@
 }
 
 /* Adaptive */
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
+  .our-instructors {
+    padding: 80px 20px;
+  }
+
   .our-instructors__title {
-    font-size: 32px;
-    height: auto;
-    margin-bottom: 20px;
+    font-size: 50px;
+    height: 200px;
   }
 
   .our-instructors__card {
-    width: 100%;
+    max-width: 328px;
+  }
+}
+
+/* МІНІМАЛЬНА (екрани <= 766px) */
+@media (max-width: 766px) {
+  .our-instructors {
+    padding: 50px 15px;
+  }
+
+  .our-instructors__title {
+    font-size: 28px;
     height: auto;
-    max-width: 100%;
-    padding: 2.5rem 2rem;
+  }
+
+  .our-instructors__card {
     flex: 1 1 100%;
+  }
+}
+
+/* СЕРЕДНЯ (екрани > 766px і <= 990px) */
+@media (min-width: 767px) and (max-width: 990px) {
+  .our-instructors {
+    padding: 60px 20px;
+  }
+
+  .our-instructors__title {
+    font-size: 36px;
+    height: auto;
+  }
+
+  .our-instructors__card {
+    flex: 1 1 calc(50% - 24px);
+  }
+}
+
+/* ДЕСКТОП (екрани > 990px) */
+@media (min-width: 991px) {
+  .our-instructors {
+    padding: 70px 20px;
+  }
+
+  .our-instructors__title {
+    font-size: 44px;
+    height: 180px;
+  }
+
+  .our-instructors__card {
+    flex: 1 1 328px;
   }
 }
