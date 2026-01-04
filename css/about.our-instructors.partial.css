@@ -5,7 +5,7 @@
   font-family: var(--font-family-base), sans-serif;
   overflow: hidden;
   padding-bottom: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .our-instructors__background {
@@ -25,14 +25,13 @@
   font-family: var(--font-family-additional);
   justify-content: center;
   align-items: center;
-  height: 200px;
 }
 
 .our-instructors__main-icon {
   display: block;
   width: 4rem;
   height: auto;
-  margin: 0 auto 10px;
+  margin: 0 auto 6px;
 }
 
 .our-instructors__container__cards {
@@ -40,7 +39,7 @@
   flex-wrap: wrap;
   gap: 30px;
   justify-content: space-between;
-  padding-top: 50px;
+  padding-top: 0px;
   padding-bottom: 50px;
   width: 100%;
   box-sizing: border-box;
@@ -49,13 +48,14 @@
 .our-instructors__card {
   box-sizing: border-box;
   width: calc((100% - 2 * 30px) / 3);
-  padding: 40px;
+  padding: 50px 40px;
   background: rgba(18, 36, 58, 0.43);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex: 1 1 200px;
+  min-height: 420px;
 }
 
 .our-instructors__card img {
