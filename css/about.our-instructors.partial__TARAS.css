@@ -1,39 +1,21 @@
-* .our-instructors {
-  position: relative;
-  padding: 80px 30px;
+* .our-instructors-inner {
+  padding-top: 80px;
+  padding-bottom: 80px;
   text-align: center;
-  font-family: var(--font-family-base), sans-serif;
-  background: linear-gradient(to bottom, #000e24 0%, #04142e 100%);
+  font-family: var(--font-family-base);
+  /* background: linear-gradient(to bottom, #000e24 0%, #04142e 100%); */
   overflow: hidden;
 }
 
-.our-instructors::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url("../assets/images/background.png") center/cover no-repeat;
-
-  /* Маска: зверху прозоро, знизу непрозоро */
-  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-size: cover;
-
-  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
-  mask-repeat: no-repeat;
-  mask-size: cover;
-
-  opacity: 1;
-  /* картинка завжди видима через маску */
-  z-index: 0;
-}
-
-/* Контент поверх фонового шару */
-.our-instructors>* {
-  position: relative;
-  z-index: 1;
+.our-instructors__background {
+  background:
+    linear-gradient(to bottom,
+      rgba(0, 14, 36, 0.95) 0%,
+      rgba(0, 14, 36, 0.65) 35%,
+      rgba(0, 14, 36, 0.25) 60%,
+      rgba(0, 14, 36, 0) 80%),
+    url("../assets/images/background.png") center/cover no-repeat;
+  background-blend-mode: normal;
 }
 
 .our-instructors__title {
@@ -54,29 +36,30 @@
 
 .our-instructors__container__cards {
   display: flex;
-  gap: 30px;
-  justify-content: center;
   flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between; /* вирівнює краї карток під краї контейнера */
   padding-top: 50px;
   padding-bottom: 50px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .our-instructors__card {
   box-sizing: border-box;
-  max-width: 100%;
-  padding: 40px 25px;
+  width: calc((100% - 2 * 30px) / 3); /* 3 колонки з двома відступами */
+  padding: 40px;
   background: rgba(18, 36, 58, 0.43);
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  flex: 1 1 200px;
 }
 
 .our-instructors__card img {
   display: block;
-  width: 120px;
-  height: 120px;
+  max-width: 100px;
+  height: auto;
   max-width: 100%;
   border-radius: 50%;
   object-fit: cover;
@@ -98,8 +81,9 @@
 
 /* Adaptive */
 @media (min-width: 1200px) {
-  .our-instructors {
-    padding: 80px 20px;
+  .our-instructors-inner {
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 
   .our-instructors__title {
@@ -107,15 +91,16 @@
     height: 200px;
   }
 
-  .our-instructors__card {
+  /* .our-instructors__card {
     max-width: 328px;
-  }
+  } */
 }
 
 /* МІНІМАЛЬНА (екрани <= 766px) */
 @media (max-width: 766px) {
-  .our-instructors {
-    padding: 50px 15px;
+  .our-instructors-inner {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .our-instructors__title {
@@ -124,14 +109,19 @@
   }
 
   .our-instructors__card {
-    flex: 1 1 100%;
+    width: 100%;
+  }
+
+  .our-instructors__card:nth-child(3) {
+    margin: 0; /* скидаємо центр, бо повна ширина */
   }
 }
 
 /* СЕРЕДНЯ (екрани > 766px і <= 990px) */
 @media (min-width: 767px) and (max-width: 990px) {
-  .our-instructors {
-    padding: 60px 20px;
+  .our-instructors-inner {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   .our-instructors__title {
@@ -140,14 +130,21 @@
   }
 
   .our-instructors__card {
-    flex: 1 1 calc(50% - 24px);
+    width: calc((100% - 1 * 30px) / 2); /* 2 колонки з одним відступом */
+  }
+
+    /* якщо 3-я картка переходить на другий ряд — центр її */
+  .our-instructors__card:nth-child(3) {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 /* ДЕСКТОП (екрани > 990px) */
 @media (min-width: 991px) {
-  .our-instructors {
-    padding: 70px 20px;
+  .our-instructors-inner {
+    padding-top: 70px;
+    padding-bottom: 70px;
   }
 
   .our-instructors__title {
@@ -155,7 +152,7 @@
     height: 180px;
   }
 
-  .our-instructors__card {
+  /* .our-instructors__card {
     flex: 1 1 328px;
-  }
+  } */
 }
