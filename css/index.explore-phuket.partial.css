@@ -1,7 +1,6 @@
 ﻿.explore-phuket {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 80px 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -20,6 +19,7 @@
 .title {
     font-size: 2.8rem;
     font-weight: 700;
+    font-family: var(--font-family-additional);
     color: var(--color-text-light);
 }
 
@@ -30,8 +30,9 @@
 }
 
 .text {
-    flex: 0 0 500px;
+    flex: 0 0 50%;
     text-align: left;
+    color: var(--text-color-secondary);
 }
 
     .text p {
@@ -53,16 +54,15 @@
         width: 100%;
         height: auto;
         display: block;
-        border-radius: 8px;
     }
 
-@media (max-width: 1100px) and (min-width: 901px) {
+@media (min-width: 767px) and (max-width: 990px) {
     .content {
         gap: 40px;
     }
 
     .text {
-        flex: 0 0 450px;
+       
     }
 
     .image-wrapper {
@@ -76,9 +76,10 @@
         }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 766px) {
     .content {
         flex-direction: column;
+        align-items: center;
         gap: 20px;
     }
 
@@ -90,6 +91,6 @@
 
         .image-wrapper img {
             width: 100%;
-            height: auto;
+            height: 100%;
         }
 }
