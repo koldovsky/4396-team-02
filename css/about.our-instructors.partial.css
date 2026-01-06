@@ -1,4 +1,4 @@
-* .our-instructors-iner {
+* .our-instructors-inner {
   position: relative;
   padding: 80px 30px;
   text-align: center;
@@ -83,7 +83,7 @@
 
 /* Adaptive */
 @media (min-width: 1200px) {
-  .our-instructors-iner {
+  .our-instructors-inner {
     padding-top: 80px;
     padding-bottom: 80px;
   }
@@ -158,4 +158,16 @@
     flex: 1 1 328px;
   } */
 }
-  
+
+/* ================= Overlay ================= */
+.our-instructors__card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.our-instructors__card.is-active {
+  position: relative;
+  transform: scale(1.08);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}

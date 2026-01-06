@@ -1,10 +1,10 @@
 function init() {
-  import("./global.burger-menu.partial.js").then(mod => mod.initBurger());
-  import("./global.currency.partial.js").then(mod => mod.initCurrencyTicker());
-  import("./about.our-equipment.partial.js").then(mod => mod.initOurEquipment());
+  import("./global.burger-menu.partial.js").then((mod) => mod.initBurger());
+  import("./global.currency.partial.js").then((mod) => mod.initCurrencyTicker());
+  import("./about.our-equipment.partial.js").then((mod) => mod.initOurEquipment());
+  import("./about.our-instructors.partial.js").then((mod) => mod.initOurInstructors());
 
   // додавайте інші partials тут за потреби
-
 }
 
 const selector = '[hx-trigger="load"], [data-hx-trigger="load"]';
@@ -24,7 +24,8 @@ function markAndCountPlaceholdersRecursive(node) {
     count++;
   }
 
-  for (const child of node.children) count += markAndCountPlaceholdersRecursive(child);
+  for (const child of node.children)
+    count += markAndCountPlaceholdersRecursive(child);
 
   return count;
 }
