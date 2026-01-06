@@ -10,16 +10,12 @@
 .our-equipment__header {
   text-align: center;
   margin-bottom: 3rem;
-  position: relative;
-  z-index: 1;
 }
 
 .our-equipment__icon {
   display: block;
   width: 4rem;
-  height: auto;
   margin: 3rem auto 1.5rem;
-  z-index: 1;
 }
 
 .our-equipment__title {
@@ -27,27 +23,36 @@
   font-family: var(--font-family-additional);
   font-weight: 700;
   color: var(--text-color-primary);
-  z-index: 1;
 }
 
 /* GRID */
 .our-equipment__grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   row-gap: 1.5rem;
-  position: relative;
-  z-index: 1;
 }
 
-/* IMAGES */
-.our-equipment__image_1 img,
-.our-equipment__image_2 img {
+/* ITEM */
+.our-equipment__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.our-equipment__item--reverse .our-equipment__image {
+  order: 2;
+}
+
+.our-equipment__item--reverse .our-equipment__content {
+  order: 1;
+}
+
+/* IMAGE */
+.our-equipment__image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
   cursor: pointer;
-  transition: transform 0.3s ease, z-index 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .our-equipment__image_1 img {
@@ -65,12 +70,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  position: relative;
-  z-index: 1;
 }
 
 .our-equipment__content h3 {
-  color: #ffffff;
   font-family: var(--font-family-additional);
   font-size: var(--ui-heading-size);
   font-weight: 700;
@@ -79,15 +81,19 @@
 
 .our-equipment__content p {
   color: var(--text-color-secondary);
-  font-family: var(--font-family-base);
   font-size: 0.95rem;
   line-height: 1.6;
 }
 
 /* ADAPTIVE */
 @media (max-width: 990px) {
-  .our-equipment__grid {
+  .our-equipment__item {
     grid-template-columns: 1fr;
+  }
+
+  .our-equipment__item--reverse .our-equipment__image,
+  .our-equipment__item--reverse .our-equipment__content {
+    order: initial;
   }
 
   .our-equipment__content {
@@ -95,17 +101,15 @@
   }
 }
 
-/* ЗУМ */
-/* Зум картинки з обмеженням до 80% екрану */
+/* ZOOM (JS) */
 .img-zoomed {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 80vw;   /* до 80% ширини екрану */
-  max-height: 80vh;  /* до 80% висоти екрану */
-  object-fit: contain; /* зберігає пропорції */
+  max-width: 80vw;
+  max-height: 80vh;
+  object-fit: contain;
   z-index: 9999;
-  transition: transform 0.3s ease, max-width 0.3s ease, max-height 0.3s ease;
   cursor: zoom-out;
 }
