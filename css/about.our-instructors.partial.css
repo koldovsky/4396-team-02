@@ -107,12 +107,12 @@
     padding-bottom: 50px;
   }
 
-  .our-instructorstitle {
+  .our-instructors__title {
     font-size: 28px;
     height: auto;
   }
 
-  .our-instructorscard {
+  .our-instructors__card {
     flex: 0 0 calc((100% - 30px) / 2);
     max-width: calc((100% - 30px) / 2);
     width: calc((100% - 30px) / 2);
@@ -133,12 +133,12 @@
     padding: auto60px 20px;
   }
 
-  .our-instructorstitle {
+  .our-instructors__title {
     font-size: 36px;
     height: auto;
   }
 
-  .our-instructorscard {
+  .our-instructors__card {
     flex: 0 0 calc((100% - 30px) / 2);
     max-width: calc((100% - 30px) / 2);
     width: calc((100% - 30px) / 2);
