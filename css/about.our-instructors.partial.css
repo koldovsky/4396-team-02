@@ -1,9 +1,9 @@
 * .our-instructors-inner {
   position: relative;
-  padding: 80px 30px;
   text-align: center;
   font-family: var(--font-family-base), sans-serif;
   overflow: hidden;
+  padding-top: 80px;
   padding-bottom: 100px;
   margin-bottom: 50px;
 }
@@ -25,7 +25,7 @@
   font-family: var(--font-family-additional);
   justify-content: center;
   align-items: center;
-   margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .our-instructors__main-icon {
@@ -95,56 +95,46 @@
   }
 }
 
-/*.our-instructors__card {
-  max-width: 328px;
-}
-*/
-
 /* МІНІМАЛЬНА (екрани <= 766px) */
 @media (max-width: 766px) {
-  .our-instructors-inner {
-    padding-top: 50px;
-    padding-bottom: 50px;
+  .our-instructors__container__cards {
+    justify-content: center;
+    align-items: stretch;
   }
 
-  .our-instructorstitle {
-    font-size: 28px;
-    height: auto;
-  }
-
-  .our-instructorscard {
-    flex: 0 0 calc((100% - 30px) / 2);
-    max-width: calc((100% - 30px) / 2);
-    width: calc((100% - 30px) / 2);
+  .our-instructors__card {
+    flex: 0 0 100%;       /* забезпечити 100% ширини */
+    max-width: 100%;
+    width: 100%;
+    margin: 0;            /* прибрати автоматичні відступи */
+    box-sizing: border-box;
   }
 
   .our-instructors__card:nth-child(3) {
-    margin-left: auto;
-    margin-right: auto;
-    flex: 0 0 calc((100% - 30px) / 2);
-    max-width: calc((100% - 30px) / 2);
-    width: calc((100% - 30px) / 2);
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
 /* СЕРЕДНЯ (екрани > 766px і <= 990px) */
 @media (min-width: 767px) and (max-width: 990px) {
   .our-instructors {
-    padding: auto60px 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
-  .our-instructorstitle {
+  .our-instructors__title {
     font-size: 36px;
     height: auto;
   }
 
-  .our-instructorscard {
+  .our-instructors__card {
     flex: 0 0 calc((100% - 30px) / 2);
     max-width: calc((100% - 30px) / 2);
     width: calc((100% - 30px) / 2);
   }
 
-    /* якщо 3-я картка переходить на другий ряд — центр її */
+  /* якщо 3-я картка переходить на другий ряд — центр її */
   .our-instructors__card:nth-child(3) {
     margin-left: auto;
     margin-right: auto;
@@ -165,13 +155,9 @@
     font-size: 44px;
     height: 180px;
   }
-
-  /* .our-instructors__card {
-    flex: 1 1 328px;
-  } */
 }
 
-/* ================= Overlay ================= */
+/* ================= Click ================= */
 .our-instructors__card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
@@ -182,4 +168,19 @@
   transform: scale(1.08);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
   z-index: 10;
+}
+
+/* Запобігти виділенню тексту і приховати caret при фокусі на картці */
+.our-instructors__card,
+.our-instructors__card * {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Забираємо видиму рамку/курсор вставки під час фокусу */
+.our-instructors__card:focus {
+  outline: none;
+  caret-color: transparent;
 }
