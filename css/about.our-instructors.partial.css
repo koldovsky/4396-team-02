@@ -25,6 +25,7 @@
   font-family: var(--font-family-additional);
   justify-content: center;
   align-items: center;
+   margin-bottom: 40px;
 }
 
 .our-instructors__main-icon {
@@ -106,17 +107,23 @@
     padding-bottom: 50px;
   }
 
-  .our-instructors__title {
+  .our-instructorstitle {
     font-size: 28px;
     height: auto;
   }
 
-  .our-instructors__card {
-    width: 100%;
+  .our-instructorscard {
+    flex: 0 0 calc((100% - 30px) / 2);
+    max-width: calc((100% - 30px) / 2);
+    width: calc((100% - 30px) / 2);
   }
 
   .our-instructors__card:nth-child(3) {
-    margin: 0; /* скидаємо центр, бо повна ширина */
+    margin-left: auto;
+    margin-right: auto;
+    flex: 0 0 calc((100% - 30px) / 2);
+    max-width: calc((100% - 30px) / 2);
+    width: calc((100% - 30px) / 2);
   }
 }
 
@@ -126,19 +133,24 @@
     padding: auto60px 20px;
   }
 
-  .our-instructors__title {
+  .our-instructorstitle {
     font-size: 36px;
     height: auto;
   }
 
-  .our-instructors__card {
-    width: calc((100% - 1 * 30px) / 2); /* 2 колонки з одним відступом */
+  .our-instructorscard {
+    flex: 0 0 calc((100% - 30px) / 2);
+    max-width: calc((100% - 30px) / 2);
+    width: calc((100% - 30px) / 2);
   }
 
     /* якщо 3-я картка переходить на другий ряд — центр її */
   .our-instructors__card:nth-child(3) {
     margin-left: auto;
     margin-right: auto;
+    flex: 0 0 calc((100% - 30px) / 2);
+    max-width: calc((100% - 30px) / 2);
+    width: calc((100% - 30px) / 2);
   }
 }
 
