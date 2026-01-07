@@ -5,7 +5,9 @@ function init() {
   import("./index.destinations.partial.js");
   import("./index.courses.partial.js");
   import("./index.diving-packages.partial.js").then((mod) => mod.initDivingPackages());
+  import("./index.open-water-course.partial.js");
 }
+
 
 const selector = '[hx-trigger="load"], [data-hx-trigger="load"]';
 let totalPartials = 0;

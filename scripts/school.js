@@ -3,6 +3,7 @@ function init() {
   import("./global.currency.partial.js").then(mod => mod.initCurrencyTicker());
   import("./school.advanced-open-water-diving.partial.js");
   import("./school.certificates-nav.partial.js").then(mod => mod.initCertificatesPromo());
+  import("./school.open-water-course.partial.js");
 
 
   // додавайте інші partials тут за потреби
