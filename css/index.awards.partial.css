@@ -1,57 +1,73 @@
 /* <!-- 08__Awards (Zarvanskyi Yaroslav) --> */
 .awards {
-  padding: 100px 0;
-  text-align: center;
+    padding: 100px 0;
+    text-align: center;
+    color: var(--text-color-primary);
+}
 
 .awards__icon {
-	display: flex;
+    display: flex;
     justify-content: center;
     margin-bottom: 16px;
-  }
+}
 
 .awards__title {
     font-family: var(--font-family-base);
     font-size: 50px;
     line-height: 1.2;
     font-weight: 700;
-    color: var(--text-color-primary);
     margin-bottom: 36px;
-  }
+}
 
 .awards__main {
     width: 100%;
     max-width: 1180px;
-    margin-top: 36px;
+    margin: 36px auto 0;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
     align-items: stretch;
 }
 
 .awards-card {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background: transparent;
+    display: flex;
+    background: rgba(255, 255, 255, 0.05);
     overflow: hidden;
-    box-shadow: 0 6px 0 rgba(0,0,0,0.06) inset;
+    transition: background 0.3s ease;
+}
+
+.awards-card:hover {
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .awards-card__image-wrapper {
     width: 100%;
-    aspect-ratio: auto;
-    overflow: hidden;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
 }
 
 .awards-card__image {
     width: 100%;
-    height: 100%;
-    min-height: 0;
-    object-fit: cover;
-    display: block;
-    transform-origin: center;
-    transition: transform var(--transition-speed) ease;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.4s ease;
 }
 
 .awards-card:hover .awards-card__image {
-    transform: scale(1.03);
+    transform: scale(1.1);
+}
+
+@media (max-width: 992px) {
+    .awards__main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .awards__main {
+        grid-template-columns: 1fr;
+    }
 }
