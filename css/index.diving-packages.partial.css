@@ -96,7 +96,7 @@
             }
         }
 
-        @media (min-width: 576px) {
+        @media (min-width: 767px) {
             grid-template-columns: 1fr 1fr;
             gap: 1.875rem;
             .diving-packages__package-card:last-child{
@@ -106,7 +106,7 @@
             }
         }
 
-        @media (min-width: 744px){
+        @media (min-width: 991px){
             grid-template-columns: repeat(3, 1fr);
             gap: 1.875rem;
             .diving-packages__package-card:last-child{

@@ -96,7 +96,7 @@
 }
 
 /* МІНІМАЛЬНА (екрани <= 766px) */
-@media (max-width: 766px) {
+@media (max-width: 767px) {
   .our-instructors__container__cards {
     justify-content: center;
     align-items: stretch;
