@@ -1,13 +1,6 @@
 .diving-packages {
     padding-top: 50px;
     padding-bottom: 50px;
-    padding-left: 15px;
-    padding-right: 15px;
-
-    max-width: 1200px; 
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
  
     .diving-packages__header{
         display: flex;
