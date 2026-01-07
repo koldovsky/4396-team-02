@@ -1,13 +1,6 @@
 .diving-packages {
     padding-top: 50px;
     padding-bottom: 50px;
-    padding-left: 15px;
-    padding-right: 15px;
-
-    max-width: 1200px; 
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
  
     .diving-packages__header{
         display: flex;
@@ -103,7 +96,7 @@
             }
         }
 
-        @media (min-width: 576px) {
+        @media (min-width: 767px) {
             grid-template-columns: 1fr 1fr;
             gap: 1.875rem;
             .diving-packages__package-card:last-child{
@@ -113,7 +106,7 @@
             }
         }
 
-        @media (min-width: 744px){
+        @media (min-width: 991px){
             grid-template-columns: repeat(3, 1fr);
             gap: 1.875rem;
             .diving-packages__package-card:last-child{

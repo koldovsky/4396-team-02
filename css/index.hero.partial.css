@@ -59,7 +59,7 @@
 }
 
 /* МІНІМАЛЬНА (екрани <= 766px) */
-@media (max-width: 766px) {
+@media (max-width: 767px) {
   .main__hero-inner {
     padding: 130px 0 100px 0;
   }

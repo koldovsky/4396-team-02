@@ -145,7 +145,7 @@
 }
 
 /* МІНІМАЛЬНА (екрани <= 766px) */
-@media (max-width: 766px) {
+@media (max-width: 767px) {
   .global__nav-menu {
     /* position: fixed; */
     padding-top: 20px;
