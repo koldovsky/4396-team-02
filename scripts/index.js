@@ -4,6 +4,7 @@ function init() {
   import("./index.why-choose-us.partial.js");
   import("./index.destinations.partial.js");
   import("./index.courses.partial.js");
+  import("./index.diving-packages.partial.js").then((mod) => mod.initDivingPackages());
 }
 
 const selector = '[hx-trigger="load"], [data-hx-trigger="load"]';
