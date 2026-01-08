@@ -2,8 +2,6 @@
 .awards {
     padding: 100px 0;
     text-align: center;
-	background: linear-gradient(rgba(0, 18, 32, 0.8), rgba(0, 18, 32, 0.8)), 
-            url('./assets/images/sections/awards/awardsbg.png') no-repeat center/cover;
     color: var(--text-color-primary);
 }
 
