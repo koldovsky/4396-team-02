@@ -5,15 +5,17 @@
 }
 
 /* МІНІМАЛЬНА (екрани <= 766px) */
-@media (max-width: 766px) {
+@media (max-width: 767px) {
   .container {
-    padding: 0 1.5rem !important; 
+    --titles-font-size: var(--titles-font-size-sm);
+    padding: 0 1.5rem !important;
   }
 }
 
 /* СЕРЕДНЯ (екрани > 766px і <= 990px) */
 @media (min-width: 767px) and (max-width: 990px) {
   .container {
+    --titles-font-size: var(--titles-font-size-md);
     padding: 0 2rem !important;
   }
 }
@@ -21,6 +23,7 @@
 /* ДЕСКТОП (екрани > 990px) */
 @media (min-width: 991px) {
   .container{
+    --titles-font-size: var(--titles-font-size-lg);
     padding: 0 2.5rem !important;    
   }
 }

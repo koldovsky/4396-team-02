@@ -1,0 +1,73 @@
+/* <!-- 08__Awards (Zarvanskyi Yaroslav) --> */
+.awards {
+    padding: 100px 0;
+    text-align: center;
+    color: var(--text-color-primary);
+}
+
+.awards__icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.awards__title {
+    font-family: var(--font-family-base);
+    font-size: 50px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 36px;
+}
+
+.awards__main {
+    width: 100%;
+    max-width: 1180px;
+    margin: 36px auto 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    align-items: stretch;
+}
+
+.awards-card {
+    display: flex;
+    background: rgba(255, 255, 255, 0.05);
+    overflow: hidden;
+    transition: background 0.3s ease;
+}
+
+.awards-card:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.awards-card__image-wrapper {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.awards-card__image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.4s ease;
+}
+
+.awards-card:hover .awards-card__image {
+    transform: scale(1.1);
+}
+
+@media (max-width: 992px) {
+    .awards__main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .awards__main {
+        grid-template-columns: 1fr;
+    }
+}

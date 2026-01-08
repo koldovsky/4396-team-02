@@ -1,9 +1,22 @@
 .about-thai-diving {
-  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 14, 36, 0)),
-    url("../assets/images/sections/about-thai-diving/background-image.png")
-      no-repeat ;
+  background: url("../assets/images/sections/about-thai-diving/background-image.png")
+    no-repeat;
   background-blend-mode: overlay;
+  position: relative;
   background-size: cover;
+  background-position: center;
+}
+
+.about-thai-diving > .wrapper {
+  position: relative;
+  z-index: 12;
+}
+
+.about-thai-diving__bg-overlay {
+  background: linear-gradient(0deg, #000e24 0%, rgba(0, 14, 36, 0) 100%);
+  position: absolute;
+  inset: 0;
+  z-index: 0;
 }
 
 .about-thai-diving-inner {
@@ -16,7 +29,7 @@
   width: 50px;
   margin-bottom: 20px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 767px) {
     height: 70px;
     width: 70px;
   }
@@ -27,10 +40,10 @@
   font-family: var(--font-family-additional);
   margin-bottom: 25px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 767px) {
     font-size: 2.75rem;
   }
-  @media screen and (min-width: 996px) {
+  @media screen and (min-width: 991px) {
     font-size: 3.125rem;
   }
 }
@@ -45,7 +58,7 @@
   display: flex;
   flex-direction: column;
   gap: 50px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 767px) {
     flex-direction: row;
     justify-content: center;
     gap: 30px;

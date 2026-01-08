@@ -41,6 +41,10 @@
   letter-spacing: normal;
 }
 
+.phone__link-button:hover {
+  color: var(--text-hover-color);
+}
+
 .social-icons__list {
   list-style: none;
   display: flex;
@@ -58,9 +62,29 @@
   transition: fill 0.3s ease;
 }
 
+.svgIcon:hover {
+  fill: var(--text-hover-color);
+  opacity: 0.75;
+}
+
+.currency-container {
+  display: flex;
+  align-items: center;
+  margin-right: 12px;
+  color: var(--text-color-primary);
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.currency-display {
+  padding: 2px 6px;
+}
+.currency-display:hover {
+  color: var(--text-hover-color);
+}
 
 /* МІНІМАЛЬНА (екрани <= 766px) */
-@media (max-width: 766px) {
+@media (max-width: 767px) {
   .global__header {
     display: none;
   }

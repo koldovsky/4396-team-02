@@ -22,13 +22,13 @@
 .menu__main-link .logo-image {
   width: 187px;
   min-width: 187px;
-  height: auto;
+  height: 4rem;
 }
 
 .menu__main-link .logo-image:hover {
   width: 187px;
   min-width: 187px;
-  height: auto;
+  height: 4rem;
   opacity: 0.75;
 }
 
@@ -108,7 +108,7 @@
   padding: 8px 0;
   position: relative;
   width: 24px;
-  height: 40px;
+  height: 4rem;
   margin-left: auto;
   margin-right: 0;
 }
@@ -145,7 +145,7 @@
 }
 
 /* МІНІМАЛЬНА (екрани <= 766px) */
-@media (max-width: 766px) {
+@media (max-width: 767px) {
   .global__nav-menu {
     /* position: fixed; */
     padding-top: 20px;
@@ -235,8 +235,8 @@
     flex-direction: column;
     padding: var(--spacing-md);
     gap: 0;
-    opacity: 0;
-    transition: opacity var(--transition-speed);
+    /* opacity: 0;
+    transition: opacity var(--transition-speed); */
   }
 
   /* header__menu-item */
@@ -246,12 +246,12 @@
   }
   /* menu__item-wrapper   header__menu-link */
   .menu__link {
-    display: block;
+    display: contents;
     padding: 0;
   }
 
   .menu__link:hover {
-    display: block;
+    display: contents;
     padding: 0;
     color: var(--text-hover-color);
     text-shadow: 3px 4px 3px rgba(0,0,0,1);
@@ -263,7 +263,7 @@
   }
 
   .burger-menu.active .burger-menu__line {
-    background-color: var(--text-hover-color);
+    background-color: var(--text-color-primary);
   }
 
   /* Burger animation */

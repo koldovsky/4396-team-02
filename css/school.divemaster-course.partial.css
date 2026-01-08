@@ -1,43 +1,42 @@
 .divemaster-course__logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .divemaster-course__logo img {
-    margin: 1em 0;
-    width: 60px;
-    height: 60px;
+  margin: 1em 0;
+  width: 60px;
+  height: 60px;
 }
 
 .divemaster-course__title {
-    text-align: center;
-    margin: 0.5em auto;
-    font-size: 3em;
-    font-family: var(--font-family-base);
-    color: var(--text-color-primary);
+  text-align: center;
+  margin: 0.5em auto;
+  font-size: 3em;
+  font-family: var(--font-family-base);
+  color: var(--text-color-primary);
 }
 
-
 .divemaster-course__description-and-features {
-    padding-right: 1.5rem;
-    color: var(--text-color-secondary);
-    display: grid;
-    gap: 30px;
-    margin-bottom: 1.5em;
+  padding-right: 1.5rem;
+  color: var(--text-color-secondary);
+  display: grid;
+  gap: 30px;
+  margin-bottom: 1.5em;
 
-    @media (max-width: 766px) {
-        grid-template-columns: 1fr;
-    }
-    @media (min-width: 767px) {
-        grid-template-columns: 2fr 1fr;
-    }
+  @media (max-width: 766px) {
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 767px) {
+    grid-template-columns: 2fr 1fr;
+  }
 }
 
 .divemaster-course__features {
-    display: grid;
-    gap: 5px;
-    grid-template-rows: repeat(2, 1fr);
+  display: grid;
+  gap: 5px;
+  grid-template-rows: repeat(2, 1fr);
 }
 
 .divemaster-course__price-toggle {
@@ -82,71 +81,70 @@
 }
 
 .divemaster-course__blocks {
-    max-width: 1200px;
-    margin: auto;
-    padding: 1.5rem;
-    display: grid;
-    gap: 5px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 1.5rem;
+  display: grid;
+  gap: 5px;
 }
 
 @media (max-width: 766px) {
-    .divemaster-course__blocks {
-        grid-template-columns: 1fr;
-    }
+  .divemaster-course__blocks {
+    grid-template-columns: 1fr;
+  }
 }
-    
+
 @media (min-width: 767px) and (max-width: 990px) {
-    .divemaster-course__blocks {
-        grid-template-columns: 1fr 1fr;
-    }
+  .divemaster-course__blocks {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (min-width: 991px) {
-    .divemaster-course__blocks {
-        grid-template-columns: repeat(3, 1fr);
-    }
+  .divemaster-course__blocks {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .divemaster-course__block {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .divemaster-course__block-icon-background {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .divemaster-course__block-icon {
-    margin: auto;
-    width: 100px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100%;
-    background: rgba(72, 134, 174, 0.4);
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background: rgba(72, 134, 174, 0.4);
 }
 
 .divemaster-course__block-icon img {
-    width: 60px;
-    aspect-ratio: 1/1;
-    object-fit: contain;
+  width: 60px;
+  aspect-ratio: 1/1;
+  object-fit: contain;
 }
 
-
 .divemaster-course__block-text {
-    padding-top: 0.5em;
-    text-align: center;
+  padding-top: 0.5em;
+  text-align: center;
 }
 
 .divemaster-course span,
 .divemaster-course p {
-    color: var(--text-color-secondary);
-    font-family: var(--font-family-base);
+  color: var(--text-color-secondary);
+  font-family: var(--font-family-base);
 }

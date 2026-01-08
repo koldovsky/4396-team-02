@@ -12,12 +12,12 @@
     ></script>
 
     <!-- font Chivo sans-serif import -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;600;700&display=swap"
       rel="stylesheet"
-    />
+    /> -->
 
     <!-- Bootstrap 5.3.8 CSS (CDN) -->
     <link
@@ -132,19 +132,10 @@
 
       <!-- 11__Contacts (Mushchynka Vasyl) -->
       <section
-        class="contacts_form"
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="components/index.contacts_form.partial.html"
-      ></section>
-
-
-      <!-- /11__Contacts (Mushchynka Vasyl)-->
-      <section
-        class="contacts_map"
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="components/global.contacts-map.partial.html"
+      class = "main__contacts"
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="components/index.contacts.partial.html"
       ></section>
     </main>
 
@@ -168,6 +159,5 @@
     </script>
 
     <script type="module" src="scripts/index.js"></script>
-
   </body>
 </html>

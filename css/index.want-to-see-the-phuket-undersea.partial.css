@@ -52,6 +52,7 @@
   text-decoration: none;
   font-weight: 700;
   font-size: 11px;
+  margin-bottom: 32px;
   text-transform: uppercase;
   border-radius: 20px;
   transition: all 0.3s ease;
@@ -105,7 +106,7 @@
   line-height: 1.5;
   overflow-wrap: break-word;
   text-align: left;
-  max-width: 520px;
+  width: 100%;
 }
 
 .scuba-diving-course__button {

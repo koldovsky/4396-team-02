@@ -7,6 +7,7 @@
   padding-top: 4.5rem;
   padding-bottom: 4.5rem;
   gap: 3rem;
+  margin-bottom: 5rem;
 }
 
 .contacts__image {
@@ -15,6 +16,7 @@
 
 .contacts__title {
   font-size: 3rem;
+  font-family: var(--font-family-additional);
   font-weight: 700;
   margin: 1.25rem 0;
 }
@@ -69,6 +71,7 @@
   display: flex;
   flex-direction: column;
   gap: 1.55rem;
+  margin-top: 1.5rem;
 }
 
 .contacts__label {
@@ -77,17 +80,18 @@
 
 .contacts__input {
   width: 100%;
-  padding: 1.0rem 0.5rem;
+  padding: 1rem 0.5rem 1rem 2rem;
   border: none;
   border-radius: 3rem;
-  background-color: var(--inputs-block-background-color);
-  font-size: 1rem;
+  background-color: var(--input-background-color);
+  font-weight: 700;
+  font-size: 0.7rem;
   outline: none;
   transition: background 0.3s, box-shadow 0.3s, filter 0.15s;
 }
 
 .contacts__input::placeholder {
-  color: var(--text-color-secondary);
+  color: var(--text-color-ternary);
 }
 
 .contacts__input:focus {
@@ -110,10 +114,15 @@
   top: 0;
   height: 100%;
   width: 100vw;
-  background-image: url("../assets/images/sections/contact_forms/map_backgroung.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background:
+    linear-gradient(to bottom,
+      rgba(0, 14, 36, 0.95) 0%,
+      rgba(0, 14, 36, 0.65) 35%,
+      rgba(0, 14, 36, 0.25) 60%,
+      rgba(0, 14, 36, 0) 80%),
+    url("../assets/images/sections/contact_forms/wave_background.png") center/cover no-repeat;
+  background-blend-mode: normal;
+  pointer-events: none;
   z-index: -1;
   pointer-events: none;
 }
@@ -133,7 +142,7 @@
 
   .contacts__form {
     order: 2;
-    padding: 1.5rem;
+    padding: 1rem 2.5rem;
     justify-content: stretch;
     width: 100%;
   }
@@ -141,6 +150,7 @@
   .contacts__form-body {
     width: 100%;
     padding: 0;
+    margin-top: 1.5rem;
   }
 
   .contacts__info {
