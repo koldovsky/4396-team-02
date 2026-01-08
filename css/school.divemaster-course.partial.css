@@ -40,6 +40,47 @@
     grid-template-rows: repeat(2, 1fr);
 }
 
+.divemaster-course__price-toggle {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.divemaster-course__price-toggle button {
+  padding: 0.75rem 1.5rem;
+  border: 2px solid var(--text-color-primary);
+  background-color: transparent;
+  color: var(--text-color-primary);
+  font-family: var(--font-family-base);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.divemaster-course__price-toggle button:hover {
+  background-color: var(--text-color-primary);
+  color: black;
+}
+
+.divemaster-course__price-toggle button:active,
+.divemaster-course__price-toggle button.active {
+  background-color: rgba(231, 185, 0, 0.2);
+  border-color: rgb(231, 185, 0);
+  color: rgb(231, 185, 0);
+}
+
+.divemaster-course__price-value {
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: rgb(231, 185, 0);
+  letter-spacing: 1px;
+  margin: 1rem 0 0;
+}
+
 .divemaster-course__blocks {
     max-width: 1200px;
     margin: auto;

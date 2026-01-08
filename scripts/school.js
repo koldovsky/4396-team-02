@@ -1,6 +1,7 @@
 function init() {
     import("./global.burger-menu.partial.js");
     import("./school.advanced-open-water-diving.partial.js");
+    import("school.divemaster-course.partial.js");
 }
 
 const totalPartials = document.querySelectorAll(
