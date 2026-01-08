@@ -4,7 +4,7 @@ function init() {
   import("./school.advanced-open-water-diving.partial.js");
   import("./school.certificates-nav.partial.js").then(mod => mod.initCertificatesPromo());
   import("./school.open-water-course.partial.js");
-  import("school.divemaster-course.partial.js");
+  import("./school.divemaster-course.partial.js");
 
   // додавайте інші partials тут за потреби
 
